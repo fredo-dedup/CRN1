@@ -145,7 +145,14 @@ function borderize(pts)
     # extrema( getx(pt) for pt in ghostpts )
     # extrema( gety(pt) for pt in ghostpts )
 
-    vcat(pts, ghostpts)
+    # foreach(pt -> push!(tess, pt), ghostpts)
+    push!(tess, ghostpts)
+
+    # allpts = vcat(pts, ghostpts)
+    # tess = DelaunayTessellation2D{Particle}(length(allpts))
+    # push!(tess, allpts)
+
+    tess
 end
 
 ###############################################################################
@@ -158,17 +165,18 @@ end
 ϵ = 0.001 # inner border
 
 function oneloop(pts, dt)
-    pts2 = borderize(pts)
+    # pts2 = borderize(pts)
+    #
+    tess = borderize(pts)
 
-    tess = DelaunayTessellation2D{Particle}(length(pts2))
-    push!(tess, pts2)
-    plpoints2(tess, pts2)
+    ves = collect(voronoiedges(tess))
 
     ### surface and perimeter calculation to evaluate P
     # ttt = filter(ed -> getgenb(ed).index == 1, collect(voronoiedges(tess)))
     # ve = ttt[1]
     foreach(pt -> pt.surface = pt.perimeter = 0., pts) # only on original points
-    for ve in voronoiedges(tess)
+    vals = zeros(maximum(pt.index for pt in pts), 2)
+    for ve in ves
         pa, pb = getgena(ve), getgenb(ve)
         (pa.index <= 0) && (pb.index <= 0) && continue
 
@@ -189,18 +197,15 @@ function oneloop(pts, dt)
             pb.perimeter += peri
         end
     end
-    foreach(pt -> pt.pressure = (pt.mass / pt.surface / pt.density) ^ γ, pts)
+    for pt in pts
+        pt.pressure = (pt.mass / pt.surface / pt.density) ^ γ
+    end
+    # foreach(pt -> pt.pressure = (pt.mass / pt.surface / pt.density) ^ γ, pts)
     maxp = maximum( pt.pressure for pt in pts)
 
     ### calculate acceleration
     foreach(pt -> pt.ax = pt.ay = 0., pts) # only on original points
-    # pt=pts[22]
-    # ttt = filter(ed -> getgenb(ed).index == 1, collect(voronoiedges(tess)))
-    # ve = ttt[1]
-
-    # pts[21:40]
-    # ve =first(voronoiedges(tess))
-    for ve in voronoiedges(tess)
+    for ve in ves
         pa, pb = getgena(ve), getgenb(ve)
         (pa.index <= 0) && (pb.index <= 0) && continue
 
@@ -237,18 +242,23 @@ function oneloop(pts, dt)
         fy += force * eijy
 
         if pa.index > 0
-            pa.ax += fx / pa.mass
-            pa.ay += fy / pa.mass - 1.
+            pa.ax += fx
+            pa.ay += fy
         end
 
         if pb.index > 0
-            pb.ax -= fx / pb.mass
-            pb.ay -= fy / pb.mass - 1.
+            pb.ax -= fx
+            pb.ay -= fy
         end
     end
-    maxa = maximum( sqrt(pt.ax*pt.ax + pt.ay*pt.ay) for pt in pts)
 
+    for pt in pts
+        pt.ax /= pt.mass
+        pt.ay /= pt.mass - 1.
+    end
+    maxa = maximum( sqrt(pt.ax*pt.ax + pt.ay*pt.ay) for pt in pts)
     dt2 = min(dt, 0.01 / maxa)
+
     for pt in pts
         pt.vx += dt2 * pt.ax
         pt._x += dt2 * pt.vx
