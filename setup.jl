@@ -211,7 +211,7 @@ end
 # sort(collect( [ (getgena(ed)._x, getgenb(ed)._y) for ed in voronoiedges((tess)) ] ))
 # length(pts)
 
-κ = 10.  # rounding force
+κ = 1.  # rounding force
 ϵ = 0.01 # inner border
 
 function oneloop(pts, dt)
@@ -222,7 +222,7 @@ function oneloop(pts, dt)
     clipcells(tess, pts)
 
     ### surface and perimeter calculation to evaluate P
-    pt = pts[1];
+    # pt = pts[1];
     for pt in pts
         pos = Point2D(getx(pt), gety(pt))
         pt.surface = 0.
@@ -244,40 +244,60 @@ function oneloop(pts, dt)
     maxp = maximum( pt.pressure for pt in pts)
 
     ### calculate acceleration
-    # pt=pts[6]
+    # pt=pts[22]
+    # pts[21:40]
     for pt in pts
         pti = Point2D(getx(pt), gety(pt))
         pt.ax = pt.ay = 0.
 
-        # ptc = first(pt.walls)
+        # ptc = pt.walls[4]
         for ptc in pt.walls
-            (ptc.ogen==nothing) && continue
-
-            ptj = Point2D(getx(ptc.ogen), gety(ptc.ogen))
             pa, pb = ptc.a, ptc.b
             Aij = sqrt(norm2(pa, pb))
+            midAx,  midAy  = (pa._x + pb._x) / 2,     (pa._y + pb._y) / 2
+
+            if ptc.ogen == nothing # border wall => create virtual particle
+                A = [ getx(pb)-getx(pa) gety(pb)-gety(pa) ;
+                      gety(pb)-gety(pa) getx(pa)-getx(pb)  ]
+                (det(A) == 0.) && error("cannot build mirror point")
+                b = [ getx(pti) - getx(pa), gety(pti) - gety(pa) ]
+                x = A \ b
+
+                midijx, midijy = getx(pa) + x[1] * A[1,1], gety(pa) + x[1] * A[2,1]
+                ptj = Point2D( 2 * midijx - pti._x, 2 * midijy - pti._y)
+                Pi = Pj = pt.pressure
+                Peri, Perj = pt.perimeter, Inf
+            elseif ptc.ogen.index == 0 # corner point
+                ptj = Point2D(getx(ptc.ogen), gety(ptc.ogen))
+                midijx, midijy = (ptj._x + pti._x) / 2,   (ptj._y + pti._y) / 2
+
+                Pi = Pj = pt.pressure
+                Peri, Perj = pt.perimeter, Inf
+            else
+                ptj = Point2D(getx(ptc.ogen), gety(ptc.ogen))
+                midijx, midijy = (ptj._x + pti._x) / 2,   (ptj._y + pti._y) / 2
+
+                Pi, Pj = pt.pressure, ptc.ogen.pressure
+                Peri, Perj = pt.perimeter, ptc.ogen.perimeter
+            end
 
             Rij = sqrt(norm2(pti, ptj))
             eijx,   eijy   = (ptj._x - pti._x) / Rij, (ptj._y - pti._y) / Rij
-            midAx,  midAy  = (pa._x + pb._x) / 2,     (pa._y + pb._y) / 2
-            midijx, midijy = (ptj._x + pti._x) / 2,   (ptj._y + pti._y) / 2
             cijx,   cijy   = midAx - midijx,           midAy - midijy
-
-            Pi, Pj = pt.pressure, ptc.ogen.pressure
 
             fx = -Aij * ( (Pi + Pj) * eijx / 2. + (Pj - Pi) * cijx / Rij )
             fy = -Aij * ( (Pi + Pj) * eijy / 2. + (Pj - Pi) * cijy / Rij )
 
             # PPO regularizing term
-            Pij = 4 * pt.mass / ( Rij + pt.perimeter )
-            Pji = 4 * pt.mass / ( Rij + ptc.ogen.perimeter )
+            Pij = (4 * pt.mass / ( Rij * Peri )) ^ γ
+            Pji = (4 * pt.mass / ( Rij * Perj )) ^ γ
 
             force = -Aij * κ * ( Pij - Pi + Pji - Pj) / 2.
-            fx -= force * eijx
-            fy -= force * eijy
+            fx += force * eijx
+            fy += force * eijy
 
             pt.ax += fx / pt.mass
-            pt.ay += fy / pt.mass
+            pt.ay += fy / pt.mass - 1.
         end
     end
     maxa = maximum( sqrt(pt.ax*pt.ax + pt.ay*pt.ay) for pt in pts)
