@@ -14,18 +14,13 @@ import Base: show
 
 abstract type ParticleType <: AbstractPoint2D end
 
-struct CellWall
-    a::Point2D
-    b::Point2D
-    ogen::Union{Nothing,ParticleType}
-end
-
 mutable struct Particle <: ParticleType
     _x::Float64
     _y::Float64
     index::Int64
     mass::Float64
     density::Float64
+    entropy::Float64
     pressure::Float64
     surface::Float64
     perimeter::Float64
@@ -33,8 +28,11 @@ mutable struct Particle <: ParticleType
     vy::Float64
     ax::Float64
     ay::Float64
-    walls::Vector{CellWall}
+    closest::Float64
 end
+
+P = s * ρ ^ γ
+
 
 function show(io::IO, part::Particle)
     show(io, "#$(part.index) ($(round(part._x, digits=2)),$(round(part._y, digits=2)))" *
@@ -45,9 +43,10 @@ function show(io::IO, part::Particle)
 end
 # pts[4]
 
-Particle(x::Float64, y::Float64) = Particle(x,y,0)
-Particle(x::Float64, y::Float64, ind::Int64) =
-    Particle(x, y, ind, 1., 1., 0., 0., 0., 0., 0., 0., 0., [])
+Particle(x::Float64, y::Float64)             = Particle(x, y, 0)
+Particle(x::Float64, y::Float64, ind::Int64) = Particle(x, y, ind, 1., 1.)
+Particle(x::Float64, y::Float64, ind::Int64, mass::Float64, density::Float64) =
+    Particle(x, y, ind, mass, density, 0., 0., 0., 0., 0., 0., 0., Inf)
 getx(p::Particle) = p._x
 gety(p::Particle) = p._y
 
@@ -56,44 +55,107 @@ gety(p::Particle) = p._y
 # isentropic gas, H₂O γ ~=  1.33
 const γ = 1.33
 
+##### part generators   #################################
 
+width = max_coord - min_coord
+validrange = (min= min_coord + width / 3.0,
+              max   = max_coord - width / 3.0)
+validwidth = width / 3.
+function part_gen1(Npart)
+    [Particle(validrange.min + validwidth * rand(),
+              validrange.min + validwidth * rand(),
+              i, 1. / Npart, 1., NaN, NaN, NaN,
+              0., 0., 0., 0., []) for i in 1:Npart]
 
-##################################################################################
-function intersection(a1::Point2D, a2::Point2D, b1::Point2D, b2::Point2D)::Union{Nothing,Point2D}
-    A = [ getx(a2)-getx(a1) getx(b1)-getx(b2) ;
-          gety(a2)-gety(a1) gety(b1)-gety(b2)  ]
-    (det(A) == 0.) && return nothing
-    b = [ getx(b1) - getx(a1), gety(b1) - gety(a1) ]
-    x = A \ b
-    all(0 .<= x .<= 1.) && return Point2D( getx(a1) + x[1] * A[1,1], gety(a1) + x[1] * A[2,1] )
-    nothing
 end
 
+function part_gen2(Npart)
+    coordrg = min_coord+0.05:sqrt(1/Npart):max_coord-0.05
+    vec( [ Particle(x, y + rand()*0.001,
+                    i, 1. /Npart, 1., NaN, NaN, NaN,
+                    0., 0., 0., 0., []) for
+                    (i, (x,y)) in enumerate(product(coordrg, coordrg)) ] )
+end
+
+function part_gen3(Npart)
+    unitarea     = validwidth * validwidth * 0.5 / Npart
+    unittriangle = sqrt(unitarea * 4 / sqrt(3))
+    htri = unittriangle * sqrt(3) / 2
+    pts = Particle[]
+    for t in 1:Npart
+        l = t * unittriangle
+        re, di = rem(l, validwidth), div(l , validwidth)
+        x = validrange.min + 0.01 + re
+        y = validrange.min + 0.01 + di * htri
+        (x > validrange.max - 0.01) && continue
+        (y > validrange.max - 0.01) && continue
+        push!(pts,
+            Particle( x, y,
+                      t, 1. / Npart, 1., NaN, NaN, NaN,
+                      0., 0., 0., 0., []) )
+    end
+    pts
+end
+
+function part_gen4(Npart)
+    unitlength = sqrt(sqrt(3) * validwidth * validwidth / Npart)
+    uls3 = sqrt(3)*unitlength
+    r1, r2 = validrange.min+2ϵ, validrange.max-2ϵ
+    pts = Particle[]
+    idx = 1
+    for y in r1:uls3:r2
+        for x in r1:unitlength:r2
+            push!(pts, Particle( x, y, idx, 1. / Npart, 1.))
+            idx += 1
+        end
+    end
+    for y in r1+uls3/2:uls3:r2
+        for x in r1+unitlength/2:unitlength:r2
+            push!(pts, Particle( x, y, idx, 1. / Npart, 1.))
+            idx += 1
+        end
+    end
+    pts
+end
+
+
+function calc_mass(pts)
+    tess = borderize(pts)
+    # tess = DelaunayTessellation2D{Particle}(length(pts2))
+    # push!(tess, pts2)
+
+    ### surface and perimeter calculation to evaluate P
+    foreach(pt -> pt.surface = 0., pts) # only on original points
+    for ve in voronoiedges(tess)
+        pa, pb = getgena(ve), getgenb(ve)
+        (pa.index <= 0) && (pb.index <= 0) && continue
+
+        p1, p2 = geta(ve), getb(ve)
+
+        pa1x, pa1y = getx(p1) - getx(pa), gety(p1) - gety(pa)
+        pa2x, pa2y = getx(p2) - getx(pa), gety(p2) - gety(pa)
+
+        surf = abs(pa1x*pa2y - pa2x*pa1y) / 2
+
+        if pa.index > 0
+            pa.surface   += surf
+        end
+        if pb.index > 0
+            pb.surface   += surf
+        end
+    end
+    foreach(pt -> pt.mass = pt.density * pt.surface / (validwidth * validwidth), pts)
+end
+
+##################################################################################
 function norm2(a1::T, a2::T)::Float64 where T <: AbstractPoint2D
     abs2(getx(a2) - getx(a1)) + abs2(gety(a2) - gety(a1))
 end
 
-# intersection(Point2D(0., 0.),Point2D(2., 0.),Point2D(0., -1.),Point2D(1., 2.))
-
-function clip(a1::Point2D, a2::Point2D)::Point2D
-    res = intersection(a1, a2, Point2D(1., 1.), Point2D(2., 1.))
-    (res != nothing) && return res
-    res = intersection(a1, a2, Point2D(1., 1.), Point2D(1., 2.))
-    (res != nothing) && return res
-    res = intersection(a1, a2, Point2D(2., 2.), Point2D(1., 2.))
-    (res != nothing) && return res
-    res = intersection(a1, a2, Point2D(2., 2.), Point2D(2., 1.))
-    (res != nothing) && return res
-    a2
-end
-# clip([1.5,1.5], [1.9, 1.9])
-# clip([1.5,1.5], [2.9, 1.9])
-# clip([1.5,1.5], [2.9, 2.9])
-# clip([1.5,1.5], [1.9, 2.9])
 
 # create ghost points to have a neat border around regular points
 function borderize(pts)
-    tess = DelaunayTessellation2D{Particle}(length(pts))
+    tess = DelaunayTessellation2D{Particle}(2 * length(pts))
     push!(tess, pts)
 
     # identify points close to the border
@@ -141,16 +203,12 @@ function borderize(pts)
             gidx -= 1
         end
     end
-    # length(ghostpts)
-    # extrema( getx(pt) for pt in ghostpts )
-    # extrema( gety(pt) for pt in ghostpts )
 
-    # foreach(pt -> push!(tess, pt), ghostpts)
-    push!(tess, ghostpts)
+    # push!(tess, ghostpts)
 
-    # allpts = vcat(pts, ghostpts)
-    # tess = DelaunayTessellation2D{Particle}(length(allpts))
-    # push!(tess, allpts)
+    allpts = vcat(pts, ghostpts)
+    tess = DelaunayTessellation2D{Particle}(length(allpts))
+    push!(tess, allpts)
 
     tess
 end
@@ -161,7 +219,7 @@ end
 
 # sort(collect( [ (getgena(ed)._x, getgenb(ed)._y) for ed in voronoiedges((tess)) ] ))
 # length(pts)
-κ = 0.1  # rounding force
+κ = 0.01  # rounding force
 ϵ = 0.001 # inner border
 
 function oneloop(pts, dt)
@@ -174,7 +232,11 @@ function oneloop(pts, dt)
     ### surface and perimeter calculation to evaluate P
     # ttt = filter(ed -> getgenb(ed).index == 1, collect(voronoiedges(tess)))
     # ve = ttt[1]
-    foreach(pt -> pt.surface = pt.perimeter = 0., pts) # only on original points
+    for pt in pts
+        pt.surface = pt.perimeter = 0.
+        pt.closest = Inf
+    end
+
     for ve in ves
         pa, pb = getgena(ve), getgenb(ve)
         (pa.index <= 0) && (pb.index <= 0) && continue
@@ -186,6 +248,7 @@ function oneloop(pts, dt)
 
         surf = abs(pa1x*pa2y - pa2x*pa1y) / 2
         peri = sqrt(norm2(p1, p2))
+        dist = sqrt(norm2(pa, pb))
 
         if pa.index > 0
             pa.surface   += surf
@@ -195,15 +258,23 @@ function oneloop(pts, dt)
             pb.surface   += surf
             pb.perimeter += peri
         end
+        if (pa.index > 0) && (pb.index > 0)
+            pa.closest = min(pa.closest, dist)
+            pb.closest = min(pb.closest, dist)
+        end
     end
+
     for pt in pts
-        pt.pressure = (pt.mass / pt.surface / pt.density) ^ γ
+        pt.pressure = (pt.mass / pt.surface) ^ γ / pt.density
     end
-    # foreach(pt -> pt.pressure = (pt.mass / pt.surface / pt.density) ^ γ, pts)
     maxp = maximum( pt.pressure for pt in pts)
+    minR = minimum( pt.closest for pt in pts)
 
     ### calculate acceleration
-    foreach(pt -> pt.ax = pt.ay = 0., pts) # only on original points
+    for pt in pts
+        pt.ax = pt.ay = 0.
+    end
+
     for ve in ves
         pa, pb = getgena(ve), getgenb(ve)
         (pa.index <= 0) && (pb.index <= 0) && continue
@@ -253,10 +324,19 @@ function oneloop(pts, dt)
 
     for pt in pts
         pt.ax /= pt.mass
-        pt.ay /= pt.mass - 1.
+        pt.ay = pt.ay / pt.mass - 1.
     end
     maxa = maximum( sqrt(pt.ax*pt.ax + pt.ay*pt.ay) for pt in pts)
-    dt2 = min(dt, 0.01 / maxa)
+
+    # calculate time step so as to avoid large moves
+    dt2 = dt
+    for pt in pts
+        nvx, nvy = pt.vx + dt2 * pt.ax, pt.vy + dt2 * pt.ay
+        while (sqrt(nvx*nvx+nvy*nvy) * dt2) > 0.1 * pt.closest
+            dt2 /= 2.
+            nvx, nvy = pt.vx + dt2 * pt.ax, pt.vy + dt2 * pt.ay
+        end
+    end
 
     for pt in pts
         pt.vx += dt2 * pt.ax
@@ -283,7 +363,8 @@ function oneloop(pts, dt)
     maxv = maximum( sqrt(pt.vx*pt.vx + pt.vy*pt.vy) for pt in pts)
 
     (maxpress = round(maxp),              maxacc = round(maxa, sigdigits=3),
-     maxvit   = round(maxv, sigdigits=3), dt     = round(dt2, sigdigits=3)), tess
+     maxvit   = round(maxv, sigdigits=3), minr   = minR,
+     dt     = round(dt2, sigdigits=3)), tess
 end
 
 
@@ -364,11 +445,49 @@ function plpoints2(tess, pts, pltrange =[validrange.min-0.01,validrange.max+0.01
         detail="idx:n", mark={:line, clip=true})
 end
 
+function plpoints2v(tess, pts, pltrange =[validrange.min-0.01,validrange.max+0.01] )
+    pd = [(x = getx(pt), y = gety(pt),
+           id = pt.index,
+           pressure  = round(pt.pressure),
+           surface   = round(pt.surface, digits=4),
+           perimeter = round(pt.perimeter, digits=3)) for pt in pts]
+
+    maxv = maximum( sqrt(pt.vx*pt.vx + pt.vy*pt.vy) for pt in pts )
+    pd3 = [(x = getx(pt), y = gety(pt), id = pt.index) for pt in pts]
+    pd3 = vcat(pd3, [(x = getx(pt) + 0.02 * pt.vx / maxv,
+                     y = gety(pt) + 0.02 * pt.vy / maxv, id = pt.index) for pt in pts])
+
+    pd2 = NamedTuple{(:x,:y,:idx), Tuple{Float64, Float64, Int64}}[]
+    for (idx, ed) in enumerate(voronoiedges(tess))
+        pa, pb = getgena(ed), getgenb(ed)
+        (pa.index <= 0) && (pb.index <= 0) && continue
+
+        push!(pd2, (x=getx(geta(ed)), y=gety(geta(ed)), idx=idx))
+        push!(pd2, (x=getx(getb(ed)), y=gety(getb(ed)), idx=idx))
+    end
+
+    # pltrange = [validrange.min-0.01,validrange.max+0.01]
+
+    @vlplot(background=:lightgrey, width=400, height=400) +
+    @vlplot(data= pd,
+            x={:x, typ=:quantitative, scale={domain=pltrange}},
+            y={:y, typ=:quantitative, scale={domain=pltrange}},
+            color={value=:black}, size={value=3},
+            mark=:point) +
+    @vlplot(data= pd3,
+            x={:x, typ=:quantitative, scale={domain=pltrange}},
+            y={:y, typ=:quantitative, scale={domain=pltrange}},
+            detail="id:n", color={value=:red},
+            mark={:line}) +
+    @vlplot(data=pd2,
+        x={:x, typ=:quantitative, scale={domain=pltrange}},
+        y={:y, typ=:quantitative, scale={domain=pltrange}},
+        detail="idx:n", mark={:line, clip=true})
+end
+
 
 function plpoints3(pts, pltrange =[validrange.min-0.01,validrange.max+0.01])
-    pts2 = borderize(pts)
-    tess = DelaunayTessellation2D{Particle}(length(pts2))
-    push!(tess, pts2)
+    tess = borderize(pts)
 
     pd = NamedTuple{(:x,:y, :idx, :o, :dens), Tuple{Float64, Float64, Int64, Int64, Float64}}[]
     for (idx, ed) in enumerate(voronoiedges(tess))
@@ -396,6 +515,39 @@ function plpoints3(pts, pltrange =[validrange.min-0.01,validrange.max+0.01])
         x={:x, typ=:quantitative, scale={domain=pltrange}},
         y={:y, typ=:quantitative, scale={domain=pltrange}},
         color="dens:q", order="o:o", detail="idx:n",
+        mark={:area, interpolate="linear-closed"})
+
+end
+
+function plpoints3p(pts, pltrange =[validrange.min-0.01,validrange.max+0.01])
+    tess = borderize(pts)
+
+    pd = NamedTuple{(:x,:y, :idx, :o, :val), Tuple{Float64, Float64, Int64, Int64, Float64}}[]
+    for (idx, ed) in enumerate(voronoiedges(tess))
+        pa, pb = getgena(ed), getgenb(ed)
+        p1x, p1y = getx(geta(ed)), gety(geta(ed))
+        p2x, p2y = getx(getb(ed)), gety(getb(ed))
+        if pa.index > 0
+            pax, pay = getx(pa), gety(pa)
+            t1 = (x=p1x, y=p1y, idx=idx, o=1, val=pa.pressure)
+            t2 = (x=p2x, y=p2y, idx=idx, o=2, val=pa.pressure)
+            t3 = (x=pax, y=pay, idx=idx, o=3, val=pa.pressure)
+            push!(pd, [t1, t2, t3]...)
+        end
+        if pb.index > 0
+            pbx, pby = getx(pb), gety(pb)
+            t1 = (x=p1x, y=p1y, idx=-idx, o=1, val=pb.pressure)
+            t2 = (x=p2x, y=p2y, idx=-idx, o=2, val=pb.pressure)
+            t3 = (x=pbx, y=pby, idx=-idx, o=3, val=pb.pressure)
+            push!(pd, [t1, t2, t3]...)
+        end
+    end
+
+    @vlplot(background=:lightgrey, width=400, height=400) +
+    @vlplot(data= pd,
+        x={:x, typ=:quantitative, scale={domain=pltrange}},
+        y={:y, typ=:quantitative, scale={domain=pltrange}},
+        color="val:q", order="o:o", detail="idx:n",
         mark={:area, interpolate="linear-closed"})
 
 end
