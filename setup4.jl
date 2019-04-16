@@ -143,10 +143,8 @@ end
 
 
 # set Particle mass using density and current surface
-function calc_mass(pts)
+function calc_mass(pts, Pref)
     tess = borderize(pts)
-    # tess = DelaunayTessellation2D{Particle}(length(pts2))
-    # push!(tess, pts2)
 
     ### surface and perimeter calculation to evaluate P
     foreach(pt -> pt.surface = 0., pts) # only on original points
@@ -166,7 +164,10 @@ function calc_mass(pts)
             pb.surface   += surf
         end
     end
-    foreach(pt -> pt.mass = pt.density * pt.surface / (validwidth * validwidth), pts)
+    for pt in pts
+        pt.mass = pt.density * pt.surface / (validwidth * validwidth)
+        pt.entropy = Pref * pt.density ^ (-γ)
+    end
 end
 
 
