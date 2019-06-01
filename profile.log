@@ -1,0 +1,1189 @@
+3    ./array.jl:624; collect(::Base.Generator{UnitRange{Int64},getfiel...
+ 2 ./boot.jl:394; _array_for
+ 1 ./none:0; (::getfield(Main, Symbol("##11#14")))(::Int64)
+227  ./channels.jl:105; (::getfield(Base, Symbol("##586#587")){getfield(V...
+ 83 ./channels.jl:251; (::getfield(VoronoiDelaunay, Symbol("#voronoiitera...
+  4  ./channels.jl:277; put_unbuffered(::Channel{Any}, ::VoronoiDelaunay....
+   4 ./array.jl:1129; popfirst!
+    4 ./array.jl:821; _deletebeg!
+  72 ./channels.jl:278; put_unbuffered(::Channel{Any}, ::VoronoiDelaunay....
+   4  ./event.jl:166; yield(::Task, ::Any)
+    2 ./sysimg.jl:18; getproperty
+   9  ./event.jl:168; yield(::Task, ::Any)
+    6 ./event.jl:89; enq_work
+     6 ./libuv.jl:89; eventloop
+    3 ./event.jl:90; enq_work
+     3 ./array.jl:856; push!
+      3 ./array.jl:814; _growend!
+   55 ./event.jl:169; yield(::Task, ::Any)
+    4  ./event.jl:186; try_yieldto(::typeof(Base.ensure_rescheduled), :...
+    42 ./event.jl:187; try_yieldto(::typeof(Base.ensure_rescheduled), :...
+    1  ./event.jl:194; try_yieldto(::typeof(Base.ensure_rescheduled), :...
+    1  ./refpointer.jl:82; Type
+     1 ./refvalue.jl:10; Type
+      1 ./refvalue.jl:8; Type
+   1  ...vl/julia-1.0.2/lib/julia/sys.so:?; ensure_rescheduled(::Task)
+  1  ./channels.jl:279; put_unbuffered(::Channel{Any}, ::VoronoiDelaunay....
+ 8  ...nay/3l7TP/src/VoronoiDelaunay.jl:193; (::getfield(VoronoiDelaunay, Symbol("#voronoiitera...
+  3 ./array.jl:731; getindex
+ 2  ...nay/3l7TP/src/VoronoiDelaunay.jl:194; (::getfield(VoronoiDelaunay, Symbol("#voronoiitera...
+  2 ./array.jl:731; getindex
+ 5  ...nay/3l7TP/src/VoronoiDelaunay.jl:197; (::getfield(VoronoiDelaunay, Symbol("#voronoiitera...
+  3 ./float.jl:395; circumcenter
+  2 ...Txz/src/GeometricalPredicates.jl:251; circumcenter
+   2 ./float.jl:401; /
+ 1  ...nay/3l7TP/src/VoronoiDelaunay.jl:199; (::getfield(VoronoiDelaunay, Symbol("#voronoiitera...
+  1 ./sysimg.jl:18; getproperty
+ 3  ...nay/3l7TP/src/VoronoiDelaunay.jl:201; (::getfield(VoronoiDelaunay, Symbol("#voronoiitera...
+  3 ./array.jl:731; getindex
+ 16 ...nay/3l7TP/src/VoronoiDelaunay.jl:202; (::getfield(VoronoiDelaunay, Symbol("#voronoiitera...
+  1  ./float.jl:401; circumcenter
+  2  ...Txz/src/GeometricalPredicates.jl:250; circumcenter
+   2 ./float.jl:399; *
+  2  ...Txz/src/GeometricalPredicates.jl:251; circumcenter
+   2 ./float.jl:395; +
+  11 ...nay/3l7TP/src/VoronoiDelaunay.jl:144; Type
+   11 ...ay/3l7TP/src/VoronoiDelaunay.jl:144; Type
+ 4  ...nay/3l7TP/src/VoronoiDelaunay.jl:204; (::getfield(VoronoiDelaunay, Symbol("#voronoiitera...
+  1 ./channels.jl:251; getproperty
+  3 ./sysimg.jl:18; getproperty
+ 2  ...nay/3l7TP/src/VoronoiDelaunay.jl:205; (::getfield(VoronoiDelaunay, Symbol("#voronoiitera...
+  1 ./array.jl:731; getindex
+ 2  ...nay/3l7TP/src/VoronoiDelaunay.jl:206; (::getfield(VoronoiDelaunay, Symbol("#voronoiitera...
+  1 ./array.jl:731; getindex
+ 12 ...nay/3l7TP/src/VoronoiDelaunay.jl:207; (::getfield(VoronoiDelaunay, Symbol("#voronoiitera...
+  6 ...Txz/src/GeometricalPredicates.jl:250; circumcenter
+   6 ./float.jl:399; *
+  2 ...Txz/src/GeometricalPredicates.jl:251; circumcenter
+   1 ./float.jl:395; +
+   1 ...Txz/src/GeometricalPredicates.jl:417; geta
+    1 ./sysimg.jl:18; getproperty
+  4 ...nay/3l7TP/src/VoronoiDelaunay.jl:144; Type
+   4 ...nay/3l7TP/src/VoronoiDelaunay.jl:144; Type
+ 2  ...nay/3l7TP/src/VoronoiDelaunay.jl:209; (::getfield(VoronoiDelaunay, Symbol("#voronoiitera...
+  2 ./sysimg.jl:18; getproperty
+ 8  ...nay/3l7TP/src/VoronoiDelaunay.jl:210; (::getfield(VoronoiDelaunay, Symbol("#voronoiitera...
+  5 ./array.jl:731; getindex
+ 2  ...nay/3l7TP/src/VoronoiDelaunay.jl:211; (::getfield(VoronoiDelaunay, Symbol("#voronoiitera...
+  2 ./array.jl:731; getindex
+ 77 ...nay/3l7TP/src/VoronoiDelaunay.jl:212; (::getfield(VoronoiDelaunay, Symbol("#voronoiitera...
+  57 ./channels.jl:251; put!
+   1  ./channels.jl:266; put_unbuffered(::Channel{Any}, ::VoronoiDelaunay....
+   2  ./channels.jl:277; put_unbuffered(::Channel{Any}, ::VoronoiDelaunay....
+    2 ./array.jl:1129; popfirst!
+     2 ./array.jl:821; _deletebeg!
+   51 ./channels.jl:278; put_unbuffered(::Channel{Any}, ::VoronoiDelaunay....
+    2  ./event.jl:166; yield(::Task, ::Any)
+     1 ./operators.jl:83; ==
+    6  ./event.jl:168; yield(::Task, ::Any)
+     1 ./event.jl:88; enq_work
+     3 ./event.jl:89; enq_work
+      1 ./libuv.jl:89; eventloop
+     1 ./event.jl:90; enq_work
+      1 ./array.jl:856; push!
+       1 ./array.jl:814; _growend!
+     1 ./task.jl:93; current_task
+    37 ./event.jl:169; yield(::Task, ::Any)
+     1  ./event.jl:186; try_yieldto(::typeof(Base.ensure_rescheduled), :...
+     33 ./event.jl:187; try_yieldto(::typeof(Base.ensure_rescheduled), :...
+     1  ./event.jl:199; try_yieldto(::typeof(Base.ensure_rescheduled), :...
+      1 ./sysimg.jl:19; setproperty!
+     1  ./refpointer.jl:82; Type
+      1 ./refvalue.jl:10; Type
+       1 ./refvalue.jl:8; Type
+   3  ./channels.jl:279; put_unbuffered(::Channel{Any}, ::VoronoiDelaunay....
+  2  ./range.jl:575; iterate
+   2 ./channels.jl:251; ==
+  3  ...Txz/src/GeometricalPredicates.jl:251; circumcenter
+   2 ./float.jl:401; /
+   1 ...Txz/src/GeometricalPredicates.jl:417; geta
+    1 ./sysimg.jl:18; getproperty
+  14 ...nay/3l7TP/src/VoronoiDelaunay.jl:144; Type
+   14 ...ay/3l7TP/src/VoronoiDelaunay.jl:144; Type
+6    ./channels.jl:278; put_unbuffered(::Channel{Any}, ::VoronoiDelaunay....
+ 6 ./event.jl:169; yield(::Task, ::Any)
+  6 ./event.jl:187; try_yieldto(::typeof(Base.ensure_rescheduled), ::B...
+1    ./dict.jl:349; ht_keyindex2!(::Dict{Tuple{Point2D,Point2D},Any},...
+4    ./event.jl:187; try_yieldto(::typeof(Base.ensure_rescheduled), ::...
+2    ./event.jl:169; yield(::Task, ::Any)
+ 2 ./event.jl:187; try_yieldto(::typeof(Base.ensure_rescheduled), ::Ba...
+1    ./none:0; (::getfield(Main, Symbol("##10#13")))(::Int64)
+3215 ./task.jl:259; (::getfield(Atom, Symbol("##19#21")){Array{Any,1}...
+ 3215 ...packages/Atom/mngyX/src/comm.jl:164; handlemsg(::Dict{String,Any}, ::Dict{String,Any})
+  3215 ...packages/Atom/mngyX/src/eval.jl:86; (::getfield(Atom, Symbol("##113#118")))(::Dict{St...
+   3215 ...ages/Media/ItEPc/src/dynamic.jl:24; macro expansion
+    3215 ...packages/Atom/mngyX/src/eval.jl:91; macro expansion
+     3215 ...ackages/Atom/mngyX/src/repl.jl:87; hideprompt(::getfield(Atom, Symbol("##114#119")...
+      3215 ...ackages/Atom/mngyX/src/eval.jl:92; #114
+       3215 ./logging.jl:491; with_logger
+        3215 ./logging.jl:395; with_logstate(::getfield(Atom, Symbol("##115#...
+         3215 ...ckages/Atom/mngyX/src/eval.jl:93; #115
+          3215 ...kages/Atom/mngyX/src/eval.jl:46; withpath
+           3215 ...CodeTools/xGemk/src/utils.jl:30; withpath(::getfield(Atom, Symbol("##116#121...
+            3215 ...ages/Atom/mngyX/src/eval.jl:94; (::getfield(Atom, Symbol("##116#121")){Stri...
+             3215 ...CodeTools/xGemk/src/eval.jl:30; include_string(::Module, ::String, ::Strin...
+              3215 ./loading.jl:1008; include_string(::Module, ::String, ::Str...
+               3215 ...1.0/Profile/src/Profile.jl:25; top-level scope
+                3215 ...ls/CRN1/voronoi-tests 2.jl:91; macro expansion
+                 1    ./array.jl:707; oneloop(::Array{Particle,1}, ::Float64)
+                 2    ./reduce.jl:59; oneloop(::Array{Particle,1}, ::Float64)
+                  2 ./reduce.jl:45; mapfoldl_impl(::typeof(identity), ::typeo...
+                   1 ./generator.jl:47; iterate
+                    1 ./none:0; #98
+                     1 ./math.jl:493; sqrt
+                   1 ./sysimg.jl:18; iterate
+                 1    ...opbox/devls/CRN1/setup.jl:0; oneloop(::Array{Particle,1}, ::Float64)
+                 8    ...opbox/devls/CRN1/setup.jl:218; oneloop(::Array{Particle,1}, ::Float64)
+                  3 ...7TP/src/VoronoiDelaunay.jl:103; DelaunayTessellation2D{Particle}(::Int64)
+                   3 ./array.jl:1024; sizehint!
+                  5 ...7TP/src/VoronoiDelaunay.jl:104; DelaunayTessellation2D{Particle}(::Int64)
+                   1 ...TP/src/VoronoiDelaunay.jl:115; sizehint!(::DelaunayTessellation2D{Parti...
+                    1 ./sysimg.jl:18; getproperty
+                   4 ...TP/src/VoronoiDelaunay.jl:116; sizehint!(::DelaunayTessellation2D{Parti...
+                    4 ...TP/src/VoronoiDelaunay.jl:71; copy
+                     4 ...TP/src/VoronoiDelaunay.jl:67; Type
+                      4 ...TP/src/VoronoiDelaunay.jl:54; Type
+                 96   ...opbox/devls/CRN1/setup.jl:219; oneloop(::Array{Particle,1}, ::Float64)
+                  2  ...TP/src/VoronoiDelaunay.jl:677; push!
+                   2 ...b/v1.0/Random/src/misc.jl:220; shuffle!
+                    1 ...b/v1.0/Random/src/misc.jl:214; shuffle!(::Random.MersenneTwister, ::Ar...
+                     1 ...v1.0/Random/src/Random.jl:190; rand
+                      1 ...1.0/Random/src/Random.jl:200; rand
+                       1 ...1.0/Random/src/Random.jl:219; rand
+                        1 ...andom/src/generation.jl:122; rand
+                         1 ....0/Random/src/Random.jl:219; rand
+                          1 ...v1.0/Random/src/RNGs.jl:314; rand
+                           1 ...1.0/Random/src/RNGs.jl:189; reserve_1
+                            1 ...1.0/Random/src/RNGs.jl:185; gen_rand
+                             1 ./gcutils.jl:87; macro expansion
+                              1 ...0/Random/src/DSFMT.jl:86; dsfmt_fill_array_close1_open2!(::R...
+                    1 ...b/v1.0/Random/src/misc.jl:215; shuffle!(::Random.MersenneTwister, ::Ar...
+                     1 ./array.jl:731; getindex
+                  9  ...TP/src/VoronoiDelaunay.jl:678; push!
+                   9 .../GeometricalPredicates.jl:1176; mssort!
+                    9 .../GeometricalPredicates.jl:1176; #mssort!#1
+                     9 ...GeometricalPredicates.jl:1169; _mssort!(::Array{Particle,1}, ::Int64,...
+                      9 ...GeometricalPredicates.jl:1157; hilbertsort!
+                       1 ...eometricalPredicates.jl:1115; hilbertsort!(::GeometricalPredicates....
+                        1 ...eometricalPredicates.jl:1089; select!(::GeometricalPredicates.Forw...
+                         1 ...eometricalPredicates.jl:1070; compare
+                          1 ./float.jl:452; <
+                       1 ...eometricalPredicates.jl:1117; hilbertsort!(::GeometricalPredicates....
+                        1 ...eometricalPredicates.jl:1120; hilbertsort!(::GeometricalPredicates...
+                         1 ...eometricalPredicates.jl:1115; hilbertsort!(::GeometricalPredicates...
+                          1 ...ometricalPredicates.jl:1090; select!(::GeometricalPredicates.Bac...
+                       3 ...eometricalPredicates.jl:1118; hilbertsort!(::GeometricalPredicates....
+                        1 ...eometricalPredicates.jl:1117; hilbertsort!(::GeometricalPredicates...
+                         1 ...eometricalPredicates.jl:1119; hilbertsort!(::GeometricalPredicates...
+                          1 ...ometricalPredicates.jl:1114; hilbertsort!(::GeometricalPredicate...
+                           1 ...ometricalPredicates.jl:1089; select!(::GeometricalPredicates.Ba...
+                        1 ...eometricalPredicates.jl:1118; hilbertsort!(::GeometricalPredicates...
+                         1 ...eometricalPredicates.jl:1118; hilbertsort!(::GeometricalPredicates...
+                          1 ...ometricalPredicates.jl:1113; hilbertsort!(::GeometricalPredicate...
+                           1 ...ometricalPredicates.jl:1090; select!(::GeometricalPredicates.Ba...
+                            1 ...metricalPredicates.jl:1073; compare
+                             1 ./operators.jl:286; >
+                              1 ./float.jl:452; <
+                        1 ...eometricalPredicates.jl:1120; hilbertsort!(::GeometricalPredicates...
+                         1 ...eometricalPredicates.jl:1119; hilbertsort!(::GeometricalPredicates...
+                          1 ...ometricalPredicates.jl:1115; hilbertsort!(::GeometricalPredicate...
+                           1 ./array.jl:0; select!(::GeometricalPredicates.Back...
+                       2 ...eometricalPredicates.jl:1119; hilbertsort!(::GeometricalPredicates....
+                        1 ...eometricalPredicates.jl:1119; hilbertsort!(::GeometricalPredicates...
+                         1 ...eometricalPredicates.jl:1113; hilbertsort!(::GeometricalPredicates...
+                          1 ...ometricalPredicates.jl:1090; select!(::GeometricalPredicates.Bac...
+                        1 ...eometricalPredicates.jl:1120; hilbertsort!(::GeometricalPredicates...
+                         1 ...eometricalPredicates.jl:1113; hilbertsort!(::GeometricalPredicates...
+                          1 ...ometricalPredicates.jl:1089; select!(::GeometricalPredicates.For...
+                           1 ./array.jl:731; getindex
+                       2 ...eometricalPredicates.jl:1120; hilbertsort!(::GeometricalPredicates....
+                        1 ...eometricalPredicates.jl:1115; hilbertsort!(::GeometricalPredicates...
+                         1 ...eometricalPredicates.jl:1090; select!(::GeometricalPredicates.Back...
+                        1 ...eometricalPredicates.jl:1117; hilbertsort!(::GeometricalPredicates...
+                         1 ...eometricalPredicates.jl:1119; hilbertsort!(::GeometricalPredicates...
+                          1 ...ometricalPredicates.jl:1115; hilbertsort!(::GeometricalPredicate...
+                           1 ./array.jl:769; select!(::GeometricalPredicates.Bac...
+                  85 ...TP/src/VoronoiDelaunay.jl:679; push!
+                   12 ...TP/src/VoronoiDelaunay.jl:669; _pushunsorted!(::DelaunayTessellation2D...
+                    1  ...TP/src/VoronoiDelaunay.jl:114; sizehint!(::DelaunayTessellation2D{Part...
+                     1 ./array.jl:1024; sizehint!
+                    1  ...TP/src/VoronoiDelaunay.jl:115; sizehint!(::DelaunayTessellation2D{Part...
+                     1 ./array.jl:199; length
+                    10 ...TP/src/VoronoiDelaunay.jl:116; sizehint!(::DelaunayTessellation2D{Part...
+                     2 ./array.jl:856; push!
+                      2 ./array.jl:814; _growend!
+                     8 ...TP/src/VoronoiDelaunay.jl:71; copy
+                      2 ./sysimg.jl:18; getproperty
+                      6 ...TP/src/VoronoiDelaunay.jl:67; Type
+                       6 ...P/src/VoronoiDelaunay.jl:54; Type
+                   73 ...TP/src/VoronoiDelaunay.jl:671; _pushunsorted!(::DelaunayTessellation2D...
+                    1  ...TP/src/VoronoiDelaunay.jl:661; push!
+                     1 ./int.jl:53; +
+                    48 ...TP/src/VoronoiDelaunay.jl:663; push!
+                     41 ...P/src/VoronoiDelaunay.jl:295; _pushunfixed!(::DelaunayTessellation2D...
+                      1  ...P/src/VoronoiDelaunay.jl:270; findindex
+                       1 ./sysimg.jl:18; getproperty
+                      36 ...P/src/VoronoiDelaunay.jl:272; findindex
+                       4  ...eometricalPredicates.jl:733; intriangle(::VoronoiDelaunay.Delaunay...
+                        3 ./float.jl:397; -
+                        1 ...box/devls/CRN1/setup.jl:51; getx
+                         1 ./sysimg.jl:18; getproperty
+                       1  ...eometricalPredicates.jl:738; intriangle(::VoronoiDelaunay.Delaunay...
+                        1 ./float.jl:452; <
+                       18 ...eometricalPredicates.jl:739; intriangle(::VoronoiDelaunay.Delaunay...
+                        18 ...eometricalPredicates.jl:710; _sz_intriangle(::VoronoiDelaunay.Del...
+                         18 ...eometricalPredicates.jl:686; _exact_intriangle(::VoronoiDelaunay....
+                          5 ...eometricalPredicates.jl:606; _exact_intriangle!(::BigInt, ::BigIn...
+                           5 ./gmp.jl:412; -
+                            4 ./gmp.jl:133; sub(::BigInt, ::BigInt)
+                             1 ./gmp.jl:57; Type
+                              1 ./gmp.jl:121; init!
+                             3 ./gmp.jl:132; sub!
+                          2 ...eometricalPredicates.jl:608; _exact_intriangle!(::BigInt, ::BigIn...
+                           2 ./gmp.jl:412; -
+                            2 ./gmp.jl:133; sub(::BigInt, ::BigInt)
+                             1 ./gmp.jl:56; Type
+                             1 ./gmp.jl:132; sub!
+                          1 ...eometricalPredicates.jl:610; _exact_intriangle!(::BigInt, ::BigIn...
+                           1 ./gmp.jl:412; *
+                            1 ./gmp.jl:133; mul(::BigInt, ::BigInt)
+                             1 ./gmp.jl:57; Type
+                              1 ./gmp.jl:121; init!
+                          2 ...eometricalPredicates.jl:611; _exact_intriangle!(::BigInt, ::BigIn...
+                           2 ./gmp.jl:412; *
+                            2 ./gmp.jl:133; mul(::BigInt, ::BigInt)
+                             2 ./gmp.jl:57; Type
+                              2 ./gmp.jl:121; init!
+                          3 ...eometricalPredicates.jl:614; _exact_intriangle!(::BigInt, ::BigIn...
+                           3 ./number.jl:142; sign(::BigInt)
+                            3 ./number.jl:298; one
+                             3 ./number.jl:297; one
+                              3 ./number.jl:7; convert
+                               3 ./gmp.jl:266; Type
+                                3 ./gmp.jl:177; set_si(::Int64)
+                                 1 ./gmp.jl:56; Type
+                                 2 ./gmp.jl:57; Type
+                                  2 ./gmp.jl:121; init!
+                          2 ...eometricalPredicates.jl:615; _exact_intriangle!(::BigInt, ::BigIn...
+                           2 ./number.jl:142; sign(::BigInt)
+                            2 ./number.jl:298; one
+                             2 ./number.jl:297; one
+                              2 ./number.jl:7; convert
+                               2 ./gmp.jl:266; Type
+                                2 ./gmp.jl:177; set_si(::Int64)
+                                 2 ./gmp.jl:57; Type
+                                  2 ./gmp.jl:121; init!
+                          1 ...eometricalPredicates.jl:618; _exact_intriangle!(::BigInt, ::BigIn...
+                           1 ./number.jl:142; sign(::BigInt)
+                            1 ./number.jl:298; one
+                             1 ./number.jl:297; one
+                              1 ./number.jl:7; convert
+                               1 ./gmp.jl:266; Type
+                                1 ./gmp.jl:177; set_si(::Int64)
+                                 1 ./gmp.jl:56; Type
+                          1 ...eometricalPredicates.jl:622; _exact_intriangle!(::BigInt, ::BigIn...
+                           1 ./number.jl:142; sign(::BigInt)
+                            1 ./number.jl:298; one
+                             1 ./number.jl:297; one
+                              1 ./number.jl:7; convert
+                               1 ./gmp.jl:266; Type
+                                1 ./gmp.jl:177; set_si(::Int64)
+                                 1 ./gmp.jl:57; Type
+                                  1 ./gmp.jl:121; init!
+                          1 ...eometricalPredicates.jl:627; _exact_intriangle!(::BigInt, ::BigIn...
+                           1 ./number.jl:142; sign(::BigInt)
+                            1 ./number.jl:298; one
+                             1 ./number.jl:297; one
+                              1 ./number.jl:7; convert
+                               1 ./gmp.jl:266; Type
+                                1 ./gmp.jl:177; set_si(::Int64)
+                                 1 ./gmp.jl:57; Type
+                                  1 ./gmp.jl:121; init!
+                       3  ...eometricalPredicates.jl:746; intriangle(::VoronoiDelaunay.Delaunay...
+                        3 ...eometricalPredicates.jl:718; _sz_intriangle(::VoronoiDelaunay.Dela...
+                         3 ...eometricalPredicates.jl:686; _exact_intriangle(::VoronoiDelaunay....
+                          1 ...eometricalPredicates.jl:615; _exact_intriangle!(::BigInt, ::BigIn...
+                           1 ./number.jl:142; sign(::BigInt)
+                            1 ./number.jl:298; one
+                             1 ./number.jl:297; one
+                              1 ./number.jl:7; convert
+                               1 ./gmp.jl:266; Type
+                                1 ./gmp.jl:177; set_si(::Int64)
+                                 1 ./gmp.jl:176; set_si!
+                          1 ...eometricalPredicates.jl:622; _exact_intriangle!(::BigInt, ::BigIn...
+                           1 ./number.jl:142; sign(::BigInt)
+                          1 ...eometricalPredicates.jl:630; _exact_intriangle!(::BigInt, ::BigIn...
+                           1 ./number.jl:142; sign(::BigInt)
+                            1 ./essentials.jl:334; oftype
+                             1 ./number.jl:7; convert
+                              1 ./gmp.jl:266; Type
+                               1 ./gmp.jl:177; set_si(::Int64)
+                                1 ./gmp.jl:57; Type
+                                 1 ./gmp.jl:121; init!
+                       1  ...eometricalPredicates.jl:749; intriangle(::VoronoiDelaunay.Delaunay...
+                        1 ./operators.jl:502; +
+                         1 ./float.jl:395; +
+                       1  ...eometricalPredicates.jl:752; intriangle(::VoronoiDelaunay.Delaunay...
+                       7  ...eometricalPredicates.jl:755; intriangle(::VoronoiDelaunay.Delaunay...
+                        7 ...eometricalPredicates.jl:728; _sz_intriangle(::VoronoiDelaunay.Dela...
+                         7 ...eometricalPredicates.jl:686; _exact_intriangle(::VoronoiDelaunay....
+                          2 ./gmp.jl:267; _extract_bigint
+                           2 ./gmp.jl:177; set_ui(::UInt64)
+                            1 ./gmp.jl:56; Type
+                            1 ./gmp.jl:57; Type
+                             1 ./gmp.jl:121; init!
+                          3 ...eometricalPredicates.jl:614; _exact_intriangle!(::BigInt, ::BigIn...
+                           2 ./number.jl:142; sign(::BigInt)
+                            1 ./essentials.jl:334; oftype
+                             1 ./number.jl:7; convert
+                              1 ./gmp.jl:266; Type
+                               1 ./gmp.jl:177; set_si(::Int64)
+                                1 ./gmp.jl:57; Type
+                                 1 ./gmp.jl:121; init!
+                            1 ./number.jl:298; one
+                             1 ./number.jl:297; one
+                              1 ./number.jl:7; convert
+                               1 ./gmp.jl:266; Type
+                                1 ./gmp.jl:177; set_si(::Int64)
+                                 1 ./gmp.jl:57; Type
+                                  1 ./gmp.jl:121; init!
+                          1 ...eometricalPredicates.jl:622; _exact_intriangle!(::BigInt, ::BigIn...
+                           1 ./number.jl:142; sign(::BigInt)
+                            1 ./number.jl:298; one
+                             1 ./number.jl:297; one
+                              1 ./number.jl:7; convert
+                               1 ./gmp.jl:266; Type
+                                1 ./gmp.jl:177; set_si(::Int64)
+                                 1 ./gmp.jl:56; Type
+                          1 ...eometricalPredicates.jl:328; _extract_bigint
+                           1 ./gmp.jl:267; Type
+                            1 ./gmp.jl:177; set_ui(::UInt64)
+                             1 ./gmp.jl:58; Type
+                              1 ./gcutils.jl:28; finalizer
+                      4  ...P/src/VoronoiDelaunay.jl:274; findindex
+                       4 ./array.jl:731; getindex
+                     2  ...P/src/VoronoiDelaunay.jl:301; _pushunfixed!(::DelaunayTessellation2D...
+                      2 ...GeometricalPredicates.jl:423; seta
+                       2 ...GeometricalPredicates.jl:414; clean!
+                        1 ...eometricalPredicates.jl:332; _clean!
+                         1 ./float.jl:397; -
+                        1 ...eometricalPredicates.jl:338; _clean!
+                         1 ./float.jl:397; -
+                     1  ...P/src/VoronoiDelaunay.jl:308; _pushunfixed!(::DelaunayTessellation2D...
+                      1 ...GeometricalPredicates.jl:427; setabc
+                       1 ...GeometricalPredicates.jl:414; clean!
+                        1 ...eometricalPredicates.jl:332; _clean!
+                         1 ./sysimg.jl:19; setproperty!
+                     3  ...P/src/VoronoiDelaunay.jl:314; _pushunfixed!(::DelaunayTessellation2D...
+                      3 ...GeometricalPredicates.jl:427; setabc
+                       3 ./sysimg.jl:19; setproperty!
+                     1  ...P/src/VoronoiDelaunay.jl:337; _pushunfixed!(::DelaunayTessellation2D...
+                      1 ./sysimg.jl:19; setproperty!
+                    24 ...TP/src/VoronoiDelaunay.jl:664; push!
+                     1 ...TP/src/VoronoiDelaunay.jl:0; _restoredelaunayhood!(::DelaunayTessell...
+                     1 ...TP/src/VoronoiDelaunay.jl:522; _restoredelaunayhood!(::DelaunayTessell...
+                      1 ...P/src/VoronoiDelaunay.jl:555; _flipca!(::DelaunayTessellation2D{Part...
+                       1 ...GeometricalPredicates.jl:423; seta
+                        1 ...eometricalPredicates.jl:414; clean!
+                         1 ...eometricalPredicates.jl:340; _clean!
+                          1 ./sysimg.jl:19; setproperty!
+                     1 ...TP/src/VoronoiDelaunay.jl:605; _restoredelaunayhood!(::DelaunayTessell...
+                      1 ...GeometricalPredicates.jl:417; geta
+                       1 ./sysimg.jl:18; getproperty
+                     1 ...TP/src/VoronoiDelaunay.jl:609; _restoredelaunayhood!(::DelaunayTessell...
+                     1 ...TP/src/VoronoiDelaunay.jl:611; _restoredelaunayhood!(::DelaunayTessell...
+                      1 ./array.jl:731; getindex
+                     4 ...TP/src/VoronoiDelaunay.jl:615; _restoredelaunayhood!(::DelaunayTessell...
+                      1 ./float.jl:397; incircle
+                      1 ...GeometricalPredicates.jl:527; incircle
+                       1 ...GeometricalPredicates.jl:417; geta
+                        1 ./sysimg.jl:18; getproperty
+                      2 ...GeometricalPredicates.jl:532; incircle
+                       1 ./float.jl:452; <
+                     1 ...TP/src/VoronoiDelaunay.jl:625; _restoredelaunayhood!(::DelaunayTessell...
+                      1 ./array.jl:856; push!
+                       1 ./array.jl:814; _growend!
+                     1 ...TP/src/VoronoiDelaunay.jl:628; _restoredelaunayhood!(::DelaunayTessell...
+                      1 ./array.jl:731; getindex
+                     4 ...TP/src/VoronoiDelaunay.jl:632; _restoredelaunayhood!(::DelaunayTessell...
+                      1 ./float.jl:397; incircle
+                      1 ./float.jl:399; incircle
+                      1 ...GeometricalPredicates.jl:527; incircle
+                       1 ...GeometricalPredicates.jl:417; geta
+                        1 ./sysimg.jl:18; getproperty
+                      1 ...GeometricalPredicates.jl:531; incircle
+                       1 ./operators.jl:502; +
+                        1 ./float.jl:395; +
+                     2 ...TP/src/VoronoiDelaunay.jl:633; _restoredelaunayhood!(::DelaunayTessell...
+                      1 ./array.jl:731; _flipb!
+                      1 ...P/src/VoronoiDelaunay.jl:438; _flipb!
+                       1 ...P/src/VoronoiDelaunay.jl:512; _flipbc!(::DelaunayTessellation2D{Par...
+                        1 .../src/VoronoiDelaunay.jl:455; _endflipb!
+                     1 ...TP/src/VoronoiDelaunay.jl:634; _restoredelaunayhood!(::DelaunayTessell...
+                      1 ./array.jl:856; push!
+                       1 ./array.jl:814; _growend!
+                     1 ...TP/src/VoronoiDelaunay.jl:638; _restoredelaunayhood!(::DelaunayTessell...
+                      1 ./array.jl:1068; pop!
+                       1 ./array.jl:823; _deleteend!
+                     2 ...TP/src/VoronoiDelaunay.jl:649; _restoredelaunayhood!(::DelaunayTessell...
+                      1 ...GeometricalPredicates.jl:527; incircle
+                       1 ./float.jl:397; -
+                      1 ...GeometricalPredicates.jl:531; incircle
+                       1 ./float.jl:399; *
+                     1 ...TP/src/VoronoiDelaunay.jl:650; _restoredelaunayhood!(::DelaunayTessell...
+                      1 ...P/src/VoronoiDelaunay.jl:526; _flipc!
+                       1 ...P/src/VoronoiDelaunay.jl:589; _flipcc!(::DelaunayTessellation2D{Par...
+                        1 ...eometricalPredicates.jl:423; seta
+                         1 ...eometricalPredicates.jl:414; clean!
+                          1 ...eometricalPredicates.jl:332; _clean!
+                           1 ./float.jl:397; -
+                     2 ...TP/src/VoronoiDelaunay.jl:655; _restoredelaunayhood!(::DelaunayTessell...
+                      2 ./array.jl:1068; pop!
+                       2 ./array.jl:823; _deleteend!
+                 2122 ...opbox/devls/CRN1/setup.jl:222; oneloop(::Array{Particle,1}, ::Float64)
+                  2   ./array.jl:0; clipcells(::DelaunayTessellation2D{Part...
+                  3   ./channels.jl:386; iterate(::Channel{Any}, ::Nothing)
+                   2 ./channels.jl:306; take!
+                  1   ./channels.jl:318; take_unbuffered(::Channel{Any})
+                  1   ./dict.jl:287; clipcells(::DelaunayTessellation2D{Part...
+                  1   ./float.jl:454; clipcells(::DelaunayTessellation2D{Part...
+                  1   ...opbox/devls/CRN1/setup.jl:79; clip(::Point2D, ::Point2D)
+                   1 ...lia-1.0.2/lib/julia/sys.so:?; vect(::String, ::Vararg{String,N} where N)
+                  5   ...opbox/devls/CRN1/setup.jl:0; clipcells(::DelaunayTessellation2D{Part...
+                  10  ...opbox/devls/CRN1/setup.jl:98; clipcells(::DelaunayTessellation2D{Part...
+                   3 ...TP/src/VoronoiDelaunay.jl:216; voronoiedges
+                    3 ./channels.jl:104; Type
+                     2 ./channels.jl:104; #Channel#585(::Type, ::Int64, ::Nothing...
+                     1 ./channels.jl:106; #Channel#585(::Type, ::Int64, ::Nothing...
+                      1 ./channels.jl:192; bind
+                  22  ...opbox/devls/CRN1/setup.jl:99; clipcells(::DelaunayTessellation2D{Part...
+                  1   ...opbox/devls/CRN1/setup.jl:103; clipcells(::DelaunayTessellation2D{Part...
+                   1 ./float.jl:454; <=
+                  25  ...opbox/devls/CRN1/setup.jl:106; clipcells(::DelaunayTessellation2D{Part...
+                   2 ...ropbox/devls/CRN1/setup.jl:79; clip(::Point2D, ::Point2D)
+                    2 ...opbox/devls/CRN1/setup.jl:68; intersection(::Point2D, ::Point2D, ::Poi...
+                     1 ./broadcast.jl:748; materialize
+                      1 ./broadcast.jl:768; copy
+                       1 ./broadcast.jl:792; copyto!
+                        1 ./broadcast.jl:852; copyto!
+                         1 ./simdloop.jl:66; macro expansion
+                          1 ./broadcast.jl:751; materialize!
+                           1 ./broadcast.jl:800; copyto!
+                            1 ./multidimensional.jl:792; fill!
+                             1 ./subarray.jl:255; setindex!
+                              1 ./array.jl:769; setindex!
+                     1 ./float.jl:399; *
+                   3 ...ropbox/devls/CRN1/setup.jl:81; clip(::Point2D, ::Point2D)
+                    3 ...opbox/devls/CRN1/setup.jl:68; intersection(::Point2D, ::Point2D, ::Poi...
+                     3 ./broadcast.jl:748; materialize
+                      3 ./broadcast.jl:768; copy
+                       3 ./broadcast.jl:792; copyto!
+                        3 ./broadcast.jl:848; copyto!
+                         3 ./boot.jl:394; Type
+                   1 ...ropbox/devls/CRN1/setup.jl:83; clip(::Point2D, ::Point2D)
+                    1 ...opbox/devls/CRN1/setup.jl:68; intersection(::Point2D, ::Point2D, ::Poi...
+                     1 ./broadcast.jl:748; materialize
+                      1 ./broadcast.jl:768; copy
+                       1 ./broadcast.jl:792; copyto!
+                        1 ./broadcast.jl:848; copyto!
+                         1 ./boot.jl:394; Type
+                   1 ...ropbox/devls/CRN1/setup.jl:84; clip(::Point2D, ::Point2D)
+                   3 ...ropbox/devls/CRN1/setup.jl:85; clip(::Point2D, ::Point2D)
+                    3 ...opbox/devls/CRN1/setup.jl:68; intersection(::Point2D, ::Point2D, ::Poi...
+                     2 ./bitarray.jl:59; materialize
+                      2 ./bitarray.jl:25; BitArray{1}(::UndefInitializer, ::Int64)
+                       2 ./boot.jl:394; Type
+                     1 ./broadcast.jl:748; materialize
+                      1 ./broadcast.jl:768; copy
+                       1 ./broadcast.jl:792; copyto!
+                        1 ./broadcast.jl:848; copyto!
+                         1 ./boot.jl:394; Type
+                  33  ...opbox/devls/CRN1/setup.jl:108; clipcells(::DelaunayTessellation2D{Part...
+                   6 ./dict.jl:382; setindex!(::Dict{Tuple{Point2D,Point2D},...
+                    1 ./dict.jl:309; ht_keyindex2!(::Dict{Tuple{Point2D,Poin...
+                     1 ./dict.jl:169; hashindex
+                      1 ./hashing.jl:18; hash
+                       1 ./tuple.jl:316; hash(::Tuple{Point2D,Point2D}, ::UInt64)
+                        1 ./tuple.jl:316; hash
+                         1 ./hashing.jl:23; hash
+                          1 ./reflection.jl:258; objectid
+                    5 ./dict.jl:349; ht_keyindex2!(::Dict{Tuple{Point2D,Poin...
+                     5 ./dict.jl:193; rehash!(::Dict{Tuple{Point2D,Point2D},A...
+                      5 ./boot.jl:394; Type
+                   5 ...opbox/devls/CRN1/setup.jl:79; clip(::Point2D, ::Point2D)
+                    1 ...opbox/devls/CRN1/setup.jl:65; intersection(::Point2D, ::Point2D, ::Poi...
+                     1 ...arAlgebra/src/generic.jl:1242; det(::Array{Float64,2})
+                      1 ./none:0; #lu
+                       1 ./none:0; #lu
+                        1 ...LinearAlgebra/src/lu.jl:142; #lu#103
+                         1 ./none:0; #lu!
+                          1 ...LinearAlgebra/src/lu.jl:40; #lu!#99(::Bool, ::Function, ::Array{...
+                           1 ./boot.jl:394; getrf!
+                    1 ...opbox/devls/CRN1/setup.jl:67; intersection(::Point2D, ::Point2D, ::Poi...
+                     1 ...earAlgebra/src/generic.jl:870; \(::Array{Float64,2}, ::Array{Float64,1})
+                      1 ...ebra/src/factorization.jl:85; \(::LU{Float64,Array{Float64,2}}, ::Arr...
+                       1 ./array.jl:332; similar
+                        1 ./boot.jl:403; Type
+                         1 ./boot.jl:394; Type
+                    3 ...opbox/devls/CRN1/setup.jl:68; intersection(::Point2D, ::Point2D, ::Poi...
+                     3 ./broadcast.jl:748; materialize
+                      3 ./broadcast.jl:768; copy
+                       3 ./broadcast.jl:792; copyto!
+                        1 ./broadcast.jl:848; copyto!
+                         1 ./boot.jl:394; Type
+                        2 ./broadcast.jl:852; copyto!
+                         2 ./simdloop.jl:66; macro expansion
+                          2 ./broadcast.jl:751; materialize!
+                           2 ./broadcast.jl:800; copyto!
+                            2 ./multidimensional.jl:792; fill!
+                             2 ./subarray.jl:255; setindex!
+                              2 ./array.jl:769; setindex!
+                   6 ...opbox/devls/CRN1/setup.jl:81; clip(::Point2D, ::Point2D)
+                    1 ...opbox/devls/CRN1/setup.jl:63; intersection(::Point2D, ::Point2D, ::Poi...
+                     1 ./abstractarray.jl:1601; hvcat(::Tuple{Int64,Int64}, ::Float64,...
+                      1 ./boot.jl:396; Type
+                    1 ...opbox/devls/CRN1/setup.jl:66; intersection(::Point2D, ::Point2D, ::Poi...
+                    4 ...opbox/devls/CRN1/setup.jl:68; intersection(::Point2D, ::Point2D, ::Poi...
+                     1 ./bitarray.jl:59; materialize
+                      1 ./bitarray.jl:25; BitArray{1}(::UndefInitializer, ::Int64)
+                       1 ./boot.jl:394; Type
+                     3 ./broadcast.jl:748; materialize
+                      3 ./broadcast.jl:768; copy
+                       3 ./broadcast.jl:792; copyto!
+                        2 ./broadcast.jl:848; copyto!
+                         2 ./boot.jl:394; Type
+                        1 ./broadcast.jl:852; copyto!
+                         1 ./simdloop.jl:67; macro expansion
+                          1 ./bitarray.jl:322; dumpbitcache
+                           1 ./bitarray.jl:297; copy_to_bitarray_chunks!(::Array{UI...
+                            1 ./boot.jl:722; Type
+                             1 ./boot.jl:699; toUInt64
+                   1 ...opbox/devls/CRN1/setup.jl:83; clip(::Point2D, ::Point2D)
+                    1 ...opbox/devls/CRN1/setup.jl:66; intersection(::Point2D, ::Point2D, ::Poi...
+                     1 ./array.jl:130; vect(::Float64, ::Vararg{Float64,N} whe...
+                      1 ./abstractarray.jl:617; similar
+                       1 ./abstractarray.jl:618; similar
+                        1 ./boot.jl:411; Type
+                         1 ./boot.jl:403; Type
+                          1 ./boot.jl:394; Type
+                   6 ...opbox/devls/CRN1/setup.jl:85; clip(::Point2D, ::Point2D)
+                    1 ...opbox/devls/CRN1/setup.jl:66; intersection(::Point2D, ::Point2D, ::Poi...
+                     1 ./array.jl:130; vect(::Float64, ::Vararg{Float64,N} whe...
+                      1 ./abstractarray.jl:617; similar
+                       1 ./abstractarray.jl:618; similar
+                        1 ./boot.jl:411; Type
+                         1 ./boot.jl:403; Type
+                          1 ./boot.jl:394; Type
+                    1 ...opbox/devls/CRN1/setup.jl:67; intersection(::Point2D, ::Point2D, ::Poi...
+                     1 ...earAlgebra/src/generic.jl:864; \(::Array{Float64,2}, ::Array{Float64,1})
+                      1 ...lgebra/src/triangular.jl:1854; \(::LowerTriangular{Float64,Array{Flo...
+                       1 ...lgebra/src/triangular.jl:583; ldiv!
+                        1 ...arAlgebra/src/lapack.jl:3343; trtrs!(::Char, ::Char, ::Char, ::Arr...
+                    4 ...opbox/devls/CRN1/setup.jl:68; intersection(::Point2D, ::Point2D, ::Poi...
+                     4 ./broadcast.jl:748; materialize
+                      4 ./broadcast.jl:768; copy
+                       4 ./broadcast.jl:792; copyto!
+                        2 ./broadcast.jl:848; copyto!
+                         2 ./boot.jl:394; Type
+                        2 ./broadcast.jl:852; copyto!
+                         1 ./simdloop.jl:66; macro expansion
+                          1 ./broadcast.jl:751; materialize!
+                           1 ./broadcast.jl:800; copyto!
+                            1 ./multidimensional.jl:792; fill!
+                             1 ./subarray.jl:255; setindex!
+                              1 ./array.jl:769; setindex!
+                         1 ./simdloop.jl:67; macro expansion
+                          1 ./bitarray.jl:322; dumpbitcache
+                           1 ./bitarray.jl:297; copy_to_bitarray_chunks!(::Array{UI...
+                            1 ./boot.jl:722; Type
+                             1 ./boot.jl:699; toUInt64
+                  2   ...opbox/devls/CRN1/setup.jl:110; clipcells(::DelaunayTessellation2D{Part...
+                   2 ./array.jl:129; vect
+                    2 ./boot.jl:413; Type
+                     2 ./boot.jl:394; Type
+                  25  ...opbox/devls/CRN1/setup.jl:111; clipcells(::DelaunayTessellation2D{Part...
+                   2  ...opbox/devls/CRN1/setup.jl:63; intersection(::Point2D, ::Point2D, ::Poi...
+                    1 ./abstractarray.jl:1598; hvcat(::Tuple{Int64,Int64}, ::Float64, ...
+                   7  ...opbox/devls/CRN1/setup.jl:65; intersection(::Point2D, ::Point2D, ::Poi...
+                    7 ...earAlgebra/src/generic.jl:1242; det(::Array{Float64,2})
+                     7 ./none:0; #lu
+                      7 ./none:0; #lu
+                       7 .../LinearAlgebra/src/lu.jl:142; #lu#103
+                        6 ./array.jl:299; copy
+                        1 ./none:0; #lu!
+                         1 ...arAlgebra/src/lapack.jl:550; #lu!#99(::Bool, ::Function, ::Array{...
+                   1  ...opbox/devls/CRN1/setup.jl:66; intersection(::Point2D, ::Point2D, ::Poi...
+                    1 ./array.jl:130; vect(::Float64, ::Vararg{Float64,N} whe...
+                     1 ./abstractarray.jl:617; similar
+                      1 ./abstractarray.jl:618; similar
+                       1 ./boot.jl:411; Type
+                        1 ./boot.jl:403; Type
+                         1 ./boot.jl:394; Type
+                   3  ...opbox/devls/CRN1/setup.jl:67; intersection(::Point2D, ::Point2D, ::Poi...
+                    3 ...earAlgebra/src/generic.jl:870; \(::Array{Float64,2}, ::Array{Float64,1})
+                     1 ...ebra/src/factorization.jl:87; \(::LU{Float64,Array{Float64,2}}, ::Arr...
+                      1 .../LinearAlgebra/src/lu.jl:342; ldiv!
+                       1 ...earAlgebra/src/lapack.jl:952; getrs!(::Char, ::Array{Float64,2}, ::...
+                     2 ...0/LinearAlgebra/src/lu.jl:142; lu
+                      2 .../LinearAlgebra/src/lu.jl:142; lu
+                       2 .../LinearAlgebra/src/lu.jl:142; #lu#103
+                        2 ./none:0; #lu!
+                         1 ...arAlgebra/src/lapack.jl:550; #lu!#99(::Bool, ::Function, ::Array{...
+                         1 ...LinearAlgebra/src/lu.jl:40; #lu!#99(::Bool, ::Function, ::Array{...
+                          1 ./boot.jl:394; getrf!
+                   11 ...opbox/devls/CRN1/setup.jl:68; intersection(::Point2D, ::Point2D, ::Poi...
+                    11 ./broadcast.jl:748; materialize
+                     11 ./broadcast.jl:768; copy
+                      11 ./broadcast.jl:792; copyto!
+                       7 ./broadcast.jl:848; copyto!
+                        7 ./boot.jl:394; Type
+                       4 ./broadcast.jl:852; copyto!
+                        3 ./simdloop.jl:66; macro expansion
+                         3 ./broadcast.jl:751; materialize!
+                          3 ./broadcast.jl:800; copyto!
+                           3 ./multidimensional.jl:792; fill!
+                            3 ./subarray.jl:255; setindex!
+                             3 ./array.jl:769; setindex!
+                        1 ./simdloop.jl:67; macro expansion
+                         1 ./bitarray.jl:322; dumpbitcache
+                          1 ./bitarray.jl:294; copy_to_bitarray_chunks!(::Array{UIn...
+                  30  ...opbox/devls/CRN1/setup.jl:113; clipcells(::DelaunayTessellation2D{Part...
+                   17 ...opbox/devls/CRN1/setup.jl:63; intersection(::Point2D, ::Point2D, ::Poi...
+                   1  ...opbox/devls/CRN1/setup.jl:65; intersection(::Point2D, ::Point2D, ::Poi...
+                    1 ...earAlgebra/src/generic.jl:1238; det(::Array{Float64,2})
+                     1 ...arAlgebra/src/generic.jl:1059; istril
+                      1 ...arAlgebra/src/generic.jl:1060; istril(::Array{Float64,2}, ::Int64)
+                       1 ./array.jl:156; size
+                   1  ...opbox/devls/CRN1/setup.jl:66; intersection(::Point2D, ::Point2D, ::Poi...
+                    1 ./array.jl:130; vect(::Float64, ::Vararg{Float64,N} whe...
+                     1 ./abstractarray.jl:617; similar
+                      1 ./abstractarray.jl:618; similar
+                       1 ./boot.jl:411; Type
+                        1 ./boot.jl:403; Type
+                         1 ./boot.jl:394; Type
+                   3  ...opbox/devls/CRN1/setup.jl:67; intersection(::Point2D, ::Point2D, ::Poi...
+                    3 ...earAlgebra/src/generic.jl:864; \(::Array{Float64,2}, ::Array{Float64,1})
+                     1 ...lgebra/src/triangular.jl:1852; \(::LowerTriangular{Float64,Array{Floa...
+                      1 ./array.jl:332; similar
+                       1 ./boot.jl:403; Type
+                        1 ./boot.jl:394; Type
+                     2 ...lgebra/src/triangular.jl:1854; \(::LowerTriangular{Float64,Array{Floa...
+                      2 ...lgebra/src/triangular.jl:583; ldiv!
+                       1 ...arAlgebra/src/lapack.jl:3343; trtrs!(::Char, ::Char, ::Char, ::Arra...
+                       1 ...arAlgebra/src/lapack.jl:3349; trtrs!(::Char, ::Char, ::Char, ::Arra...
+                   8  ...opbox/devls/CRN1/setup.jl:68; intersection(::Point2D, ::Point2D, ::Poi...
+                    1 ./bitarray.jl:59; materialize
+                     1 ./bitarray.jl:27; BitArray{1}(::UndefInitializer, ::Int64)
+                    7 ./broadcast.jl:748; materialize
+                     7 ./broadcast.jl:768; copy
+                      7 ./broadcast.jl:792; copyto!
+                       5 ./broadcast.jl:848; copyto!
+                        5 ./boot.jl:394; Type
+                       2 ./broadcast.jl:852; copyto!
+                        1 ./simdloop.jl:66; macro expansion
+                         1 ./broadcast.jl:751; materialize!
+                          1 ./broadcast.jl:800; copyto!
+                           1 ./multidimensional.jl:792; fill!
+                            1 ./subarray.jl:255; setindex!
+                             1 ./array.jl:769; setindex!
+                        1 ./simdloop.jl:67; macro expansion
+                         1 ./bitarray.jl:322; dumpbitcache
+                          1 ./bitarray.jl:257; copy_to_bitarray_chunks!(::Array{UIn...
+                           1 ./int.jl:320; |
+                  45  ...opbox/devls/CRN1/setup.jl:115; clipcells(::DelaunayTessellation2D{Part...
+                   23 ...opbox/devls/CRN1/setup.jl:63; intersection(::Point2D, ::Point2D, ::Poi...
+                   2  ...opbox/devls/CRN1/setup.jl:65; intersection(::Point2D, ::Point2D, ::Poi...
+                    2 ...earAlgebra/src/generic.jl:1242; det(::Array{Float64,2})
+                     2 ./none:0; #lu
+                      2 ./none:0; #lu
+                       2 .../LinearAlgebra/src/lu.jl:142; #lu#103
+                        1 ./array.jl:299; copy
+                        1 ./none:0; #lu!
+                         1 ...LinearAlgebra/src/lu.jl:40; #lu!#99(::Bool, ::Function, ::Array{F...
+                          1 ./boot.jl:394; getrf!
+                   2  ...opbox/devls/CRN1/setup.jl:66; intersection(::Point2D, ::Point2D, ::Poi...
+                    1 ./array.jl:130; vect(::Float64, ::Vararg{Float64,N} whe...
+                     1 ./abstractarray.jl:617; similar
+                      1 ./abstractarray.jl:618; similar
+                       1 ./boot.jl:411; Type
+                        1 ./boot.jl:403; Type
+                         1 ./boot.jl:394; Type
+                   8  ...opbox/devls/CRN1/setup.jl:67; intersection(::Point2D, ::Point2D, ::Poi...
+                    8 ...earAlgebra/src/generic.jl:870; \(::Array{Float64,2}, ::Array{Float64,1})
+                     1 ...ebra/src/factorization.jl:85; \(::LU{Float64,Array{Float64,2}}, ::Arr...
+                      1 ./array.jl:332; similar
+                       1 ./boot.jl:403; Type
+                        1 ./boot.jl:394; Type
+                     3 ...ebra/src/factorization.jl:87; \(::LU{Float64,Array{Float64,2}}, ::Arr...
+                      3 .../LinearAlgebra/src/lu.jl:342; ldiv!
+                       3 ...earAlgebra/src/lapack.jl:952; getrs!(::Char, ::Array{Float64,2}, ::...
+                     4 ...0/LinearAlgebra/src/lu.jl:142; lu
+                      4 .../LinearAlgebra/src/lu.jl:142; lu
+                       4 .../LinearAlgebra/src/lu.jl:142; #lu#103
+                        4 ./none:0; #lu!
+                         3 ...LinearAlgebra/src/lu.jl:40; #lu!#99(::Bool, ::Function, ::Array{F...
+                          3 ./boot.jl:394; getrf!
+                         1 ...LinearAlgebra/src/lu.jl:41; #lu!#99(::Bool, ::Function, ::Array{F...
+                   9  ...opbox/devls/CRN1/setup.jl:68; intersection(::Point2D, ::Point2D, ::Poi...
+                    1 ./bitarray.jl:59; materialize
+                     1 ./bitarray.jl:25; BitArray{1}(::UndefInitializer, ::Int64)
+                      1 ./boot.jl:394; Type
+                    8 ./broadcast.jl:748; materialize
+                     8 ./broadcast.jl:768; copy
+                      8 ./broadcast.jl:792; copyto!
+                       6 ./broadcast.jl:848; copyto!
+                        6 ./boot.jl:394; Type
+                       2 ./broadcast.jl:852; copyto!
+                        2 ./simdloop.jl:66; macro expansion
+                         2 ./broadcast.jl:751; materialize!
+                          2 ./broadcast.jl:800; copyto!
+                           2 ./multidimensional.jl:792; fill!
+                            2 ./subarray.jl:255; setindex!
+                             2 ./array.jl:769; setindex!
+                  22  ...opbox/devls/CRN1/setup.jl:117; clipcells(::DelaunayTessellation2D{Part...
+                   1  .../GeometricalPredicates.jl:87; Type
+                   14 ...opbox/devls/CRN1/setup.jl:63; intersection(::Point2D, ::Point2D, ::Poi...
+                    3 ./abstractarray.jl:1601; hvcat(::Tuple{Int64,Int64}, ::Float64, ...
+                     3 ./boot.jl:396; Type
+                   1  ...opbox/devls/CRN1/setup.jl:66; intersection(::Point2D, ::Point2D, ::Poi...
+                    1 ./array.jl:130; vect(::Float64, ::Vararg{Float64,N} whe...
+                     1 ./abstractarray.jl:617; similar
+                      1 ./abstractarray.jl:618; similar
+                       1 ./boot.jl:411; Type
+                        1 ./boot.jl:403; Type
+                         1 ./boot.jl:394; Type
+                   1  ...opbox/devls/CRN1/setup.jl:67; intersection(::Point2D, ::Point2D, ::Poi...
+                    1 ...earAlgebra/src/generic.jl:864; \(::Array{Float64,2}, ::Array{Float64,1})
+                     1 ...lgebra/src/triangular.jl:1854; \(::LowerTriangular{Float64,Array{Floa...
+                      1 ...lgebra/src/triangular.jl:583; ldiv!
+                       1 ...arAlgebra/src/lapack.jl:3343; trtrs!(::Char, ::Char, ::Char, ::Arra...
+                   5  ...opbox/devls/CRN1/setup.jl:68; intersection(::Point2D, ::Point2D, ::Poi...
+                    5 ./broadcast.jl:748; materialize
+                     5 ./broadcast.jl:768; copy
+                      5 ./broadcast.jl:792; copyto!
+                       5 ./broadcast.jl:848; copyto!
+                        5 ./boot.jl:394; Type
+                  25  ...opbox/devls/CRN1/setup.jl:121; clipcells(::DelaunayTessellation2D{Part...
+                   3 ./dict.jl:382; setindex!(::Dict{Tuple{Point2D,Point2D},...
+                    1 ./dict.jl:309; ht_keyindex2!(::Dict{Tuple{Point2D,Poin...
+                     1 ./dict.jl:169; hashindex
+                      1 ./hashing.jl:18; hash
+                       1 ./tuple.jl:316; hash(::Tuple{Point2D,Point2D}, ::UInt64)
+                        1 ./tuple.jl:316; hash
+                         1 ./hashing.jl:23; hash
+                          1 ./reflection.jl:258; objectid
+                    2 ./dict.jl:314; ht_keyindex2!(::Dict{Tuple{Point2D,Poin...
+                     2 ./dict.jl:171; isslotempty
+                      2 ./array.jl:731; getindex
+                   8 ./dict.jl:389; setindex!(::Dict{Tuple{Point2D,Point2D},...
+                    8 ./dict.jl:368; _setindex!
+                     2 ./dict.jl:193; rehash!(::Dict{Tuple{Point2D,Point2D},A...
+                      2 ./boot.jl:394; Type
+                     5 ./dict.jl:203; rehash!(::Dict{Tuple{Point2D,Point2D},A...
+                      5 ./dict.jl:169; hashindex
+                       5 ./hashing.jl:18; hash
+                        5 ./tuple.jl:316; hash(::Tuple{Point2D,Point2D}, ::UInt64)
+                         1 ./reflection.jl:258; hash
+                         4 ./tuple.jl:316; hash
+                          4 ./hashing.jl:23; hash
+                           4 ./reflection.jl:258; objectid
+                     1 ./dict.jl:204; rehash!(::Dict{Tuple{Point2D,Point2D},A...
+                      1 ./operators.jl:185; !=
+                       1 ./int.jl:432; ==
+                        1 ./promotion.jl:350; ==
+                         1 ./promotion.jl:425; ==
+                  395 ...opbox/devls/CRN1/setup.jl:130; clipcells(::DelaunayTessellation2D{Part...
+                   2   ./channels.jl:385; iterate(::Channel{Any}, ::Nothing)
+                   393 ./channels.jl:386; iterate(::Channel{Any}, ::Nothing)
+                    346 ./channels.jl:306; take!
+                     1   ./channels.jl:318; take_unbuffered(::Channel{Any})
+                     7   ./channels.jl:319; take_unbuffered(::Channel{Any})
+                      7 ./array.jl:856; push!
+                       7 ./array.jl:814; _growend!
+                     337 ./channels.jl:329; take_unbuffered(::Channel{Any})
+                      4   ./event.jl:244; wait()
+                      6   ./event.jl:253; wait()
+                       2 ./event.jl:229; poptask()
+                        1 ./array.jl:1129; popfirst!
+                         1 ./array.jl:821; _deletebeg!
+                       2 ./event.jl:230; poptask()
+                        2 ./sysimg.jl:18; getproperty
+                       2 ./event.jl:240; poptask()
+                        2 ./refpointer.jl:82; Type
+                         2 ./refvalue.jl:10; Type
+                          2 ./refvalue.jl:8; Type
+                      126 ./event.jl:255; wait()
+                       2   ./event.jl:186; try_yieldto(::typeof(Base.ensure_res...
+                       114 ./event.jl:187; try_yieldto(::typeof(Base.ensure_res...
+                       1   ./event.jl:192; try_yieldto(::typeof(Base.ensure_res...
+                        1 ./task.jl:93; current_task
+                       1   ./event.jl:193; try_yieldto(::typeof(Base.ensure_res...
+                        1 ./sysimg.jl:18; getproperty
+                       8   ./event.jl:196; try_yieldto(::typeof(Base.ensure_res...
+                      199 ./event.jl:256; wait()
+                       2   ./libuv.jl:96; process_events
+                        2 ./libuv.jl:89; eventloop
+                       197 ./libuv.jl:100; process_events
+                  26  ...opbox/devls/CRN1/setup.jl:137; clipcells(::DelaunayTessellation2D{Part...
+                   26 ./abstractarray.jl:1835; foreach(::getfield(Main, Symbol("##9#12...
+                    26 ...opbox/devls/CRN1/setup.jl:137; #9
+                     13 ./array.jl:129; vect
+                      13 ./boot.jl:413; Type
+                       13 ./boot.jl:394; Type
+                     13 ./sysimg.jl:19; setproperty!
+                      12 ./array.jl:489; convert
+                       3 ./array.jl:497; Type
+                        3 ./abstractarray.jl:723; copyto!
+                         2 ./abstractarray.jl:727; copyto!(::IndexLinear, ::Array{CellW...
+                       9 ./boot.jl:394; Type
+                  12  ...opbox/devls/CRN1/setup.jl:138; clipcells(::DelaunayTessellation2D{Part...
+                  106 ...opbox/devls/CRN1/setup.jl:139; clipcells(::DelaunayTessellation2D{Part...
+                   7  ./array.jl:856; push!(::Array{CellWall,1}, ::CellWall)
+                    7 ./array.jl:814; _growend!
+                   7  ./sysimg.jl:18; getproperty
+                   1  ...TP/src/VoronoiDelaunay.jl:149; geta(::VoronoiDelaunay.VoronoiEdge{Part...
+                   1  ...TP/src/VoronoiDelaunay.jl:152; getgenb(::VoronoiDelaunay.VoronoiEdge{P...
+                   15 ...opbox/devls/CRN1/setup.jl:18; CellWall(::Point2D, ::Point2D, ::Particle)
+                  450 ...opbox/devls/CRN1/setup.jl:140; clipcells(::DelaunayTessellation2D{Part...
+                   2   ./array.jl:855; push!(::Array{CellWall,1}, ::CellWall)
+                   2   ./array.jl:856; push!(::Array{CellWall,1}, ::CellWall)
+                    2 ./array.jl:814; _growend!
+                   5   ./channels.jl:385; iterate(::Channel{Any}, ::Nothing)
+                   384 ./channels.jl:386; iterate(::Channel{Any}, ::Nothing)
+                    322 ./channels.jl:306; take!
+                     3   ./channels.jl:319; take_unbuffered(::Channel{Any})
+                      3 ./array.jl:856; push!
+                       3 ./array.jl:814; _growend!
+                     2   ./channels.jl:320; take_unbuffered(::Channel{Any})
+                     316 ./channels.jl:329; take_unbuffered(::Channel{Any})
+                      1   ./event.jl:229; poptask()
+                      1   ./event.jl:244; wait()
+                      6   ./event.jl:253; wait()
+                       5 ./event.jl:229; poptask()
+                        3 ./array.jl:1128; popfirst!
+                         3 ./array.jl:731; getindex
+                        2 ./array.jl:1129; popfirst!
+                         2 ./array.jl:821; _deletebeg!
+                       1 ./event.jl:230; poptask()
+                        1 ./sysimg.jl:18; getproperty
+                      174 ./event.jl:255; wait()
+                       5   ./event.jl:186; try_yieldto(::typeof(Base.ensure_res...
+                       162 ./event.jl:187; try_yieldto(::typeof(Base.ensure_res...
+                       2   ./event.jl:193; try_yieldto(::typeof(Base.ensure_res...
+                        2 ./sysimg.jl:18; getproperty
+                       4   ./event.jl:196; try_yieldto(::typeof(Base.ensure_res...
+                      133 ./event.jl:256; wait()
+                       133 ./libuv.jl:100; process_events
+                   6   ./sysimg.jl:18; getproperty
+                   10  ...opbox/devls/CRN1/setup.jl:18; CellWall(::Point2D, ::Point2D, ::Particle)
+                  19  ...opbox/devls/CRN1/setup.jl:147; clipcells(::DelaunayTessellation2D{Part...
+                   1 ./range.jl:911; vcat(::UnitRange{Int64})
+                   9 ./range.jl:915; vcat(::UnitRange{Int64})
+                    9 ./boot.jl:394; Type
+                  15  ...opbox/devls/CRN1/setup.jl:148; clipcells(::DelaunayTessellation2D{Part...
+                   13 ./array.jl:366; getindex
+                    7 ./boot.jl:394; Type
+                   2  ./array.jl:731; getindex(::Array{CellWall,1}, ::Int64)
+                  10  ...opbox/devls/CRN1/setup.jl:149; clipcells(::DelaunayTessellation2D{Part...
+                   8 ./sysimg.jl:18; getproperty(::Any, ::Symbol)
+                  22  ...opbox/devls/CRN1/setup.jl:150; clipcells(::DelaunayTessellation2D{Part...
+                   1 ...lia-1.0.2/lib/julia/sys.so:?; length(::Array{Int64,1})
+                  282 ...opbox/devls/CRN1/setup.jl:151; clipcells(::DelaunayTessellation2D{Part...
+                   55  ./array.jl:619; collect(::Base.Generator{UnitRange{Int...
+                    55 ./generator.jl:47; iterate
+                     53 ./none:0; (::getfield(Main, Symbol("##10#13")))(:...
+                      1  ./array.jl:731; getindex(::Array{CellWall,1}, ::Int64)
+                      15 ./sysimg.jl:18; getproperty(::Any, ::Symbol)
+                   152 ./array.jl:624; collect(::Base.Generator{UnitRange{Int...
+                    2   ./array.jl:641; collect_to_with_first!(::Array{Bool,1}...
+                    109 ./array.jl:643; collect_to_with_first!(::Array{Bool,1}...
+                     104 ./array.jl:656; collect_to!
+                      104 ./generator.jl:47; iterate
+                       103 ./none:0; (::getfield(Main, Symbol("##10#13")))...
+                        1  ./array.jl:731; getindex(::Array{CellWall,1}, ::Int64)
+                        37 ./sysimg.jl:18; getproperty(::Any, ::Symbol)
+                     2   ./array.jl:660; collect_to!
+                      2 ./array.jl:769; setindex!
+                    39  ./boot.jl:394; _array_for
+                   2   ./array.jl:1661; findfirst(::Array{Bool,1})
+                    2 ./array.jl:1609; findnext
+                     2 ./int.jl:428; <=
+                   9   ./generator.jl:32; Base.Generator(::getfield(Main, Symbol...
+                    9 ./generator.jl:32; Type
+                  6   ...opbox/devls/CRN1/setup.jl:152; clipcells(::DelaunayTessellation2D{Part...
+                  5   ...opbox/devls/CRN1/setup.jl:153; clipcells(::DelaunayTessellation2D{Part...
+                  10  ...opbox/devls/CRN1/setup.jl:154; clipcells(::DelaunayTessellation2D{Part...
+                   6 ./array.jl:856; push!(::Array{CellWall,1}, ::CellWall)
+                    6 ./array.jl:814; _growend!
+                  22  ...opbox/devls/CRN1/setup.jl:155; clipcells(::DelaunayTessellation2D{Part...
+                   17 ./sysimg.jl:18; getproperty(::Any, ::Symbol)
+                  169 ...opbox/devls/CRN1/setup.jl:157; clipcells(::DelaunayTessellation2D{Part...
+                   35 ./array.jl:619; collect(::Base.Generator{UnitRange{Int6...
+                    1  ./generator.jl:44; iterate
+                     1 ./range.jl:571; iterate
+                      1 ./range.jl:455; isempty
+                       1 ./operators.jl:286; >
+                        1 ./int.jl:49; <
+                    34 ./generator.jl:47; iterate
+                     34 ./none:0; (::getfield(Main, Symbol("##11#14")))(:...
+                      1  ./array.jl:731; getindex(::Array{CellWall,1}, ::Int64)
+                      12 ./sysimg.jl:18; getproperty(::Any, ::Symbol)
+                   82 ./array.jl:624; collect(::Base.Generator{UnitRange{Int6...
+                    63 ./array.jl:643; collect_to_with_first!(::Array{Bool,1},...
+                     63 ./array.jl:656; collect_to!
+                      1  ./generator.jl:44; iterate
+                       1 ./range.jl:576; iterate
+                        1 ./int.jl:53; +
+                      62 ./generator.jl:47; iterate
+                       61 ./none:0; (::getfield(Main, Symbol("##11#14")))(...
+                        1  ./array.jl:731; getindex(::Array{Int64,1}, ::Int64)
+                        30 ./sysimg.jl:18; getproperty(::Any, ::Symbol)
+                    17 ./boot.jl:394; _array_for
+                   10 ./generator.jl:32; Base.Generator(::getfield(Main, Symbol(...
+                    10 ./generator.jl:32; Type
+                  1   ...opbox/devls/CRN1/setup.jl:158; clipcells(::DelaunayTessellation2D{Part...
+                  13  ...opbox/devls/CRN1/setup.jl:159; clipcells(::DelaunayTessellation2D{Part...
+                  61  ...opbox/devls/CRN1/setup.jl:160; clipcells(::DelaunayTessellation2D{Part...
+                   8  ./array.jl:856; push!
+                    8 ./array.jl:814; _growend!
+                   19 ./sysimg.jl:18; getproperty(::Any, ::Symbol)
+                   6  ...opbox/devls/CRN1/setup.jl:18; CellWall(::Point2D, ::Point2D, ::Particle)
+                  12  ...opbox/devls/CRN1/setup.jl:161; clipcells(::DelaunayTessellation2D{Part...
+                   9 ./sysimg.jl:18; getproperty(::Any, ::Symbol)
+                  20  ...opbox/devls/CRN1/setup.jl:163; clipcells(::DelaunayTessellation2D{Part...
+                   11 ./array.jl:1313; splice!(::Array{Int64,1}, ::Int64)
+                    5 ./array.jl:1313; splice!(::Array{Int64,1}, ::Int64, ::Ar...
+                     2 ./array.jl:731; getindex
+                    4 ./array.jl:1316; splice!(::Array{Int64,1}, ::Int64, ::Ar...
+                     4 ./array.jl:825; _deleteat!
+                    2 ./array.jl:1324; splice!(::Array{Int64,1}, ::Int64, ::Ar...
+                     2 ./array.jl:707; iterate
+                   1  ./array.jl:1327; splice!(::Array{Int64,1}, ::Int64, ::Ar...
+                  1   ...opbox/devls/CRN1/setup.jl:165; clipcells(::DelaunayTessellation2D{Part...
+                   1 ./array.jl:707; iterate
+                    1 ./array.jl:731; getindex
+                  1   ...opbox/devls/CRN1/setup.jl:170; clipcells(::DelaunayTessellation2D{Part...
+                   1 ./sysimg.jl:18; getproperty
+                  4   ...opbox/devls/CRN1/setup.jl:171; clipcells(::DelaunayTessellation2D{Part...
+                   4 ./array.jl:365; getindex
+                    4 ./boot.jl:413; Type
+                     4 ./boot.jl:394; Type
+                  21  ...opbox/devls/CRN1/setup.jl:174; clipcells(::DelaunayTessellation2D{Part...
+                   4  ./array.jl:731; getindex
+                   13 ./dict.jl:546; haskey
+                    12 ./dict.jl:283; ht_keyindex
+                     12 ./dict.jl:169; hashindex
+                      12 ./hashing.jl:18; hash
+                       12 ./tuple.jl:316; hash(::Tuple{Point2D,Point2D}, ::UInt64)
+                        7 ./reflection.jl:258; hash
+                        5 ./tuple.jl:316; hash
+                         5 ./hashing.jl:23; hash
+                          5 ./reflection.jl:258; objectid
+                    1  ./dict.jl:284; ht_keyindex
+                     1 ./sysimg.jl:18; getproperty
+                  1   ...opbox/devls/CRN1/setup.jl:176; clipcells(::DelaunayTessellation2D{Part...
+                   1 ./array.jl:731; getindex
+                  78  ...opbox/devls/CRN1/setup.jl:182; clipcells(::DelaunayTessellation2D{Part...
+                   66 ./dict.jl:546; haskey
+                    1  ./dict.jl:0; ht_keyindex
+                    3  ./dict.jl:287; ht_keyindex
+                     3 ./dict.jl:171; isslotempty
+                      3 ./array.jl:731; getindex
+                    11 ./dict.jl:290; ht_keyindex
+                     11 ./array.jl:731; getindex
+                    51 ./hashing.jl:18; ht_keyindex
+                     51 ./tuple.jl:316; hash(::Tuple{Point2D,Point2D}, ::UInt64)
+                      3  ./essentials.jl:173; tail
+                      2  ./hashing.jl:23; hash
+                       2 ./hashing.jl:63; hash_uint
+                        2 ./hashing.jl:31; hash_64_64
+                         2 ./operators.jl:502; +
+                          2 ./int.jl:53; +
+                      25 ./reflection.jl:258; hash
+                      21 ./tuple.jl:316; hash
+                       21 ./hashing.jl:23; hash
+                        1  ./hashing.jl:63; hash_uint
+                         1 ./hashing.jl:33; hash_64_64
+                          1 ./operators.jl:502; +
+                           1 ./int.jl:53; +
+                        20 ./reflection.jl:258; objectid
+                  2   ...opbox/devls/CRN1/setup.jl:184; clipcells(::DelaunayTessellation2D{Part...
+                  1   ...opbox/devls/CRN1/setup.jl:185; clipcells(::DelaunayTessellation2D{Part...
+                  3   ...opbox/devls/CRN1/setup.jl:189; clipcells(::DelaunayTessellation2D{Part...
+                   2 ./array.jl:856; push!
+                    2 ./array.jl:814; _growend!
+                   1 ...opbox/devls/CRN1/setup.jl:18; CellWall(::Point2D, ::Point2D, ::Particle)
+                  56  ...opbox/devls/CRN1/setup.jl:192; clipcells(::DelaunayTessellation2D{Part...
+                   56 ./dict.jl:546; haskey
+                    46 ./dict.jl:283; ht_keyindex
+                     45 ./dict.jl:169; hashindex
+                      45 ./hashing.jl:18; hash
+                       45 ./tuple.jl:316; hash(::Tuple{Point2D,Point2D}, ::UInt64)
+                        25 ./reflection.jl:258; hash
+                        20 ./tuple.jl:316; hash
+                         20 ./hashing.jl:23; hash
+                          1  ./hashing.jl:63; hash_uint
+                           1 ./int.jl:442; hash_64_64
+                          19 ./reflection.jl:258; objectid
+                     1  ./int.jl:52; hashindex
+                    4  ./dict.jl:287; ht_keyindex
+                     1 ./array.jl:731; isslotempty
+                     1 ./dict.jl:171; isslotempty
+                      1 ./array.jl:731; getindex
+                    5  ./dict.jl:290; ht_keyindex
+                     4 ./array.jl:731; getindex
+                    1  ./int.jl:53; ht_keyindex
+                  1   ...opbox/devls/CRN1/setup.jl:193; clipcells(::DelaunayTessellation2D{Part...
+                   1 ./dict.jl:477; getindex
+                    1 ./dict.jl:283; ht_keyindex
+                     1 ./dict.jl:169; hashindex
+                      1 ./hashing.jl:18; hash
+                       1 ./tuple.jl:316; hash(::Tuple{Point2D,Point2D}, ::UInt64)
+                        1 ./reflection.jl:258; hash
+                  3   ...opbox/devls/CRN1/setup.jl:194; clipcells(::DelaunayTessellation2D{Part...
+                  1   ...opbox/devls/CRN1/setup.jl:195; clipcells(::DelaunayTessellation2D{Part...
+                  1   ...opbox/devls/CRN1/setup.jl:199; clipcells(::DelaunayTessellation2D{Part...
+                   1 ...ropbox/devls/CRN1/setup.jl:18; Type
+                  2   ...opbox/devls/CRN1/setup.jl:200; clipcells(::DelaunayTessellation2D{Part...
+                   1 ./array.jl:856; push!
+                    1 ./array.jl:814; _growend!
+                   1 ...opbox/devls/CRN1/setup.jl:18; CellWall(::Point2D, ::Point2D, ::Particle)
+                  21  ...opbox/devls/CRN1/setup.jl:204; clipcells(::DelaunayTessellation2D{Part...
+                   1  ./array.jl:707; iterate
+                    1 ./int.jl:434; <
+                     1 ./operators.jl:333; >=
+                      1 ./int.jl:428; <=
+                   1  ./array.jl:155; push!
+                   16 ./array.jl:856; push!
+                    16 ./array.jl:814; _growend!
+                   3  ./array.jl:857; push!
+                    3 ./array.jl:769; setindex!
+                  2   ...opbox/devls/CRN1/setup.jl:207; clipcells(::DelaunayTessellation2D{Part...
+                   2 ./sysimg.jl:19; setproperty!
+                  1   ...ia-1.0.2/lib/julia/sys.so:?; take_unbuffered(::Channel{Any})
+                 2    ...opbox/devls/CRN1/setup.jl:227; oneloop(::Array{Particle,1}, ::Float64)
+                  2 ...ropbox/devls/CRN1/setup.jl:51; getx
+                   2 ./sysimg.jl:18; getproperty
+                 2    ...opbox/devls/CRN1/setup.jl:231; oneloop(::Array{Particle,1}, ::Float64)
+                  2 ./float.jl:397; -
+                 1    ...opbox/devls/CRN1/setup.jl:235; oneloop(::Array{Particle,1}, ::Float64)
+                  1 ./float.jl:395; +
+                 10   ...opbox/devls/CRN1/setup.jl:242; oneloop(::Array{Particle,1}, ::Float64)
+                  10 ./math.jl:780; ^
+                 5    ...opbox/devls/CRN1/setup.jl:254; oneloop(::Array{Particle,1}, ::Float64)
+                  4 ./array.jl:707; iterate
+                   4 ./array.jl:707; iterate
+                    1 ./array.jl:731; getindex
+                  1 ./sysimg.jl:18; getproperty
+                 24   ...opbox/devls/CRN1/setup.jl:256; oneloop(::Array{Particle,1}, ::Float64)
+                  2  ./math.jl:493; sqrt
+                  22 ...opbox/devls/CRN1/setup.jl:73; norm2
+                   3  ./float.jl:395; +
+                   18 ./float.jl:397; -
+                   1  ./number.jl:157; abs2
+                    1 ./float.jl:399; *
+                 11   ...opbox/devls/CRN1/setup.jl:259; oneloop(::Array{Particle,1}, ::Float64)
+                 3    ...opbox/devls/CRN1/setup.jl:260; oneloop(::Array{Particle,1}, ::Float64)
+                  1 ./abstractarray.jl:1601; hvcat(::Tuple{Int64,Int64}, ::Float64, :...
+                   1 ./boot.jl:396; Type
+                  2 ./float.jl:397; -
+                 4    ...opbox/devls/CRN1/setup.jl:262; oneloop(::Array{Particle,1}, ::Float64)
+                  1 ...earAlgebra/src/generic.jl:1240; det(::Array{Float64,2})
+                   1 ...Algebra/src/triangular.jl:2453; det
+                    1 ...inearAlgebra/src/dense.jl:284; diag
+                     1 ...inearAlgebra/src/dense.jl:284; diag(::Array{Float64,2}, ::Int64)
+                      1 ./array.jl:756; getindex(::Array{Float64,2}, ::StepRan...
+                       1 ./abstractarray.jl:617; similar
+                        1 ./abstractarray.jl:618; similar
+                         1 ./boot.jl:411; Type
+                          1 ./boot.jl:403; Type
+                           1 ./boot.jl:394; Type
+                  3 ...earAlgebra/src/generic.jl:1242; det(::Array{Float64,2})
+                   3 ./none:0; #lu
+                    3 ./none:0; #lu
+                     3 ...0/LinearAlgebra/src/lu.jl:142; #lu#103
+                      3 ./none:0; #lu!
+                       1 ...earAlgebra/src/lapack.jl:550; #lu!#99(::Bool, ::Function, ::Array{F...
+                       1 .../LinearAlgebra/src/lu.jl:40; #lu!#99(::Bool, ::Function, ::Array{F...
+                        1 ...arAlgebra/src/lapack.jl:545; getrf!
+                         1 ...ra/src/LinearAlgebra.jl:192; chkstride1
+                          1 ...ra/src/LinearAlgebra.jl:194; _chkstride1
+                       1 .../LinearAlgebra/src/lu.jl:42; #lu!#99(::Bool, ::Function, ::Array{F...
+                        1 .../LinearAlgebra/src/lu.jl:13; Type
+                 2    ...opbox/devls/CRN1/setup.jl:264; oneloop(::Array{Particle,1}, ::Float64)
+                  1 ...nearAlgebra/src/generic.jl:862; \(::Array{Float64,2}, ::Array{Float64,1})
+                   1 ...earAlgebra/src/diagonal.jl:36; Type
+                    1 ...inearAlgebra/src/dense.jl:284; diag
+                     1 ...inearAlgebra/src/dense.jl:284; diag(::Array{Float64,2}, ::Int64)
+                      1 ...nearAlgebra/src/dense.jl:260; diagind
+                       1 ...nearAlgebra/src/dense.jl:238; diagind
+                        1 ./none:0; #range
+                         1 ./range.jl:76; #range#29
+                          1 ./range.jl:91; _range
+                           1 ./range.jl:93; _rangestyle
+                            1 ./range.jl:180; Type
+                             1 ./range.jl:213; steprange_last(::Int64, ::Int64, :...
+                  1 ...nearAlgebra/src/generic.jl:870; \(::Array{Float64,2}, ::Array{Float64,1})
+                   1 ...0/LinearAlgebra/src/lu.jl:142; lu
+                    1 ...0/LinearAlgebra/src/lu.jl:142; lu
+                     1 ...0/LinearAlgebra/src/lu.jl:142; #lu#103
+                      1 ./none:0; #lu!
+                       1 .../LinearAlgebra/src/lu.jl:40; #lu!#99(::Bool, ::Function, ::Array{Fl...
+                        1 ./boot.jl:394; getrf!
+                 27   ...opbox/devls/CRN1/setup.jl:270; oneloop(::Array{Particle,1}, ::Float64)
+                  12 ./sysimg.jl:18; getproperty(::Any, ::Symbol)
+                 1    ...opbox/devls/CRN1/setup.jl:278; oneloop(::Array{Particle,1}, ::Float64)
+                  1 ./promotion.jl:316; /
+                   1 ./float.jl:401; /
+                 23   ...opbox/devls/CRN1/setup.jl:280; oneloop(::Array{Particle,1}, ::Float64)
+                  1  ./sysimg.jl:18; getproperty
+                  12 ./sysimg.jl:18; getproperty(::Any, ::Symbol)
+                 24   ...opbox/devls/CRN1/setup.jl:281; oneloop(::Array{Particle,1}, ::Float64)
+                  2  ./sysimg.jl:18; getproperty
+                  15 ./sysimg.jl:18; getproperty(::Any, ::Symbol)
+                 10   ...opbox/devls/CRN1/setup.jl:285; oneloop(::Array{Particle,1}, ::Float64)
+                  10 ./float.jl:401; /
+                 130  ...opbox/devls/CRN1/setup.jl:288; oneloop(::Array{Particle,1}, ::Float64)
+                 133  ...opbox/devls/CRN1/setup.jl:289; oneloop(::Array{Particle,1}, ::Float64)
+                  1 ./float.jl:401; /(::Float64, ::Float64)
+                  2 ...lia-1.0.2/lib/julia/sys.so:?; +(::Float64, ::Float64)
+                  1 ...lia-1.0.2/lib/julia/sys.so:?; /(::Float64, ::Float64)
+                 53   ...opbox/devls/CRN1/setup.jl:292; oneloop(::Array{Particle,1}, ::Float64)
+                  2  ./float.jl:401; /
+                  49 ./math.jl:780; ^
+                  2  ./promotion.jl:314; *
+                   2 ./float.jl:399; *
+                 91   ...opbox/devls/CRN1/setup.jl:293; oneloop(::Array{Particle,1}, ::Float64)
+                  39 ./math.jl:780; ^(::Float64, ::Float64)
+                  1  ...ia-1.0.2/lib/julia/sys.so:?; /(::Float64, ::Float64)
+                 65   ...opbox/devls/CRN1/setup.jl:295; oneloop(::Array{Particle,1}, ::Float64)
+                  31 ./operators.jl:502; *
+                 31   ...opbox/devls/CRN1/setup.jl:296; oneloop(::Array{Particle,1}, ::Float64)
+                 22   ...opbox/devls/CRN1/setup.jl:297; oneloop(::Array{Particle,1}, ::Float64)
+                 121  ...opbox/devls/CRN1/setup.jl:299; oneloop(::Array{Particle,1}, ::Float64)
+                  1  ./sysimg.jl:18; getproperty
+                  64 ./sysimg.jl:19; setproperty!(::Particle, ::Symbol, ::Flo...
+                   1 ...lia-1.0.2/lib/julia/sys.so:?; convert(::Type{Float64}, ::Float64)
+                 139  ...opbox/devls/CRN1/setup.jl:300; oneloop(::Array{Particle,1}, ::Float64)
+                  6  ./array.jl:707; iterate
+                   3 ./array.jl:731; getindex
+                   3 ./array.jl:199; length
+                  1  ./float.jl:401; /(::Float64, ::Float64)
+                  55 ./sysimg.jl:19; setproperty!(::Particle, ::Symbol, ::Flo...
+                 1    ...opbox/devls/CRN1/setup.jl:307; oneloop(::Array{Particle,1}, ::Float64)
+                  1 ./sysimg.jl:19; setproperty!
+                 1    ...opbox/devls/CRN1/setup.jl:308; oneloop(::Array{Particle,1}, ::Float64)
+                  1 ./float.jl:395; +
+                 2    ...opbox/devls/CRN1/setup.jl:309; oneloop(::Array{Particle,1}, ::Float64)
+                 1    ...opbox/devls/CRN1/setup.jl:310; oneloop(::Array{Particle,1}, ::Float64)
+                  1 ./sysimg.jl:19; setproperty!(::Particle, ::Symbol, ::Floa...
+                 1    ...opbox/devls/CRN1/setup.jl:312; oneloop(::Array{Particle,1}, ::Float64)
+                 21   ...opbox/devls/CRN1/setup.jl:319; oneloop(::Array{Particle,1}, ::Float64)
+                  11 ./sysimg.jl:19; setproperty!(::Particle, ::Symbol, ::Flo...
+                  1  ...lia-1.0.2/lib/julia/sys.so:?; min(::Float64, ::Float64)
+                 4    ...opbox/devls/CRN1/setup.jl:320; oneloop(::Array{Particle,1}, ::Float64)
+                 6    ...opbox/devls/CRN1/setup.jl:323; oneloop(::Array{Particle,1}, ::Float64)
+                 1    ...opbox/devls/CRN1/setup.jl:325; oneloop(::Array{Particle,1}, ::Float64)
+                  1 ./array.jl:707; iterate
+                   1 ./array.jl:731; getindex
+                 1    ...opbox/devls/CRN1/setup.jl:330; oneloop(::Array{Particle,1}, ::Float64)

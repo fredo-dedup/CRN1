@@ -1,0 +1,1693 @@
+272  ./channels.jl:105; (::getfield(Base, Symbol("##586#587")){getfield(VoronoiDelaunay, Symbol("#voronoii...
+ 125 ./channels.jl:251; (::getfield(VoronoiDelaunay, Symbol("#voronoiiterator#2")){DelaunayTessellation2D{...
+  2   ./channels.jl:266; put_unbuffered(::Channel{Any}, ::VoronoiDelaunay.VoronoiEdge{Particle})
+   1 ./promotion.jl:425; ==
+  7   ./channels.jl:277; put_unbuffered(::Channel{Any}, ::VoronoiDelaunay.VoronoiEdge{Particle})
+   1 ./array.jl:1128; popfirst!
+    1 ./array.jl:731; getindex
+   6 ./array.jl:1129; popfirst!
+    6 ./array.jl:821; _deletebeg!
+  113 ./channels.jl:278; put_unbuffered(::Channel{Any}, ::VoronoiDelaunay.VoronoiEdge{Particle})
+   4  ./event.jl:166; yield(::Task, ::Any)
+    1 ./operators.jl:83; ==
+   1  ./event.jl:167; yield(::Task, ::Any)
+    1 ./sysimg.jl:19; setproperty!
+   6  ./event.jl:168; yield(::Task, ::Any)
+    5 ./event.jl:89; enq_work
+     4 ./libuv.jl:89; eventloop
+    1 ./event.jl:90; enq_work
+     1 ./array.jl:856; push!
+      1 ./array.jl:814; _growend!
+   98 ./event.jl:169; yield(::Task, ::Any)
+    7  ./event.jl:186; try_yieldto(::typeof(Base.ensure_rescheduled), ::Base.RefValue{Task})
+    63 ./event.jl:187; try_yieldto(::typeof(Base.ensure_rescheduled), ::Base.RefValue{Task})
+    1  ./event.jl:199; try_yieldto(::typeof(Base.ensure_rescheduled), ::Base.RefValue{Task})
+     1 ./sysimg.jl:19; setproperty!
+    1  ./event.jl:200; try_yieldto(::typeof(Base.ensure_rescheduled), ::Base.RefValue{Task})
+    13 ./refpointer.jl:82; Type
+     13 ./refvalue.jl:10; Type
+      13 ./refvalue.jl:8; Type
+  1   ./channels.jl:279; put_unbuffered(::Channel{Any}, ::VoronoiDelaunay.VoronoiEdge{Particle})
+ 5   .../packages/VoronoiDelaunay/3l7TP/src/VoronoiDelaunay.jl:193; (::getfield(VoronoiDelaunay, Symbol("#voronoiiterator#2")){DelaunayTessellation2D{...
+  2 ./array.jl:731; getindex
+ 3   .../packages/VoronoiDelaunay/3l7TP/src/VoronoiDelaunay.jl:194; (::getfield(VoronoiDelaunay, Symbol("#voronoiiterator#2")){DelaunayTessellation2D{...
+  3 ./array.jl:731; getindex
+ 5   .../packages/VoronoiDelaunay/3l7TP/src/VoronoiDelaunay.jl:197; (::getfield(VoronoiDelaunay, Symbol("#voronoiiterator#2")){DelaunayTessellation2D{...
+  1 ./float.jl:395; circumcenter
+  1 ./sysimg.jl:18; circumcenter
+  2 ...ometricalPredicates/BdTxz/src/GeometricalPredicates.jl:250; circumcenter
+   2 ./float.jl:399; *
+  1 ...ometricalPredicates/BdTxz/src/GeometricalPredicates.jl:251; circumcenter
+   1 ./float.jl:401; /
+ 1   .../packages/VoronoiDelaunay/3l7TP/src/VoronoiDelaunay.jl:199; (::getfield(VoronoiDelaunay, Symbol("#voronoiiterator#2")){DelaunayTessellation2D{...
+  1 ./sysimg.jl:18; getproperty
+ 1   .../packages/VoronoiDelaunay/3l7TP/src/VoronoiDelaunay.jl:200; (::getfield(VoronoiDelaunay, Symbol("#voronoiiterator#2")){DelaunayTessellation2D{...
+ 13  .../packages/VoronoiDelaunay/3l7TP/src/VoronoiDelaunay.jl:202; (::getfield(VoronoiDelaunay, Symbol("#voronoiiterator#2")){DelaunayTessellation2D{...
+  3 ...ometricalPredicates/BdTxz/src/GeometricalPredicates.jl:250; circumcenter
+   3 ./float.jl:399; *
+  1 ...ometricalPredicates/BdTxz/src/GeometricalPredicates.jl:251; circumcenter
+   1 ./float.jl:395; +
+  9 .../packages/VoronoiDelaunay/3l7TP/src/VoronoiDelaunay.jl:144; Type
+   9 .../packages/VoronoiDelaunay/3l7TP/src/VoronoiDelaunay.jl:144; Type
+ 2   .../packages/VoronoiDelaunay/3l7TP/src/VoronoiDelaunay.jl:204; (::getfield(VoronoiDelaunay, Symbol("#voronoiiterator#2")){DelaunayTessellation2D{...
+  2 ./sysimg.jl:18; getproperty
+ 3   .../packages/VoronoiDelaunay/3l7TP/src/VoronoiDelaunay.jl:205; (::getfield(VoronoiDelaunay, Symbol("#voronoiiterator#2")){DelaunayTessellation2D{...
+ 1   .../packages/VoronoiDelaunay/3l7TP/src/VoronoiDelaunay.jl:206; (::getfield(VoronoiDelaunay, Symbol("#voronoiiterator#2")){DelaunayTessellation2D{...
+ 9   .../packages/VoronoiDelaunay/3l7TP/src/VoronoiDelaunay.jl:207; (::getfield(VoronoiDelaunay, Symbol("#voronoiiterator#2")){DelaunayTessellation2D{...
+  1 ./float.jl:401; circumcenter
+  3 ...ometricalPredicates/BdTxz/src/GeometricalPredicates.jl:250; circumcenter
+   3 ./float.jl:399; *
+  5 .../packages/VoronoiDelaunay/3l7TP/src/VoronoiDelaunay.jl:144; Type
+   5 .../packages/VoronoiDelaunay/3l7TP/src/VoronoiDelaunay.jl:144; Type
+ 1   .../packages/VoronoiDelaunay/3l7TP/src/VoronoiDelaunay.jl:209; (::getfield(VoronoiDelaunay, Symbol("#voronoiiterator#2")){DelaunayTessellation2D{...
+  1 ./channels.jl:251; getproperty
+ 3   .../packages/VoronoiDelaunay/3l7TP/src/VoronoiDelaunay.jl:210; (::getfield(VoronoiDelaunay, Symbol("#voronoiiterator#2")){DelaunayTessellation2D{...
+  1 ./array.jl:731; getindex
+ 3   .../packages/VoronoiDelaunay/3l7TP/src/VoronoiDelaunay.jl:211; (::getfield(VoronoiDelaunay, Symbol("#voronoiiterator#2")){DelaunayTessellation2D{...
+  3 ./array.jl:731; getindex
+ 96  .../packages/VoronoiDelaunay/3l7TP/src/VoronoiDelaunay.jl:212; (::getfield(VoronoiDelaunay, Symbol("#voronoiiterator#2")){DelaunayTessellation2D{...
+  70 ./channels.jl:251; put!
+   1  ./channels.jl:266; put_unbuffered(::Channel{Any}, ::VoronoiDelaunay.VoronoiEdge{Particle})
+   5  ./channels.jl:277; put_unbuffered(::Channel{Any}, ::VoronoiDelaunay.VoronoiEdge{Particle})
+    5 ./array.jl:1129; popfirst!
+     5 ./array.jl:821; _deletebeg!
+   62 ./channels.jl:278; put_unbuffered(::Channel{Any}, ::VoronoiDelaunay.VoronoiEdge{Particle})
+    2  ./event.jl:166; yield(::Task, ::Any)
+    5  ./event.jl:168; yield(::Task, ::Any)
+     4 ./event.jl:89; enq_work
+      2 ./libuv.jl:89; eventloop
+     1 ./event.jl:90; enq_work
+      1 ./array.jl:856; push!
+       1 ./array.jl:814; _growend!
+    52 ./event.jl:169; yield(::Task, ::Any)
+     37 ./event.jl:187; try_yieldto(::typeof(Base.ensure_rescheduled), ::Base.RefValue{Task})
+     11 ./refpointer.jl:82; Type
+      11 ./refvalue.jl:10; Type
+       11 ./refvalue.jl:8; Type
+   1  ./channels.jl:279; put_unbuffered(::Channel{Any}, ::VoronoiDelaunay.VoronoiEdge{Particle})
+  1  ./float.jl:395; circumcenter
+  5  ...ometricalPredicates/BdTxz/src/GeometricalPredicates.jl:250; circumcenter
+   5 ./float.jl:399; *
+  4  ...ometricalPredicates/BdTxz/src/GeometricalPredicates.jl:251; circumcenter
+   3 ./float.jl:401; /
+   1 ...ometricalPredicates/BdTxz/src/GeometricalPredicates.jl:417; geta
+    1 ./sysimg.jl:18; getproperty
+  16 .../packages/VoronoiDelaunay/3l7TP/src/VoronoiDelaunay.jl:144; Type
+   16 ...packages/VoronoiDelaunay/3l7TP/src/VoronoiDelaunay.jl:144; Type
+7    ./channels.jl:278; put_unbuffered(::Channel{Any}, ::VoronoiDelaunay.VoronoiEdge{Particle})
+ 7 ./event.jl:169; yield(::Task, ::Any)
+  7 ./event.jl:187; try_yieldto(::typeof(Base.ensure_rescheduled), ::Base.RefValue{Task})
+4    ./channels.jl:251; (::getfield(VoronoiDelaunay, Symbol("#voronoiiterator#2")){DelaunayTessellation2D{...
+ 4 ./channels.jl:278; put_unbuffered(::Channel{Any}, ::VoronoiDelaunay.VoronoiEdge{Particle})
+  4 ./event.jl:169; yield(::Task, ::Any)
+   4 ./event.jl:187; try_yieldto(::typeof(Base.ensure_rescheduled), ::Base.RefValue{Task})
+9    ./event.jl:187; try_yieldto(::typeof(Base.ensure_rescheduled), ::Base.RefValue{Task})
+1    ./event.jl:169; yield(::Task, ::Any)
+ 1 ./event.jl:187; try_yieldto(::typeof(Base.ensure_rescheduled), ::Base.RefValue{Task})
+3343 ./task.jl:259; (::getfield(Atom, Symbol("##19#21")){Array{Any,1}})()
+ 3343 /home/fred/.julia/packages/Atom/mngyX/src/comm.jl:164; handlemsg(::Dict{String,Any}, ::Dict{String,Any})
+  3343 /home/fred/.julia/packages/Atom/mngyX/src/eval.jl:86; (::getfield(Atom, Symbol("##113#118")))(::Dict{String,Any})
+   3343 /home/fred/.julia/packages/Media/ItEPc/src/dynamic.jl:24; macro expansion
+    3343 /home/fred/.julia/packages/Atom/mngyX/src/eval.jl:91; macro expansion
+     3343 /home/fred/.julia/packages/Atom/mngyX/src/repl.jl:87; hideprompt(::getfield(Atom, Symbol("##114#119")){String,Int64,String})
+      3343 /home/fred/.julia/packages/Atom/mngyX/src/eval.jl:92; #114
+       3343 ./logging.jl:491; with_logger
+        3343 ./logging.jl:395; with_logstate(::getfield(Atom, Symbol("##115#120")){String,Int64,String}, ::Ba...
+         3343 /home/fred/.julia/packages/Atom/mngyX/src/eval.jl:93; #115
+          3343 /home/fred/.julia/packages/Atom/mngyX/src/eval.jl:46; withpath
+           3343 .../fred/.julia/packages/CodeTools/xGemk/src/utils.jl:30; withpath(::getfield(Atom, Symbol("##116#121")){String,Int64,String}, ::String)
+            3343 /home/fred/.julia/packages/Atom/mngyX/src/eval.jl:94; (::getfield(Atom, Symbol("##116#121")){String,Int64,String})()
+             3343 .../fred/.julia/packages/CodeTools/xGemk/src/eval.jl:30; include_string(::Module, ::String, ::String, ::Int64)
+              3343 ./loading.jl:1008; include_string(::Module, ::String, ::String)
+               3343 ...r/share/julia/stdlib/v1.0/Profile/src/Profile.jl:25; top-level scope
+                3343 ...Documents/Dropbox/devls/CRN1/voronoi-tests 3.jl:175; macro expansion
+                 1   ./channels.jl:385; iterate(::Channel{Any}, ::Nothing)
+                 4   ./channels.jl:386; iterate(::Channel{Any}, ::Nothing)
+                  4 ./channels.jl:306; take!
+                 1   ./math.jl:0; oneloop(::Array{Particle,1}, ::Float64)
+                 3   /home/fred/Documents/Dropbox/devls/CRN1/setup2.jl:0; oneloop(::Array{Particle,1}, ::Float64)
+                 985 /home/fred/Documents/Dropbox/devls/CRN1/setup2.jl:158; oneloop(::Array{Particle,1}, ::Float64)
+                  1   ./abstractarray.jl:0; borderize(::Array{Particle,1})
+                  1   ./channels.jl:386; iterate(::Channel{Any}, ::Nothing)
+                   1 ./channels.jl:306; take!
+                    1 /home/fred/devl/julia-1.0.2/lib/julia/sys.so:?; ensure_rescheduled(::Task)
+                  1   /home/fred/Documents/Dropbox/devls/CRN1/setup2.jl:0; borderize(::Array{Particle,1})
+                  18  /home/fred/Documents/Dropbox/devls/CRN1/setup2.jl:213; borderize(::Array{Particle,1})
+                   2  ...es/VoronoiDelaunay/3l7TP/src/VoronoiDelaunay.jl:103; DelaunayTessellation2D{Particle}(::Int64)
+                    2 ./array.jl:1024; sizehint!
+                   16 ...es/VoronoiDelaunay/3l7TP/src/VoronoiDelaunay.jl:104; DelaunayTessellation2D{Particle}(::Int64)
+                    8 ...es/VoronoiDelaunay/3l7TP/src/VoronoiDelaunay.jl:114; sizehint!(::DelaunayTessellation2D{Particle}, ::Int64)
+                     8 ./array.jl:1024; sizehint!
+                    1 ...es/VoronoiDelaunay/3l7TP/src/VoronoiDelaunay.jl:115; sizehint!(::DelaunayTessellation2D{Particle}, ::Int64)
+                     1 ./array.jl:199; length
+                    6 ...es/VoronoiDelaunay/3l7TP/src/VoronoiDelaunay.jl:116; sizehint!(::DelaunayTessellation2D{Particle}, ::Int64)
+                     2 ./array.jl:856; push!
+                      2 ./array.jl:814; _growend!
+                     4 ...es/VoronoiDelaunay/3l7TP/src/VoronoiDelaunay.jl:71; copy
+                      2 ./sysimg.jl:18; getproperty
+                      2 ...es/VoronoiDelaunay/3l7TP/src/VoronoiDelaunay.jl:67; Type
+                       2 ...s/VoronoiDelaunay/3l7TP/src/VoronoiDelaunay.jl:54; Type
+                  251 /home/fred/Documents/Dropbox/devls/CRN1/setup2.jl:214; borderize(::Array{Particle,1})
+                   1   ...es/VoronoiDelaunay/3l7TP/src/VoronoiDelaunay.jl:677; push!
+                    1 .../usr/share/julia/stdlib/v1.0/Random/src/misc.jl:220; shuffle!
+                     1 .../usr/share/julia/stdlib/v1.0/Random/src/misc.jl:215; shuffle!(::Random.MersenneTwister, ::Array{Particle,1})
+                      1 ./array.jl:769; setindex!
+                   17  ...es/VoronoiDelaunay/3l7TP/src/VoronoiDelaunay.jl:678; push!
+                    17 ...lPredicates/BdTxz/src/GeometricalPredicates.jl:1176; mssort!
+                     17 ...lPredicates/BdTxz/src/GeometricalPredicates.jl:1176; #mssort!#1
+                      17 ...Predicates/BdTxz/src/GeometricalPredicates.jl:1169; _mssort!(::Array{Particle,1}, ::Int64, ::Int64, ::Float64)
+                       17 ...Predicates/BdTxz/src/GeometricalPredicates.jl:1157; hilbertsort!
+                        1 ...Predicates/BdTxz/src/GeometricalPredicates.jl:1113; hilbertsort!(::GeometricalPredicates.Backward, ::GeometricalPredicate...
+                         1 ...Predicates/BdTxz/src/GeometricalPredicates.jl:1090; select!(::GeometricalPredicates.Backward, ::GeometricalPredicates.Coo...
+                          1 ./array.jl:731; getindex
+                        1 ...Predicates/BdTxz/src/GeometricalPredicates.jl:1114; hilbertsort!(::GeometricalPredicates.Backward, ::GeometricalPredicate...
+                         1 ...Predicates/BdTxz/src/GeometricalPredicates.jl:1091; select!(::GeometricalPredicates.Backward, ::GeometricalPredicates.Coo...
+                          1 ./array.jl:731; <=
+                        4 ...Predicates/BdTxz/src/GeometricalPredicates.jl:1117; hilbertsort!(::GeometricalPredicates.Backward, ::GeometricalPredicate...
+                         1 ...Predicates/BdTxz/src/GeometricalPredicates.jl:1115; hilbertsort!(::GeometricalPredicates.Backward, ::GeometricalPredicate...
+                          1 ...redicates/BdTxz/src/GeometricalPredicates.jl:1089; select!(::GeometricalPredicates.Forward, ::GeometricalPredicates.Coo...
+                           1 ...redicates/BdTxz/src/GeometricalPredicates.jl:1072; compare
+                            1 ./float.jl:452; <
+                         1 ...Predicates/BdTxz/src/GeometricalPredicates.jl:1118; hilbertsort!(::GeometricalPredicates.Backward, ::GeometricalPredicate...
+                          1 ...redicates/BdTxz/src/GeometricalPredicates.jl:1120; hilbertsort!(::GeometricalPredicates.Backward, ::GeometricalPredicat...
+                           1 ...redicates/BdTxz/src/GeometricalPredicates.jl:1115; hilbertsort!(::GeometricalPredicates.Forward, ::GeometricalPredicat...
+                            1 ...edicates/BdTxz/src/GeometricalPredicates.jl:1089; select!(::GeometricalPredicates.Backward, ::GeometricalPredicates.C...
+                         1 ...Predicates/BdTxz/src/GeometricalPredicates.jl:1119; hilbertsort!(::GeometricalPredicates.Backward, ::GeometricalPredicate...
+                          1 ...redicates/BdTxz/src/GeometricalPredicates.jl:1120; hilbertsort!(::GeometricalPredicates.Backward, ::GeometricalPredicat...
+                           1 ...redicates/BdTxz/src/GeometricalPredicates.jl:1115; hilbertsort!(::GeometricalPredicates.Forward, ::GeometricalPredicat...
+                            1 ...edicates/BdTxz/src/GeometricalPredicates.jl:1090; select!(::GeometricalPredicates.Backward, ::GeometricalPredicates.C...
+                             1 ./array.jl:731; getindex
+                         1 ...Predicates/BdTxz/src/GeometricalPredicates.jl:1120; hilbertsort!(::GeometricalPredicates.Backward, ::GeometricalPredicate...
+                          1 ...redicates/BdTxz/src/GeometricalPredicates.jl:1117; hilbertsort!(::GeometricalPredicates.Forward, ::GeometricalPredicate...
+                           1 ...redicates/BdTxz/src/GeometricalPredicates.jl:1113; hilbertsort!(::GeometricalPredicates.Forward, ::GeometricalPredicat...
+                            1 ...edicates/BdTxz/src/GeometricalPredicates.jl:1091; select!(::GeometricalPredicates.Forward, ::GeometricalPredicates.Co...
+                             1 ./array.jl:731; <=
+                        6 ...Predicates/BdTxz/src/GeometricalPredicates.jl:1118; hilbertsort!(::GeometricalPredicates.Backward, ::GeometricalPredicate...
+                         1 ...Predicates/BdTxz/src/GeometricalPredicates.jl:1113; hilbertsort!(::GeometricalPredicates.Backward, ::GeometricalPredicate...
+                          1 ./array.jl:769; select!(::GeometricalPredicates.Backward, ::GeometricalPredicates.Coo...
+                         1 ...Predicates/BdTxz/src/GeometricalPredicates.jl:1114; hilbertsort!(::GeometricalPredicates.Backward, ::GeometricalPredicate...
+                          1 ...redicates/BdTxz/src/GeometricalPredicates.jl:1089; select!(::GeometricalPredicates.Backward, ::GeometricalPredicates.Co...
+                           1 ...redicates/BdTxz/src/GeometricalPredicates.jl:1071; compare
+                            1 ./operators.jl:286; >
+                             1 ./float.jl:452; <
+                         2 ...Predicates/BdTxz/src/GeometricalPredicates.jl:1115; hilbertsort!(::GeometricalPredicates.Backward, ::GeometricalPredicate...
+                          1 ...redicates/BdTxz/src/GeometricalPredicates.jl:1089; select!(::GeometricalPredicates.Forward, ::GeometricalPredicates.Coo...
+                          1 ...redicates/BdTxz/src/GeometricalPredicates.jl:1091; select!(::GeometricalPredicates.Forward, ::GeometricalPredicates.Coo...
+                           1 ./array.jl:731; <=
+                         1 ...Predicates/BdTxz/src/GeometricalPredicates.jl:1118; hilbertsort!(::GeometricalPredicates.Backward, ::GeometricalPredicate...
+                          1 ...redicates/BdTxz/src/GeometricalPredicates.jl:1119; hilbertsort!(::GeometricalPredicates.Backward, ::GeometricalPredicat...
+                           1 ...redicates/BdTxz/src/GeometricalPredicates.jl:1113; hilbertsort!(::GeometricalPredicates.Backward, ::GeometricalPredica...
+                            1 ...edicates/BdTxz/src/GeometricalPredicates.jl:1089; select!(::GeometricalPredicates.Backward, ::GeometricalPredicates.C...
+                             1 ./array.jl:731; getindex
+                         1 ...Predicates/BdTxz/src/GeometricalPredicates.jl:1120; hilbertsort!(::GeometricalPredicates.Backward, ::GeometricalPredicate...
+                          1 ...redicates/BdTxz/src/GeometricalPredicates.jl:1117; hilbertsort!(::GeometricalPredicates.Forward, ::GeometricalPredicate...
+                           1 ...redicates/BdTxz/src/GeometricalPredicates.jl:1113; hilbertsort!(::GeometricalPredicates.Forward, ::GeometricalPredicat...
+                            1 ...edicates/BdTxz/src/GeometricalPredicates.jl:1086; select!(::GeometricalPredicates.Forward, ::GeometricalPredicates.Co...
+                             1 ./int.jl:452; >>>
+                              1 ./int.jl:444; >>>
+                        2 ...Predicates/BdTxz/src/GeometricalPredicates.jl:1119; hilbertsort!(::GeometricalPredicates.Backward, ::GeometricalPredicate...
+                         1 ...Predicates/BdTxz/src/GeometricalPredicates.jl:1113; hilbertsort!(::GeometricalPredicates.Backward, ::GeometricalPredicate...
+                          1 ...redicates/BdTxz/src/GeometricalPredicates.jl:1091; select!(::GeometricalPredicates.Backward, ::GeometricalPredicates.Co...
+                         1 ...Predicates/BdTxz/src/GeometricalPredicates.jl:1115; hilbertsort!(::GeometricalPredicates.Backward, ::GeometricalPredicate...
+                          1 ...redicates/BdTxz/src/GeometricalPredicates.jl:1090; select!(::GeometricalPredicates.Forward, ::GeometricalPredicates.Coo...
+                           1 ...redicates/BdTxz/src/GeometricalPredicates.jl:1070; compare
+                            1 ./float.jl:452; <
+                        3 ...Predicates/BdTxz/src/GeometricalPredicates.jl:1120; hilbertsort!(::GeometricalPredicates.Backward, ::GeometricalPredicate...
+                         1 ...Predicates/BdTxz/src/GeometricalPredicates.jl:1114; hilbertsort!(::GeometricalPredicates.Forward, ::GeometricalPredicates...
+                          1 ./array.jl:0; select!(::GeometricalPredicates.Forward, ::GeometricalPredicates.Coord...
+                         1 ...Predicates/BdTxz/src/GeometricalPredicates.jl:1118; hilbertsort!(::GeometricalPredicates.Forward, ::GeometricalPredicates...
+                          1 ...redicates/BdTxz/src/GeometricalPredicates.jl:1113; hilbertsort!(::GeometricalPredicates.Forward, ::GeometricalPredicate...
+                           1 ...redicates/BdTxz/src/GeometricalPredicates.jl:1091; select!(::GeometricalPredicates.Forward, ::GeometricalPredicates.Co...
+                            1 ./array.jl:731; <=
+                         1 ...Predicates/BdTxz/src/GeometricalPredicates.jl:1119; hilbertsort!(::GeometricalPredicates.Forward, ::GeometricalPredicates...
+                          1 ...redicates/BdTxz/src/GeometricalPredicates.jl:1115; hilbertsort!(::GeometricalPredicates.Forward, ::GeometricalPredicate...
+                           1 ...redicates/BdTxz/src/GeometricalPredicates.jl:1090; select!(::GeometricalPredicates.Backward, ::GeometricalPredicates.C...
+                            1 ...edicates/BdTxz/src/GeometricalPredicates.jl:1073; compare
+                             1 ./operators.jl:286; >
+                              1 ./float.jl:452; <
+                   233 ...es/VoronoiDelaunay/3l7TP/src/VoronoiDelaunay.jl:679; push!
+                    233 ...s/VoronoiDelaunay/3l7TP/src/VoronoiDelaunay.jl:671; _pushunsorted!(::DelaunayTessellation2D{Particle}, ::Array{Particle,1})
+                     219 ...s/VoronoiDelaunay/3l7TP/src/VoronoiDelaunay.jl:663; push!
+                      216 .../VoronoiDelaunay/3l7TP/src/VoronoiDelaunay.jl:295; _pushunfixed!(::DelaunayTessellation2D{Particle}, ::Particle)
+                       215 .../VoronoiDelaunay/3l7TP/src/VoronoiDelaunay.jl:272; findindex
+                        1  ./array.jl:731; getindex
+                        1  ...Predicates/BdTxz/src/GeometricalPredicates.jl:733; intriangle(::VoronoiDelaunay.DelaunayTriangle{Particle}, ::Particle)
+                         1 /home/fred/Documents/Dropbox/devls/CRN1/setup.jl:51; getx
+                          1 ./sysimg.jl:18; getproperty
+                        1  ...Predicates/BdTxz/src/GeometricalPredicates.jl:735; intriangle(::VoronoiDelaunay.DelaunayTriangle{Particle}, ::Particle)
+                         1 ./float.jl:399; *
+                        1  ...Predicates/BdTxz/src/GeometricalPredicates.jl:736; intriangle(::VoronoiDelaunay.DelaunayTriangle{Particle}, ::Particle)
+                        91 ...Predicates/BdTxz/src/GeometricalPredicates.jl:739; intriangle(::VoronoiDelaunay.DelaunayTriangle{Particle}, ::Particle)
+                         91 ...Predicates/BdTxz/src/GeometricalPredicates.jl:710; _sz_intriangle(::VoronoiDelaunay.DelaunayTriangle{Particle}, ::Partic...
+                          91 ...redicates/BdTxz/src/GeometricalPredicates.jl:686; _exact_intriangle(::VoronoiDelaunay.DelaunayTriangle{Particle}, ::Pa...
+                           5  ./gmp.jl:267; _extract_bigint
+                            5 ./gmp.jl:177; set_ui(::UInt64)
+                             1 ./gmp.jl:56; Type
+                             4 ./gmp.jl:57; Type
+                              4 ./gmp.jl:121; init!
+                           3  ...redicates/BdTxz/src/GeometricalPredicates.jl:606; _exact_intriangle!(::BigInt, ::BigInt, ::BigInt, ::BigInt, ::BigInt...
+                            3 ./gmp.jl:412; -
+                             3 ./gmp.jl:133; sub(::BigInt, ::BigInt)
+                              1 ./gmp.jl:58; Type
+                               1 ./gcutils.jl:28; finalizer
+                              2 ./gmp.jl:132; sub!
+                           6  ...redicates/BdTxz/src/GeometricalPredicates.jl:607; _exact_intriangle!(::BigInt, ::BigInt, ::BigInt, ::BigInt, ::BigInt...
+                            6 ./gmp.jl:412; -
+                             6 ./gmp.jl:133; sub(::BigInt, ::BigInt)
+                              3 ./gmp.jl:57; Type
+                               3 ./gmp.jl:121; init!
+                              1 ./gmp.jl:58; Type
+                               1 ./gcutils.jl:28; finalizer
+                              1 ./gmp.jl:132; sub!
+                           4  ...redicates/BdTxz/src/GeometricalPredicates.jl:608; _exact_intriangle!(::BigInt, ::BigInt, ::BigInt, ::BigInt, ::BigInt...
+                            4 ./gmp.jl:412; -
+                             4 ./gmp.jl:133; sub(::BigInt, ::BigInt)
+                              1 ./gmp.jl:56; Type
+                              3 ./gmp.jl:57; Type
+                               3 ./gmp.jl:121; init!
+                           6  ...redicates/BdTxz/src/GeometricalPredicates.jl:610; _exact_intriangle!(::BigInt, ::BigInt, ::BigInt, ::BigInt, ::BigInt...
+                            2 ./gmp.jl:412; *
+                             2 ./gmp.jl:133; mul(::BigInt, ::BigInt)
+                              1 ./gmp.jl:56; Type
+                              1 ./gmp.jl:132; mul!
+                            2 ./gmp.jl:412; +
+                             2 ./gmp.jl:133; add(::BigInt, ::BigInt)
+                              2 ./gmp.jl:57; Type
+                               2 ./gmp.jl:121; init!
+                            2 ./gmp.jl:469; -
+                             2 ./gmp.jl:167; neg(::BigInt)
+                              1 ./gmp.jl:57; Type
+                               1 ./gmp.jl:121; init!
+                              1 ./gmp.jl:58; Type
+                               1 ./gcutils.jl:28; finalizer
+                           4  ...redicates/BdTxz/src/GeometricalPredicates.jl:611; _exact_intriangle!(::BigInt, ::BigInt, ::BigInt, ::BigInt, ::BigInt...
+                            3 ./gmp.jl:412; *
+                             3 ./gmp.jl:133; mul(::BigInt, ::BigInt)
+                              2 ./gmp.jl:57; Type
+                               2 ./gmp.jl:121; init!
+                              1 ./gmp.jl:58; Type
+                               1 ./gcutils.jl:28; finalizer
+                            1 ./gmp.jl:412; -
+                             1 ./gmp.jl:133; sub(::BigInt, ::BigInt)
+                              1 ./gmp.jl:132; sub!
+                           5  ...redicates/BdTxz/src/GeometricalPredicates.jl:612; _exact_intriangle!(::BigInt, ::BigInt, ::BigInt, ::BigInt, ::BigInt...
+                            2 ./gmp.jl:412; *
+                             2 ./gmp.jl:133; mul(::BigInt, ::BigInt)
+                              1 ./gmp.jl:57; Type
+                               1 ./gmp.jl:121; init!
+                              1 ./gmp.jl:132; mul!
+                            3 ./gmp.jl:412; -
+                             3 ./gmp.jl:133; sub(::BigInt, ::BigInt)
+                              2 ./gmp.jl:57; Type
+                               2 ./gmp.jl:121; init!
+                              1 ./gmp.jl:132; sub!
+                           13 ...redicates/BdTxz/src/GeometricalPredicates.jl:614; _exact_intriangle!(::BigInt, ::BigInt, ::BigInt, ::BigInt, ::BigInt...
+                            13 ./number.jl:142; sign(::BigInt)
+                             4 ./essentials.jl:334; oftype
+                              4 ./number.jl:7; convert
+                               4 ./gmp.jl:266; Type
+                                4 ./gmp.jl:177; set_si(::Int64)
+                                 1 ./gmp.jl:56; Type
+                                 2 ./gmp.jl:57; Type
+                                  2 ./gmp.jl:121; init!
+                             9 ./number.jl:298; one
+                              9 ./number.jl:297; one
+                               9 ./number.jl:7; convert
+                                9 ./gmp.jl:266; Type
+                                 9 ./gmp.jl:177; set_si(::Int64)
+                                  2 ./gmp.jl:56; Type
+                                  7 ./gmp.jl:57; Type
+                                   7 ./gmp.jl:121; init!
+                           8  ...redicates/BdTxz/src/GeometricalPredicates.jl:615; _exact_intriangle!(::BigInt, ::BigInt, ::BigInt, ::BigInt, ::BigInt...
+                            1 ./gmp.jl:339; Int64(::BigInt)
+                            1 ./gmp.jl:345; Int64(::BigInt)
+                             1 ./int.jl:97; rem
+                            6 ./number.jl:142; sign(::BigInt)
+                             2 ./essentials.jl:334; oftype
+                              2 ./number.jl:7; convert
+                               2 ./gmp.jl:266; Type
+                                2 ./gmp.jl:177; set_si(::Int64)
+                                 2 ./gmp.jl:57; Type
+                                  2 ./gmp.jl:121; init!
+                             4 ./number.jl:298; one
+                              4 ./number.jl:297; one
+                               4 ./number.jl:7; convert
+                                4 ./gmp.jl:266; Type
+                                 4 ./gmp.jl:177; set_si(::Int64)
+                                  1 ./gmp.jl:56; Type
+                                  2 ./gmp.jl:57; Type
+                                   2 ./gmp.jl:121; init!
+                                  1 ./gmp.jl:58; Type
+                                   1 ./gcutils.jl:28; finalizer
+                           2  ...redicates/BdTxz/src/GeometricalPredicates.jl:618; _exact_intriangle!(::BigInt, ::BigInt, ::BigInt, ::BigInt, ::BigInt...
+                            2 ./number.jl:142; sign(::BigInt)
+                             2 ./number.jl:298; one
+                              2 ./number.jl:297; one
+                               2 ./number.jl:7; convert
+                                2 ./gmp.jl:266; Type
+                                 2 ./gmp.jl:177; set_si(::Int64)
+                                  1 ./gmp.jl:57; Type
+                                   1 ./gmp.jl:121; init!
+                                  1 ./gmp.jl:58; Type
+                                   1 ./gcutils.jl:28; finalizer
+                           1  ...redicates/BdTxz/src/GeometricalPredicates.jl:621; _exact_intriangle!(::BigInt, ::BigInt, ::BigInt, ::BigInt, ::BigInt...
+                            1 ./gmp.jl:412; +
+                             1 ./gmp.jl:133; add(::BigInt, ::BigInt)
+                              1 ./gmp.jl:57; Type
+                               1 ./gmp.jl:121; init!
+                           5  ...redicates/BdTxz/src/GeometricalPredicates.jl:622; _exact_intriangle!(::BigInt, ::BigInt, ::BigInt, ::BigInt, ::BigInt...
+                            1 ./gmp.jl:345; Int64(::BigInt)
+                             1 ./gmp.jl:316; rem
+                              1 ./sysimg.jl:18; getproperty
+                            4 ./number.jl:142; sign(::BigInt)
+                             1 ./essentials.jl:334; oftype
+                              1 ./number.jl:7; convert
+                               1 ./gmp.jl:266; Type
+                                1 ./gmp.jl:177; set_si(::Int64)
+                                 1 ./gmp.jl:56; Type
+                             2 ./number.jl:298; one
+                              2 ./number.jl:297; one
+                               2 ./number.jl:7; convert
+                                2 ./gmp.jl:266; Type
+                                 2 ./gmp.jl:177; set_si(::Int64)
+                                  1 ./gmp.jl:56; Type
+                                  1 ./gmp.jl:57; Type
+                                   1 ./gmp.jl:121; init!
+                             1 ./operators.jl:286; >
+                              1 ./gmp.jl:585; <
+                               1 ./gmp.jl:491; cmp
+                                1 ./gmp.jl:204; cmp_si
+                           11 ...redicates/BdTxz/src/GeometricalPredicates.jl:627; _exact_intriangle!(::BigInt, ::BigInt, ::BigInt, ::BigInt, ::BigInt...
+                            11 ./number.jl:142; sign(::BigInt)
+                             11 ./number.jl:298; one
+                              11 ./number.jl:297; one
+                               11 ./number.jl:7; convert
+                                11 ./gmp.jl:266; Type
+                                 11 ./gmp.jl:177; set_si(::Int64)
+                                  11 ./gmp.jl:56; Type
+                           17 ...redicates/BdTxz/src/GeometricalPredicates.jl:328; _extract_bigint
+                            17 ./gmp.jl:267; Type
+                             17 ./gmp.jl:177; set_ui(::UInt64)
+                              14 ./gmp.jl:56; Type
+                              3  ./gmp.jl:57; Type
+                               3 ./gmp.jl:121; init!
+                        62 ...Predicates/BdTxz/src/GeometricalPredicates.jl:746; intriangle(::VoronoiDelaunay.DelaunayTriangle{Particle}, ::Particle)
+                         62 ...Predicates/BdTxz/src/GeometricalPredicates.jl:718; _sz_intriangle(::VoronoiDelaunay.DelaunayTriangle{Particle}, ::Partic...
+                          62 ...redicates/BdTxz/src/GeometricalPredicates.jl:686; _exact_intriangle(::VoronoiDelaunay.DelaunayTriangle{Particle}, ::Pa...
+                           2  ./gmp.jl:267; _extract_bigint
+                            2 ./gmp.jl:177; set_ui(::UInt64)
+                             2 ./gmp.jl:57; Type
+                              2 ./gmp.jl:121; init!
+                           2  ...redicates/BdTxz/src/GeometricalPredicates.jl:606; _exact_intriangle!(::BigInt, ::BigInt, ::BigInt, ::BigInt, ::BigInt...
+                            2 ./gmp.jl:412; -
+                             2 ./gmp.jl:133; sub(::BigInt, ::BigInt)
+                              1 ./gmp.jl:132; sub!
+                           4  ...redicates/BdTxz/src/GeometricalPredicates.jl:607; _exact_intriangle!(::BigInt, ::BigInt, ::BigInt, ::BigInt, ::BigInt...
+                            4 ./gmp.jl:412; -
+                             4 ./gmp.jl:133; sub(::BigInt, ::BigInt)
+                              1 ./gmp.jl:57; Type
+                               1 ./gmp.jl:121; init!
+                              1 ./gmp.jl:58; Type
+                               1 ./gcutils.jl:28; finalizer
+                              1 ./gmp.jl:132; sub!
+                           1  ...redicates/BdTxz/src/GeometricalPredicates.jl:608; _exact_intriangle!(::BigInt, ::BigInt, ::BigInt, ::BigInt, ::BigInt...
+                            1 ./gmp.jl:412; -
+                             1 ./gmp.jl:133; sub(::BigInt, ::BigInt)
+                              1 ./gmp.jl:132; sub!
+                           6  ...redicates/BdTxz/src/GeometricalPredicates.jl:610; _exact_intriangle!(::BigInt, ::BigInt, ::BigInt, ::BigInt, ::BigInt...
+                            4 ./gmp.jl:412; *
+                             4 ./gmp.jl:133; mul(::BigInt, ::BigInt)
+                              1 ./gmp.jl:56; Type
+                              2 ./gmp.jl:57; Type
+                               2 ./gmp.jl:121; init!
+                              1 ./gmp.jl:132; mul!
+                            2 ./gmp.jl:412; +
+                             2 ./gmp.jl:133; add(::BigInt, ::BigInt)
+                              2 ./gmp.jl:132; add!
+                           17 ...redicates/BdTxz/src/GeometricalPredicates.jl:611; _exact_intriangle!(::BigInt, ::BigInt, ::BigInt, ::BigInt, ::BigInt...
+                            15 ./gmp.jl:412; *
+                             15 ./gmp.jl:133; mul(::BigInt, ::BigInt)
+                              10 ./gmp.jl:56; Type
+                              3  ./gmp.jl:57; Type
+                               3 ./gmp.jl:121; init!
+                              2  ./gmp.jl:132; mul!
+                            2  ./gmp.jl:412; -
+                             2 ./gmp.jl:133; sub(::BigInt, ::BigInt)
+                              1 ./gmp.jl:57; Type
+                               1 ./gmp.jl:121; init!
+                           8  ...redicates/BdTxz/src/GeometricalPredicates.jl:612; _exact_intriangle!(::BigInt, ::BigInt, ::BigInt, ::BigInt, ::BigInt...
+                            8 ./gmp.jl:412; *
+                             8 ./gmp.jl:133; mul(::BigInt, ::BigInt)
+                              8 ./gmp.jl:56; Type
+                           1  ...redicates/BdTxz/src/GeometricalPredicates.jl:614; _exact_intriangle!(::BigInt, ::BigInt, ::BigInt, ::BigInt, ::BigInt...
+                            1 ./number.jl:142; sign(::BigInt)
+                             1 ./number.jl:298; one
+                              1 ./number.jl:297; one
+                               1 ./number.jl:7; convert
+                                1 ./gmp.jl:266; Type
+                                 1 ./gmp.jl:177; set_si(::Int64)
+                                  1 ./gmp.jl:57; Type
+                                   1 ./gmp.jl:121; init!
+                           1  ...redicates/BdTxz/src/GeometricalPredicates.jl:615; _exact_intriangle!(::BigInt, ::BigInt, ::BigInt, ::BigInt, ::BigInt...
+                            1 ./number.jl:142; sign(::BigInt)
+                             1 ./number.jl:298; one
+                              1 ./number.jl:297; one
+                               1 ./number.jl:7; convert
+                                1 ./gmp.jl:266; Type
+                                 1 ./gmp.jl:177; set_si(::Int64)
+                                  1 ./gmp.jl:57; Type
+                                   1 ./gmp.jl:121; init!
+                           12 ...redicates/BdTxz/src/GeometricalPredicates.jl:618; _exact_intriangle!(::BigInt, ::BigInt, ::BigInt, ::BigInt, ::BigInt...
+                            12 ./number.jl:142; sign(::BigInt)
+                             12 ./number.jl:298; one
+                              12 ./number.jl:297; one
+                               12 ./number.jl:7; convert
+                                12 ./gmp.jl:266; Type
+                                 12 ./gmp.jl:177; set_si(::Int64)
+                                  11 ./gmp.jl:56; Type
+                                  1  ./gmp.jl:57; Type
+                                   1 ./gmp.jl:121; init!
+                           2  ...redicates/BdTxz/src/GeometricalPredicates.jl:621; _exact_intriangle!(::BigInt, ::BigInt, ::BigInt, ::BigInt, ::BigInt...
+                            2 ./gmp.jl:412; -
+                             2 ./gmp.jl:133; sub(::BigInt, ::BigInt)
+                              1 ./gmp.jl:57; Type
+                               1 ./gmp.jl:121; init!
+                           2  ...redicates/BdTxz/src/GeometricalPredicates.jl:622; _exact_intriangle!(::BigInt, ::BigInt, ::BigInt, ::BigInt, ::BigInt...
+                            2 ./number.jl:142; sign(::BigInt)
+                             1 ./essentials.jl:334; oftype
+                              1 ./number.jl:7; convert
+                               1 ./gmp.jl:266; Type
+                                1 ./gmp.jl:177; set_si(::Int64)
+                                 1 ./gmp.jl:57; Type
+                                  1 ./gmp.jl:121; init!
+                             1 ./number.jl:298; one
+                              1 ./number.jl:297; one
+                               1 ./number.jl:7; convert
+                                1 ./gmp.jl:266; Type
+                                 1 ./gmp.jl:177; set_si(::Int64)
+                                  1 ./gmp.jl:57; Type
+                                   1 ./gmp.jl:121; init!
+                           1  ...redicates/BdTxz/src/GeometricalPredicates.jl:627; _exact_intriangle!(::BigInt, ::BigInt, ::BigInt, ::BigInt, ::BigInt...
+                            1 ./number.jl:142; sign(::BigInt)
+                             1 ./number.jl:298; one
+                              1 ./number.jl:297; one
+                               1 ./number.jl:7; convert
+                                1 ./gmp.jl:266; Type
+                                 1 ./gmp.jl:177; set_si(::Int64)
+                                  1 ./gmp.jl:57; Type
+                                   1 ./gmp.jl:121; init!
+                           1  ...redicates/BdTxz/src/GeometricalPredicates.jl:630; _exact_intriangle!(::BigInt, ::BigInt, ::BigInt, ::BigInt, ::BigInt...
+                            1 ./number.jl:142; sign(::BigInt)
+                             1 ./number.jl:298; one
+                              1 ./number.jl:297; one
+                               1 ./number.jl:7; convert
+                                1 ./gmp.jl:266; Type
+                                 1 ./gmp.jl:177; set_si(::Int64)
+                                  1 ./gmp.jl:56; Type
+                           2  ...redicates/BdTxz/src/GeometricalPredicates.jl:328; _extract_bigint
+                            2 ./gmp.jl:267; Type
+                             2 ./gmp.jl:177; set_ui(::UInt64)
+                              1 ./gmp.jl:56; Type
+                              1 ./gmp.jl:57; Type
+                               1 ./gmp.jl:121; init!
+                        58 ...Predicates/BdTxz/src/GeometricalPredicates.jl:755; intriangle(::VoronoiDelaunay.DelaunayTriangle{Particle}, ::Particle)
+                         58 ...Predicates/BdTxz/src/GeometricalPredicates.jl:728; _sz_intriangle(::VoronoiDelaunay.DelaunayTriangle{Particle}, ::Partic...
+                          58 ...redicates/BdTxz/src/GeometricalPredicates.jl:686; _exact_intriangle(::VoronoiDelaunay.DelaunayTriangle{Particle}, ::Pa...
+                           2  ./gmp.jl:267; _extract_bigint
+                            2 ./gmp.jl:177; set_ui(::UInt64)
+                             1 ./gmp.jl:56; Type
+                             1 ./gmp.jl:57; Type
+                              1 ./gmp.jl:121; init!
+                           2  ...redicates/BdTxz/src/GeometricalPredicates.jl:606; _exact_intriangle!(::BigInt, ::BigInt, ::BigInt, ::BigInt, ::BigInt...
+                            2 ./gmp.jl:412; -
+                             2 ./gmp.jl:133; sub(::BigInt, ::BigInt)
+                              2 ./gmp.jl:57; Type
+                               2 ./gmp.jl:121; init!
+                           4  ...redicates/BdTxz/src/GeometricalPredicates.jl:607; _exact_intriangle!(::BigInt, ::BigInt, ::BigInt, ::BigInt, ::BigInt...
+                            4 ./gmp.jl:412; -
+                             4 ./gmp.jl:133; sub(::BigInt, ::BigInt)
+                              1 ./gmp.jl:56; Type
+                              2 ./gmp.jl:57; Type
+                               2 ./gmp.jl:121; init!
+                           4  ...redicates/BdTxz/src/GeometricalPredicates.jl:608; _exact_intriangle!(::BigInt, ::BigInt, ::BigInt, ::BigInt, ::BigInt...
+                            4 ./gmp.jl:412; -
+                             4 ./gmp.jl:133; sub(::BigInt, ::BigInt)
+                              2 ./gmp.jl:57; Type
+                               2 ./gmp.jl:121; init!
+                              1 ./gmp.jl:58; Type
+                              1 ./gmp.jl:132; sub!
+                           3  ...redicates/BdTxz/src/GeometricalPredicates.jl:610; _exact_intriangle!(::BigInt, ::BigInt, ::BigInt, ::BigInt, ::BigInt...
+                            3 ./gmp.jl:412; *
+                             3 ./gmp.jl:133; mul(::BigInt, ::BigInt)
+                              3 ./gmp.jl:57; Type
+                               3 ./gmp.jl:121; init!
+                           1  ...redicates/BdTxz/src/GeometricalPredicates.jl:611; _exact_intriangle!(::BigInt, ::BigInt, ::BigInt, ::BigInt, ::BigInt...
+                            1 ./gmp.jl:412; *
+                             1 ./gmp.jl:133; mul(::BigInt, ::BigInt)
+                              1 ./gmp.jl:132; mul!
+                           6  ...redicates/BdTxz/src/GeometricalPredicates.jl:612; _exact_intriangle!(::BigInt, ::BigInt, ::BigInt, ::BigInt, ::BigInt...
+                            3 ./gmp.jl:412; *
+                             3 ./gmp.jl:133; mul(::BigInt, ::BigInt)
+                              2 ./gmp.jl:56; Type
+                              1 ./gmp.jl:132; mul!
+                            3 ./gmp.jl:412; -
+                             3 ./gmp.jl:133; sub(::BigInt, ::BigInt)
+                              2 ./gmp.jl:57; Type
+                               2 ./gmp.jl:121; init!
+                              1 ./gmp.jl:132; sub!
+                           6  ...redicates/BdTxz/src/GeometricalPredicates.jl:614; _exact_intriangle!(::BigInt, ::BigInt, ::BigInt, ::BigInt, ::BigInt...
+                            3 ./number.jl:142; sign(::BigInt)
+                             1 ./essentials.jl:334; oftype
+                              1 ./number.jl:7; convert
+                               1 ./gmp.jl:266; Type
+                                1 ./gmp.jl:177; set_si(::Int64)
+                                 1 ./gmp.jl:57; Type
+                                  1 ./gmp.jl:121; init!
+                             2 ./number.jl:298; one
+                              2 ./number.jl:297; one
+                               2 ./number.jl:7; convert
+                                2 ./gmp.jl:266; Type
+                                 2 ./gmp.jl:177; set_si(::Int64)
+                                  2 ./gmp.jl:57; Type
+                                   2 ./gmp.jl:121; init!
+                           2  ...redicates/BdTxz/src/GeometricalPredicates.jl:615; _exact_intriangle!(::BigInt, ::BigInt, ::BigInt, ::BigInt, ::BigInt...
+                            2 ./number.jl:142; sign(::BigInt)
+                             1 ./essentials.jl:334; oftype
+                              1 ./number.jl:7; convert
+                               1 ./gmp.jl:266; Type
+                                1 ./gmp.jl:177; set_si(::Int64)
+                                 1 ./gmp.jl:57; Type
+                                  1 ./gmp.jl:121; init!
+                             1 ./number.jl:298; one
+                              1 ./number.jl:297; one
+                               1 ./number.jl:7; convert
+                                1 ./gmp.jl:266; Type
+                                 1 ./gmp.jl:177; set_si(::Int64)
+                                  1 ./gmp.jl:57; Type
+                                   1 ./gmp.jl:121; init!
+                           2  ...redicates/BdTxz/src/GeometricalPredicates.jl:618; _exact_intriangle!(::BigInt, ::BigInt, ::BigInt, ::BigInt, ::BigInt...
+                            2 ./number.jl:142; sign(::BigInt)
+                             1 ./essentials.jl:334; oftype
+                              1 ./number.jl:7; convert
+                               1 ./gmp.jl:266; Type
+                                1 ./gmp.jl:177; set_si(::Int64)
+                                 1 ./gmp.jl:56; Type
+                             1 ./number.jl:298; one
+                              1 ./number.jl:297; one
+                               1 ./number.jl:7; convert
+                                1 ./gmp.jl:266; Type
+                                 1 ./gmp.jl:177; set_si(::Int64)
+                                  1 ./gmp.jl:57; Type
+                                   1 ./gmp.jl:121; init!
+                           4  ...redicates/BdTxz/src/GeometricalPredicates.jl:622; _exact_intriangle!(::BigInt, ::BigInt, ::BigInt, ::BigInt, ::BigInt...
+                            4 ./number.jl:142; sign(::BigInt)
+                             1 ./essentials.jl:334; oftype
+                              1 ./number.jl:7; convert
+                               1 ./gmp.jl:266; Type
+                                1 ./gmp.jl:177; set_si(::Int64)
+                                 1 ./gmp.jl:58; Type
+                                  1 ./gcutils.jl:28; finalizer
+                             3 ./number.jl:298; one
+                              3 ./number.jl:297; one
+                               3 ./number.jl:7; convert
+                                3 ./gmp.jl:266; Type
+                                 3 ./gmp.jl:177; set_si(::Int64)
+                                  3 ./gmp.jl:57; Type
+                                   3 ./gmp.jl:121; init!
+                           16 ...redicates/BdTxz/src/GeometricalPredicates.jl:627; _exact_intriangle!(::BigInt, ::BigInt, ::BigInt, ::BigInt, ::BigInt...
+                            16 ./number.jl:142; sign(::BigInt)
+                             1  ./essentials.jl:334; oftype
+                              1 ./number.jl:7; convert
+                               1 ./gmp.jl:266; Type
+                                1 ./gmp.jl:177; set_si(::Int64)
+                                 1 ./gmp.jl:57; Type
+                                  1 ./gmp.jl:121; init!
+                             15 ./number.jl:298; one
+                              15 ./number.jl:297; one
+                               15 ./number.jl:7; convert
+                                15 ./gmp.jl:266; Type
+                                 15 ./gmp.jl:177; set_si(::Int64)
+                                  13 ./gmp.jl:56; Type
+                                  2  ./gmp.jl:57; Type
+                                   2 ./gmp.jl:121; init!
+                           3  ...redicates/BdTxz/src/GeometricalPredicates.jl:630; _exact_intriangle!(::BigInt, ::BigInt, ::BigInt, ::BigInt, ::BigInt...
+                            3 ./number.jl:142; sign(::BigInt)
+                             2 ./essentials.jl:334; oftype
+                              2 ./number.jl:7; convert
+                               2 ./gmp.jl:266; Type
+                                2 ./gmp.jl:177; set_si(::Int64)
+                                 2 ./gmp.jl:57; Type
+                                  2 ./gmp.jl:121; init!
+                             1 ./number.jl:298; one
+                              1 ./number.jl:297; one
+                               1 ./number.jl:7; convert
+                                1 ./gmp.jl:266; Type
+                                 1 ./gmp.jl:177; set_si(::Int64)
+                                  1 ./gmp.jl:57; Type
+                                   1 ./gmp.jl:121; init!
+                           3  ...redicates/BdTxz/src/GeometricalPredicates.jl:328; _extract_bigint
+                            3 ./gmp.jl:267; Type
+                             3 ./gmp.jl:177; set_ui(::UInt64)
+                              3 ./gmp.jl:57; Type
+                               3 ./gmp.jl:121; init!
+                       1   .../VoronoiDelaunay/3l7TP/src/VoronoiDelaunay.jl:274; findindex
+                        1 ./array.jl:731; getindex
+                      1   .../VoronoiDelaunay/3l7TP/src/VoronoiDelaunay.jl:313; _pushunfixed!(::DelaunayTessellation2D{Particle}, ::Particle)
+                       1 ./array.jl:731; getindex
+                      1   .../VoronoiDelaunay/3l7TP/src/VoronoiDelaunay.jl:320; _pushunfixed!(::DelaunayTessellation2D{Particle}, ::Particle)
+                       1 ./promotion.jl:425; ==
+                      1   .../VoronoiDelaunay/3l7TP/src/VoronoiDelaunay.jl:329; _pushunfixed!(::DelaunayTessellation2D{Particle}, ::Particle)
+                     14  ...s/VoronoiDelaunay/3l7TP/src/VoronoiDelaunay.jl:664; push!
+                      1 ...s/VoronoiDelaunay/3l7TP/src/VoronoiDelaunay.jl:609; _restoredelaunayhood!(::DelaunayTessellation2D{Particle}, ::Int64)
+                      1 ...s/VoronoiDelaunay/3l7TP/src/VoronoiDelaunay.jl:610; _restoredelaunayhood!(::DelaunayTessellation2D{Particle}, ::Int64)
+                       1 ./array.jl:731; getindex
+                      2 ...s/VoronoiDelaunay/3l7TP/src/VoronoiDelaunay.jl:615; _restoredelaunayhood!(::DelaunayTessellation2D{Particle}, ::Int64)
+                       1 ./float.jl:397; incircle
+                       1 ...lPredicates/BdTxz/src/GeometricalPredicates.jl:527; incircle
+                        1 ...Predicates/BdTxz/src/GeometricalPredicates.jl:417; geta
+                         1 ./sysimg.jl:18; getproperty
+                      1 ...s/VoronoiDelaunay/3l7TP/src/VoronoiDelaunay.jl:617; _restoredelaunayhood!(::DelaunayTessellation2D{Particle}, ::Int64)
+                       1 ./array.jl:856; push!
+                        1 ./array.jl:814; _growend!
+                      1 ...s/VoronoiDelaunay/3l7TP/src/VoronoiDelaunay.jl:621; _restoredelaunayhood!(::DelaunayTessellation2D{Particle}, ::Int64)
+                       1 ./array.jl:1068; pop!
+                        1 ./array.jl:823; _deleteend!
+                      1 ...s/VoronoiDelaunay/3l7TP/src/VoronoiDelaunay.jl:632; _restoredelaunayhood!(::DelaunayTessellation2D{Particle}, ::Int64)
+                       1 ...lPredicates/BdTxz/src/GeometricalPredicates.jl:534; incircle
+                        1 ./operators.jl:286; >
+                         1 ./float.jl:452; <
+                      2 ...s/VoronoiDelaunay/3l7TP/src/VoronoiDelaunay.jl:638; _restoredelaunayhood!(::DelaunayTessellation2D{Particle}, ::Int64)
+                       2 ./array.jl:1068; pop!
+                        2 ./array.jl:823; _deleteend!
+                      1 ...s/VoronoiDelaunay/3l7TP/src/VoronoiDelaunay.jl:642; _restoredelaunayhood!(::DelaunayTessellation2D{Particle}, ::Int64)
+                       1 ./array.jl:857; push!
+                        1 ./array.jl:769; setindex!
+                      1 ...s/VoronoiDelaunay/3l7TP/src/VoronoiDelaunay.jl:649; _restoredelaunayhood!(::DelaunayTessellation2D{Particle}, ::Int64)
+                       1 ...lPredicates/BdTxz/src/GeometricalPredicates.jl:534; incircle
+                        1 ./operators.jl:286; >
+                         1 ./float.jl:452; <
+                      2 ...s/VoronoiDelaunay/3l7TP/src/VoronoiDelaunay.jl:650; _restoredelaunayhood!(::DelaunayTessellation2D{Particle}, ::Int64)
+                       1 ...s/VoronoiDelaunay/3l7TP/src/VoronoiDelaunay.jl:524; _flipc!
+                        1 .../VoronoiDelaunay/3l7TP/src/VoronoiDelaunay.jl:582; _flipcb!(::DelaunayTessellation2D{Particle}, ::Int64, ::Int64, ::Voron...
+                         1 .../VoronoiDelaunay/3l7TP/src/VoronoiDelaunay.jl:541; _endflipc!
+                          1 ./array.jl:731; getindex
+                       1 ...s/VoronoiDelaunay/3l7TP/src/VoronoiDelaunay.jl:526; _flipc!
+                        1 .../VoronoiDelaunay/3l7TP/src/VoronoiDelaunay.jl:600; _flipcc!(::DelaunayTessellation2D{Particle}, ::Int64, ::Int64, ::Voron...
+                         1 .../VoronoiDelaunay/3l7TP/src/VoronoiDelaunay.jl:545; _endflipc!
+                      1 ...s/VoronoiDelaunay/3l7TP/src/VoronoiDelaunay.jl:655; _restoredelaunayhood!(::DelaunayTessellation2D{Particle}, ::Int64)
+                  1   /home/fred/Documents/Dropbox/devls/CRN1/setup2.jl:217; borderize(::Array{Particle,1})
+                   1 ./bitarray.jl:369; falses
+                    1 ./bitarray.jl:371; falses
+                     1 ./bitarray.jl:59; Type
+                      1 ./bitarray.jl:25; BitArray{2}(::UndefInitializer, ::Int64, ::Int64)
+                       1 ./boot.jl:394; Type
+                  12  /home/fred/Documents/Dropbox/devls/CRN1/setup2.jl:218; borderize(::Array{Particle,1})
+                   6 ...es/VoronoiDelaunay/3l7TP/src/VoronoiDelaunay.jl:216; voronoiedges
+                    6 ./channels.jl:104; Type
+                     2 ./channels.jl:104; #Channel#585(::Type, ::Int64, ::Nothing, ::Type, ::getfield(VoronoiDelau...
+                     4 ./channels.jl:106; #Channel#585(::Type, ::Int64, ::Nothing, ::Type, ::getfield(VoronoiDelau...
+                      4 ./channels.jl:192; bind
+                       3 ./task.jl:273; register_taskdone_hook(::Task, ::Function)
+                        3 ./abstractdict.jl:649; get!
+                         3 ./abstractdict.jl:585; setindex!(::IdDict{Any,Any}, ::Any, ::Any)
+                  75  /home/fred/Documents/Dropbox/devls/CRN1/setup2.jl:219; borderize(::Array{Particle,1})
+                   48 ./sysimg.jl:18; getproperty(::Any, ::Symbol)
+                  85  /home/fred/Documents/Dropbox/devls/CRN1/setup2.jl:220; borderize(::Array{Particle,1})
+                   40 ./sysimg.jl:18; getproperty(::Any, ::Symbol)
+                  66  /home/fred/Documents/Dropbox/devls/CRN1/setup2.jl:221; borderize(::Array{Particle,1})
+                   43 ./sysimg.jl:18; getproperty(::Any, ::Symbol)
+                  104 /home/fred/Documents/Dropbox/devls/CRN1/setup2.jl:222; borderize(::Array{Particle,1})
+                   69 ./sysimg.jl:18; getproperty(::Any, ::Symbol)
+                  17  /home/fred/Documents/Dropbox/devls/CRN1/setup2.jl:224; borderize(::Array{Particle,1})
+                   8 ./sysimg.jl:18; getproperty
+                  3   /home/fred/Documents/Dropbox/devls/CRN1/setup2.jl:225; borderize(::Array{Particle,1})
+                   3 ./abstractarray.jl:998; setindex!
+                  2   /home/fred/Documents/Dropbox/devls/CRN1/setup2.jl:226; borderize(::Array{Particle,1})
+                   1 ./abstractarray.jl:998; setindex!
+                  3   /home/fred/Documents/Dropbox/devls/CRN1/setup2.jl:227; borderize(::Array{Particle,1})
+                   1 ./abstractarray.jl:998; setindex!
+                   1 ./sysimg.jl:18; getproperty
+                  1   /home/fred/Documents/Dropbox/devls/CRN1/setup2.jl:228; borderize(::Array{Particle,1})
+                  1   /home/fred/Documents/Dropbox/devls/CRN1/setup2.jl:230; borderize(::Array{Particle,1})
+                  327 /home/fred/Documents/Dropbox/devls/CRN1/setup2.jl:233; borderize(::Array{Particle,1})
+                   1   ./channels.jl:385; iterate(::Channel{Any}, ::Nothing)
+                   325 ./channels.jl:386; iterate(::Channel{Any}, ::Nothing)
+                    254 ./channels.jl:306; take!
+                     5   ./channels.jl:319; take_unbuffered(::Channel{Any})
+                      2 ./array.jl:856; push!
+                       2 ./array.jl:814; _growend!
+                      2 ./array.jl:857; push!
+                       1 ./abstractarray.jl:249; lastindex
+                        1 ./abstractarray.jl:214; eachindex
+                         1 ./abstractarray.jl:93; axes1
+                          1 ./abstractarray.jl:75; axes
+                           1 ./tuple.jl:162; map
+                            1 ./range.jl:298; Type
+                             1 ./range.jl:289; Type
+                              1 ./promotion.jl:436; max
+                       1 ./array.jl:769; setindex!
+                      1 ./task.jl:93; current_task
+                     2   ./channels.jl:320; take_unbuffered(::Channel{Any})
+                     246 ./channels.jl:329; take_unbuffered(::Channel{Any})
+                      1   ./event.jl:244; wait()
+                      11  ./event.jl:253; wait()
+                       1  ./event.jl:229; poptask()
+                        1 ./array.jl:1129; popfirst!
+                         1 ./array.jl:821; _deletebeg!
+                       10 ./event.jl:240; poptask()
+                        10 ./refpointer.jl:82; Type
+                         10 ./refvalue.jl:10; Type
+                          10 ./refvalue.jl:8; Type
+                      116 ./event.jl:255; wait()
+                       2   ./event.jl:186; try_yieldto(::typeof(Base.ensure_rescheduled), ::Base.RefValue{Task})
+                       108 ./event.jl:187; try_yieldto(::typeof(Base.ensure_rescheduled), ::Base.RefValue{Task})
+                       1   ./event.jl:193; try_yieldto(::typeof(Base.ensure_rescheduled), ::Base.RefValue{Task})
+                        1 ./sysimg.jl:18; getproperty
+                       3   ./event.jl:196; try_yieldto(::typeof(Base.ensure_rescheduled), ::Base.RefValue{Task})
+                      116 ./event.jl:256; wait()
+                       1   ./libuv.jl:96; process_events
+                        1 ./libuv.jl:89; eventloop
+                       115 ./libuv.jl:100; process_events
+                  1   /home/fred/Documents/Dropbox/devls/CRN1/setup2.jl:240; borderize(::Array{Particle,1})
+                   1 ./sysimg.jl:18; getproperty
+                  4   /home/fred/Documents/Dropbox/devls/CRN1/setup2.jl:241; borderize(::Array{Particle,1})
+                   1 ./array.jl:856; push!
+                    1 ./array.jl:814; _growend!
+                   3 /home/fred/Documents/Dropbox/devls/CRN1/setup.jl:49; Type
+                    3 ./array.jl:129; vect
+                     3 ./boot.jl:413; Type
+                      3 ./boot.jl:394; Type
+                  1   /home/fred/Documents/Dropbox/devls/CRN1/setup2.jl:244; borderize(::Array{Particle,1})
+                   1 ./abstractarray.jl:905; getindex
+                    1 ./abstractarray.jl:927; _getindex
+                     1 ./abstractarray.jl:449; checkbounds
+                      1 ./abstractarray.jl:428; checkbounds
+                       1 ./abstractarray.jl:75; axes
+                        1 ./bitarray.jl:71; size
+                         1 ./sysimg.jl:18; getproperty
+                  3   /home/fred/Documents/Dropbox/devls/CRN1/setup2.jl:245; borderize(::Array{Particle,1})
+                  2   /home/fred/Documents/Dropbox/devls/CRN1/setup2.jl:253; borderize(::Array{Particle,1})
+                   1 ./sysimg.jl:18; getproperty(::Any, ::Symbol)
+                  2   /home/fred/Documents/Dropbox/devls/CRN1/setup2.jl:261; borderize(::Array{Particle,1})
+                   2 ./array.jl:1536; vcat(::Array{Particle,1}, ::Array{Particle,1})
+                    2 ./boot.jl:394; Type
+                 29  /home/fred/Documents/Dropbox/devls/CRN1/setup2.jl:160; oneloop(::Array{Particle,1}, ::Float64)
+                  1  ...es/VoronoiDelaunay/3l7TP/src/VoronoiDelaunay.jl:101; DelaunayTessellation2D{Particle}(::Int64)
+                   1 ./array.jl:368; getindex
+                    1 ./boot.jl:394; Type
+                  28 ...es/VoronoiDelaunay/3l7TP/src/VoronoiDelaunay.jl:104; DelaunayTessellation2D{Particle}(::Int64)
+                   28 ...es/VoronoiDelaunay/3l7TP/src/VoronoiDelaunay.jl:116; sizehint!(::DelaunayTessellation2D{Particle}, ::Int64)
+                    2  ./array.jl:856; push!
+                     2 ./array.jl:814; _growend!
+                    26 ...es/VoronoiDelaunay/3l7TP/src/VoronoiDelaunay.jl:71; copy
+                     4  ./sysimg.jl:18; getproperty
+                     22 ...es/VoronoiDelaunay/3l7TP/src/VoronoiDelaunay.jl:67; Type
+                      22 ...s/VoronoiDelaunay/3l7TP/src/VoronoiDelaunay.jl:54; Type
+                 240 /home/fred/Documents/Dropbox/devls/CRN1/setup2.jl:161; oneloop(::Array{Particle,1}, ::Float64)
+                  10  ...es/VoronoiDelaunay/3l7TP/src/VoronoiDelaunay.jl:678; push!
+                   10 ...alPredicates/BdTxz/src/GeometricalPredicates.jl:1176; mssort!
+                    10 ...lPredicates/BdTxz/src/GeometricalPredicates.jl:1176; #mssort!#1
+                     10 ...lPredicates/BdTxz/src/GeometricalPredicates.jl:1169; _mssort!(::Array{Particle,1}, ::Int64, ::Int64, ::Float64)
+                      10 ...Predicates/BdTxz/src/GeometricalPredicates.jl:1157; hilbertsort!
+                       2 ...Predicates/BdTxz/src/GeometricalPredicates.jl:1113; hilbertsort!(::GeometricalPredicates.Backward, ::GeometricalPredicates...
+                        1 ...Predicates/BdTxz/src/GeometricalPredicates.jl:1089; select!(::GeometricalPredicates.Backward, ::GeometricalPredicates.Coo...
+                         1 ...Predicates/BdTxz/src/GeometricalPredicates.jl:1073; compare
+                          1 /home/fred/Documents/Dropbox/devls/CRN1/setup.jl:52; gety
+                           1 ./sysimg.jl:18; getproperty
+                        1 ...Predicates/BdTxz/src/GeometricalPredicates.jl:1091; select!(::GeometricalPredicates.Backward, ::GeometricalPredicates.Coo...
+                       1 ...Predicates/BdTxz/src/GeometricalPredicates.jl:1117; hilbertsort!(::GeometricalPredicates.Backward, ::GeometricalPredicates...
+                        1 ...Predicates/BdTxz/src/GeometricalPredicates.jl:1118; hilbertsort!(::GeometricalPredicates.Backward, ::GeometricalPredicate...
+                         1 ...Predicates/BdTxz/src/GeometricalPredicates.jl:1113; hilbertsort!(::GeometricalPredicates.Backward, ::GeometricalPredicate...
+                          1 ...redicates/BdTxz/src/GeometricalPredicates.jl:1090; select!(::GeometricalPredicates.Backward, ::GeometricalPredicates.Co...
+                           1 ./array.jl:731; getindex
+                       1 ...Predicates/BdTxz/src/GeometricalPredicates.jl:1118; hilbertsort!(::GeometricalPredicates.Backward, ::GeometricalPredicates...
+                        1 ...Predicates/BdTxz/src/GeometricalPredicates.jl:1118; hilbertsort!(::GeometricalPredicates.Backward, ::GeometricalPredicate...
+                         1 ...Predicates/BdTxz/src/GeometricalPredicates.jl:1113; hilbertsort!(::GeometricalPredicates.Backward, ::GeometricalPredicate...
+                          1 ...redicates/BdTxz/src/GeometricalPredicates.jl:1090; select!(::GeometricalPredicates.Backward, ::GeometricalPredicates.Co...
+                           1 ./array.jl:731; getindex
+                       4 ...Predicates/BdTxz/src/GeometricalPredicates.jl:1119; hilbertsort!(::GeometricalPredicates.Backward, ::GeometricalPredicates...
+                        2 ...Predicates/BdTxz/src/GeometricalPredicates.jl:1115; hilbertsort!(::GeometricalPredicates.Backward, ::GeometricalPredicate...
+                         1 ...Predicates/BdTxz/src/GeometricalPredicates.jl:1090; select!(::GeometricalPredicates.Forward, ::GeometricalPredicates.Coor...
+                          1 ./array.jl:731; getindex
+                         1 ...Predicates/BdTxz/src/GeometricalPredicates.jl:1091; select!(::GeometricalPredicates.Forward, ::GeometricalPredicates.Coor...
+                          1 ./array.jl:731; <=
+                        1 ...Predicates/BdTxz/src/GeometricalPredicates.jl:1118; hilbertsort!(::GeometricalPredicates.Backward, ::GeometricalPredicate...
+                         1 ...Predicates/BdTxz/src/GeometricalPredicates.jl:1113; hilbertsort!(::GeometricalPredicates.Backward, ::GeometricalPredicate...
+                          1 ...redicates/BdTxz/src/GeometricalPredicates.jl:1090; select!(::GeometricalPredicates.Backward, ::GeometricalPredicates.Co...
+                           1 ...redicates/BdTxz/src/GeometricalPredicates.jl:1073; compare
+                            1 ./operators.jl:286; >
+                             1 ./float.jl:452; <
+                        1 ...Predicates/BdTxz/src/GeometricalPredicates.jl:1120; hilbertsort!(::GeometricalPredicates.Backward, ::GeometricalPredicate...
+                         1 ...Predicates/BdTxz/src/GeometricalPredicates.jl:1118; hilbertsort!(::GeometricalPredicates.Forward, ::GeometricalPredicates...
+                          1 ...redicates/BdTxz/src/GeometricalPredicates.jl:1113; hilbertsort!(::GeometricalPredicates.Forward, ::GeometricalPredicate...
+                           1 ...redicates/BdTxz/src/GeometricalPredicates.jl:1080; select!(::GeometricalPredicates.Forward, ::GeometricalPredicates.Co...
+                       2 ...Predicates/BdTxz/src/GeometricalPredicates.jl:1120; hilbertsort!(::GeometricalPredicates.Backward, ::GeometricalPredicates...
+                        1 ...Predicates/BdTxz/src/GeometricalPredicates.jl:1115; hilbertsort!(::GeometricalPredicates.Forward, ::GeometricalPredicates...
+                         1 ...Predicates/BdTxz/src/GeometricalPredicates.jl:1089; select!(::GeometricalPredicates.Backward, ::GeometricalPredicates.Coo...
+                          1 ./array.jl:731; getindex
+                        1 ...Predicates/BdTxz/src/GeometricalPredicates.jl:1118; hilbertsort!(::GeometricalPredicates.Forward, ::GeometricalPredicates...
+                         1 ...Predicates/BdTxz/src/GeometricalPredicates.jl:1117; hilbertsort!(::GeometricalPredicates.Forward, ::GeometricalPredicates...
+                          1 ...redicates/BdTxz/src/GeometricalPredicates.jl:1115; hilbertsort!(::GeometricalPredicates.Forward, ::GeometricalPredicate...
+                           1 ...redicates/BdTxz/src/GeometricalPredicates.jl:1078; select!(::GeometricalPredicates.Backward, ::GeometricalPredicates.C...
+                            1 ./int.jl:428; <=
+                  230 ...es/VoronoiDelaunay/3l7TP/src/VoronoiDelaunay.jl:679; push!
+                   230 ...es/VoronoiDelaunay/3l7TP/src/VoronoiDelaunay.jl:671; _pushunsorted!(::DelaunayTessellation2D{Particle}, ::Array{Particle,1})
+                    1   ...s/VoronoiDelaunay/3l7TP/src/VoronoiDelaunay.jl:662; push!
+                     1 ...es/VoronoiDelaunay/3l7TP/src/VoronoiDelaunay.jl:124; sizefit_at_least(::DelaunayTessellation2D{Particle}, ::Int64)
+                    172 ...s/VoronoiDelaunay/3l7TP/src/VoronoiDelaunay.jl:663; push!
+                     168 ...s/VoronoiDelaunay/3l7TP/src/VoronoiDelaunay.jl:295; _pushunfixed!(::DelaunayTessellation2D{Particle}, ::Particle)
+                      1   .../VoronoiDelaunay/3l7TP/src/VoronoiDelaunay.jl:270; findindex
+                       1 ./sysimg.jl:18; getproperty
+                      167 .../VoronoiDelaunay/3l7TP/src/VoronoiDelaunay.jl:272; findindex
+                       3  ...Predicates/BdTxz/src/GeometricalPredicates.jl:733; intriangle(::VoronoiDelaunay.DelaunayTriangle{Particle}, ::Particle)
+                        1 ./float.jl:397; -
+                        1 ...Predicates/BdTxz/src/GeometricalPredicates.jl:417; geta
+                         1 ./sysimg.jl:18; getproperty
+                        1 /home/fred/Documents/Dropbox/devls/CRN1/setup.jl:51; getx
+                         1 ./sysimg.jl:18; getproperty
+                       4  ...Predicates/BdTxz/src/GeometricalPredicates.jl:735; intriangle(::VoronoiDelaunay.DelaunayTriangle{Particle}, ::Particle)
+                        1 ./float.jl:399; *
+                        1 ./float.jl:395; +
+                        2 ./number.jl:142; sign
+                       1  ...Predicates/BdTxz/src/GeometricalPredicates.jl:736; intriangle(::VoronoiDelaunay.DelaunayTriangle{Particle}, ::Particle)
+                       55 ...Predicates/BdTxz/src/GeometricalPredicates.jl:739; intriangle(::VoronoiDelaunay.DelaunayTriangle{Particle}, ::Particle)
+                        54 ...Predicates/BdTxz/src/GeometricalPredicates.jl:710; _sz_intriangle(::VoronoiDelaunay.DelaunayTriangle{Particle}, ::Partic...
+                         54 ...Predicates/BdTxz/src/GeometricalPredicates.jl:686; _exact_intriangle(::VoronoiDelaunay.DelaunayTriangle{Particle}, ::Par...
+                          3 ./gmp.jl:267; _extract_bigint
+                           3 ./gmp.jl:177; set_ui(::UInt64)
+                            3 ./gmp.jl:57; Type
+                             3 ./gmp.jl:121; init!
+                          1 ./gmp.jl:133; mul(::BigInt, ::BigInt)
+                           1 ./gmp.jl:132; mul!
+                          3 ...Predicates/BdTxz/src/GeometricalPredicates.jl:606; _exact_intriangle!(::BigInt, ::BigInt, ::BigInt, ::BigInt, ::BigInt, ...
+                           3 ./gmp.jl:412; -
+                            3 ./gmp.jl:133; sub(::BigInt, ::BigInt)
+                             2 ./gmp.jl:57; Type
+                              2 ./gmp.jl:121; init!
+                             1 ./gmp.jl:132; sub!
+                          5 ...Predicates/BdTxz/src/GeometricalPredicates.jl:608; _exact_intriangle!(::BigInt, ::BigInt, ::BigInt, ::BigInt, ::BigInt, ...
+                           5 ./gmp.jl:412; -
+                            5 ./gmp.jl:133; sub(::BigInt, ::BigInt)
+                             2 ./gmp.jl:57; Type
+                              2 ./gmp.jl:121; init!
+                             3 ./gmp.jl:132; sub!
+                          7 ...Predicates/BdTxz/src/GeometricalPredicates.jl:610; _exact_intriangle!(::BigInt, ::BigInt, ::BigInt, ::BigInt, ::BigInt, ...
+                           4 ./gmp.jl:412; *
+                            3 ./gmp.jl:133; mul(::BigInt, ::BigInt)
+                             2 ./gmp.jl:56; Type
+                             1 ./gmp.jl:132; mul!
+                           3 ./gmp.jl:412; +
+                            3 ./gmp.jl:133; add(::BigInt, ::BigInt)
+                             2 ./gmp.jl:57; Type
+                              2 ./gmp.jl:121; init!
+                             1 ./gmp.jl:132; add!
+                          4 ...Predicates/BdTxz/src/GeometricalPredicates.jl:611; _exact_intriangle!(::BigInt, ::BigInt, ::BigInt, ::BigInt, ::BigInt, ...
+                           2 ./gmp.jl:412; *
+                            2 ./gmp.jl:133; mul(::BigInt, ::BigInt)
+                             1 ./gmp.jl:56; Type
+                             1 ./gmp.jl:57; Type
+                              1 ./gmp.jl:121; init!
+                           2 ./gmp.jl:412; -
+                            2 ./gmp.jl:133; sub(::BigInt, ::BigInt)
+                             2 ./gmp.jl:132; sub!
+                          9 ...Predicates/BdTxz/src/GeometricalPredicates.jl:612; _exact_intriangle!(::BigInt, ::BigInt, ::BigInt, ::BigInt, ::BigInt, ...
+                           8 ./gmp.jl:412; *
+                            8 ./gmp.jl:133; mul(::BigInt, ::BigInt)
+                             4 ./gmp.jl:57; Type
+                              4 ./gmp.jl:121; init!
+                             3 ./gmp.jl:132; mul!
+                           1 ./gmp.jl:412; -
+                            1 ./gmp.jl:133; sub(::BigInt, ::BigInt)
+                             1 ./gmp.jl:132; sub!
+                          4 ...Predicates/BdTxz/src/GeometricalPredicates.jl:614; _exact_intriangle!(::BigInt, ::BigInt, ::BigInt, ::BigInt, ::BigInt, ...
+                           4 ./number.jl:142; sign(::BigInt)
+                            3 ./essentials.jl:334; oftype
+                             3 ./number.jl:7; convert
+                              3 ./gmp.jl:266; Type
+                               3 ./gmp.jl:177; set_si(::Int64)
+                                1 ./gmp.jl:56; Type
+                                1 ./gmp.jl:57; Type
+                                 1 ./gmp.jl:121; init!
+                                1 ./gmp.jl:58; Type
+                                 1 ./gcutils.jl:28; finalizer
+                            1 ./number.jl:298; one
+                             1 ./number.jl:297; one
+                              1 ./number.jl:7; convert
+                               1 ./gmp.jl:266; Type
+                                1 ./gmp.jl:177; set_si(::Int64)
+                                 1 ./gmp.jl:56; Type
+                          3 ...Predicates/BdTxz/src/GeometricalPredicates.jl:615; _exact_intriangle!(::BigInt, ::BigInt, ::BigInt, ::BigInt, ::BigInt, ...
+                           3 ./number.jl:142; sign(::BigInt)
+                            2 ./number.jl:298; one
+                             2 ./number.jl:297; one
+                              2 ./number.jl:7; convert
+                               2 ./gmp.jl:266; Type
+                                2 ./gmp.jl:177; set_si(::Int64)
+                                 2 ./gmp.jl:57; Type
+                                  2 ./gmp.jl:121; init!
+                          1 ...Predicates/BdTxz/src/GeometricalPredicates.jl:621; _exact_intriangle!(::BigInt, ::BigInt, ::BigInt, ::BigInt, ::BigInt, ...
+                           1 ./gmp.jl:412; -
+                            1 ./gmp.jl:133; sub(::BigInt, ::BigInt)
+                             1 ./gmp.jl:132; sub!
+                          4 ...Predicates/BdTxz/src/GeometricalPredicates.jl:622; _exact_intriangle!(::BigInt, ::BigInt, ::BigInt, ::BigInt, ::BigInt, ...
+                           4 ./number.jl:142; sign(::BigInt)
+                            4 ./number.jl:298; one
+                             4 ./number.jl:297; one
+                              4 ./number.jl:7; convert
+                               4 ./gmp.jl:266; Type
+                                4 ./gmp.jl:177; set_si(::Int64)
+                                 4 ./gmp.jl:57; Type
+                                  4 ./gmp.jl:121; init!
+                          1 ...Predicates/BdTxz/src/GeometricalPredicates.jl:627; _exact_intriangle!(::BigInt, ::BigInt, ::BigInt, ::BigInt, ::BigInt, ...
+                          3 ...Predicates/BdTxz/src/GeometricalPredicates.jl:630; _exact_intriangle!(::BigInt, ::BigInt, ::BigInt, ::BigInt, ::BigInt, ...
+                           3 ./number.jl:142; sign(::BigInt)
+                            2 ./essentials.jl:334; oftype
+                             2 ./number.jl:7; convert
+                              2 ./gmp.jl:266; Type
+                               2 ./gmp.jl:177; set_si(::Int64)
+                                2 ./gmp.jl:57; Type
+                                 2 ./gmp.jl:121; init!
+                          5 ...Predicates/BdTxz/src/GeometricalPredicates.jl:328; _extract_bigint
+                           5 ./gmp.jl:267; Type
+                            5 ./gmp.jl:177; set_ui(::UInt64)
+                             1 ./gmp.jl:56; Type
+                             3 ./gmp.jl:57; Type
+                              3 ./gmp.jl:121; init!
+                             1 ./gmp.jl:58; Type
+                              1 ./gcutils.jl:28; finalizer
+                          1 /home/fred/devl/julia-1.0.2/lib/julia/sys.so:?; write(::REPL.Terminals.TerminalBuffer, ::String)
+                       1  ...Predicates/BdTxz/src/GeometricalPredicates.jl:745; intriangle(::VoronoiDelaunay.DelaunayTriangle{Particle}, ::Particle)
+                        1 ./float.jl:452; <
+                       49 ...Predicates/BdTxz/src/GeometricalPredicates.jl:746; intriangle(::VoronoiDelaunay.DelaunayTriangle{Particle}, ::Particle)
+                        49 ...Predicates/BdTxz/src/GeometricalPredicates.jl:718; _sz_intriangle(::VoronoiDelaunay.DelaunayTriangle{Particle}, ::Partic...
+                         49 ...Predicates/BdTxz/src/GeometricalPredicates.jl:686; _exact_intriangle(::VoronoiDelaunay.DelaunayTriangle{Particle}, ::Par...
+                          2  ./gmp.jl:267; _extract_bigint
+                           2 ./gmp.jl:177; set_ui(::UInt64)
+                            2 ./gmp.jl:57; Type
+                             2 ./gmp.jl:121; init!
+                          4  ...redicates/BdTxz/src/GeometricalPredicates.jl:606; _exact_intriangle!(::BigInt, ::BigInt, ::BigInt, ::BigInt, ::BigInt,...
+                           4 ./gmp.jl:412; -
+                            4 ./gmp.jl:133; sub(::BigInt, ::BigInt)
+                             1 ./gmp.jl:57; Type
+                              1 ./gmp.jl:121; init!
+                             1 ./gmp.jl:58; Type
+                              1 ./gcutils.jl:28; finalizer
+                             2 ./gmp.jl:132; sub!
+                          1  ...redicates/BdTxz/src/GeometricalPredicates.jl:607; _exact_intriangle!(::BigInt, ::BigInt, ::BigInt, ::BigInt, ::BigInt,...
+                           1 ./gmp.jl:412; -
+                            1 ./gmp.jl:133; sub(::BigInt, ::BigInt)
+                             1 ./gmp.jl:132; sub!
+                          1  ...redicates/BdTxz/src/GeometricalPredicates.jl:608; _exact_intriangle!(::BigInt, ::BigInt, ::BigInt, ::BigInt, ::BigInt,...
+                           1 ./gmp.jl:412; -
+                            1 ./gmp.jl:133; sub(::BigInt, ::BigInt)
+                             1 ./gmp.jl:56; Type
+                          4  ...redicates/BdTxz/src/GeometricalPredicates.jl:610; _exact_intriangle!(::BigInt, ::BigInt, ::BigInt, ::BigInt, ::BigInt,...
+                           2 ./gmp.jl:412; *
+                            1 ./gmp.jl:133; mul(::BigInt, ::BigInt)
+                             1 ./gmp.jl:56; Type
+                           1 ./gmp.jl:412; +
+                            1 ./gmp.jl:133; add(::BigInt, ::BigInt)
+                             1 ./gmp.jl:56; Type
+                           1 ./gmp.jl:469; -
+                            1 ./gmp.jl:167; neg(::BigInt)
+                             1 ./gmp.jl:56; Type
+                          3  ...redicates/BdTxz/src/GeometricalPredicates.jl:611; _exact_intriangle!(::BigInt, ::BigInt, ::BigInt, ::BigInt, ::BigInt,...
+                           1 ./gmp.jl:412; *
+                            1 ./gmp.jl:133; mul(::BigInt, ::BigInt)
+                             1 ./gmp.jl:57; Type
+                              1 ./gmp.jl:121; init!
+                           2 ./gmp.jl:412; -
+                            2 ./gmp.jl:133; sub(::BigInt, ::BigInt)
+                             1 ./gmp.jl:57; Type
+                              1 ./gmp.jl:121; init!
+                             1 ./gmp.jl:132; sub!
+                          6  ...redicates/BdTxz/src/GeometricalPredicates.jl:612; _exact_intriangle!(::BigInt, ::BigInt, ::BigInt, ::BigInt, ::BigInt,...
+                           4 ./gmp.jl:412; *
+                            4 ./gmp.jl:133; mul(::BigInt, ::BigInt)
+                             2 ./gmp.jl:57; Type
+                              2 ./gmp.jl:121; init!
+                             1 ./gmp.jl:132; mul!
+                           2 ./gmp.jl:412; -
+                            2 ./gmp.jl:133; sub(::BigInt, ::BigInt)
+                             2 ./gmp.jl:132; sub!
+                          8  ...redicates/BdTxz/src/GeometricalPredicates.jl:614; _exact_intriangle!(::BigInt, ::BigInt, ::BigInt, ::BigInt, ::BigInt,...
+                           1 ./gmp.jl:177; set_si(::Int64)
+                           7 ./number.jl:142; sign(::BigInt)
+                            1 ./essentials.jl:334; oftype
+                             1 ./number.jl:7; convert
+                              1 ./gmp.jl:266; Type
+                               1 ./gmp.jl:177; set_si(::Int64)
+                                1 ./gmp.jl:57; Type
+                                 1 ./gmp.jl:121; init!
+                            6 ./number.jl:298; one
+                             6 ./number.jl:297; one
+                              6 ./number.jl:7; convert
+                               6 ./gmp.jl:266; Type
+                                6 ./gmp.jl:177; set_si(::Int64)
+                                 2 ./gmp.jl:56; Type
+                                 4 ./gmp.jl:57; Type
+                                  4 ./gmp.jl:121; init!
+                          2  ...redicates/BdTxz/src/GeometricalPredicates.jl:615; _exact_intriangle!(::BigInt, ::BigInt, ::BigInt, ::BigInt, ::BigInt,...
+                           2 ./number.jl:142; sign(::BigInt)
+                            1 ./essentials.jl:334; oftype
+                             1 ./number.jl:7; convert
+                              1 ./gmp.jl:266; Type
+                               1 ./gmp.jl:177; set_si(::Int64)
+                                1 ./gmp.jl:57; Type
+                                 1 ./gmp.jl:121; init!
+                            1 ./number.jl:298; one
+                             1 ./number.jl:297; one
+                              1 ./number.jl:7; convert
+                               1 ./gmp.jl:266; Type
+                                1 ./gmp.jl:177; set_si(::Int64)
+                                 1 ./gmp.jl:57; Type
+                                  1 ./gmp.jl:121; init!
+                          2  ...redicates/BdTxz/src/GeometricalPredicates.jl:618; _exact_intriangle!(::BigInt, ::BigInt, ::BigInt, ::BigInt, ::BigInt,...
+                           2 ./number.jl:142; sign(::BigInt)
+                            2 ./number.jl:298; one
+                             2 ./number.jl:297; one
+                              2 ./number.jl:7; convert
+                               2 ./gmp.jl:266; Type
+                                2 ./gmp.jl:177; set_si(::Int64)
+                                 2 ./gmp.jl:57; Type
+                                  2 ./gmp.jl:121; init!
+                          2  ...redicates/BdTxz/src/GeometricalPredicates.jl:627; _exact_intriangle!(::BigInt, ::BigInt, ::BigInt, ::BigInt, ::BigInt,...
+                           2 ./number.jl:142; sign(::BigInt)
+                            1 ./essentials.jl:334; oftype
+                             1 ./number.jl:7; convert
+                              1 ./gmp.jl:266; Type
+                               1 ./gmp.jl:177; set_si(::Int64)
+                                1 ./gmp.jl:58; Type
+                                 1 ./gcutils.jl:28; finalizer
+                            1 ./number.jl:298; one
+                             1 ./number.jl:297; one
+                              1 ./number.jl:7; convert
+                               1 ./gmp.jl:266; Type
+                                1 ./gmp.jl:177; set_si(::Int64)
+                                 1 ./gmp.jl:56; Type
+                          2  ...redicates/BdTxz/src/GeometricalPredicates.jl:630; _exact_intriangle!(::BigInt, ::BigInt, ::BigInt, ::BigInt, ::BigInt,...
+                           2 ./number.jl:142; sign(::BigInt)
+                            2 ./number.jl:298; one
+                             2 ./number.jl:297; one
+                              2 ./number.jl:7; convert
+                               2 ./gmp.jl:266; Type
+                                2 ./gmp.jl:177; set_si(::Int64)
+                                 2 ./gmp.jl:57; Type
+                                  2 ./gmp.jl:121; init!
+                          12 ...redicates/BdTxz/src/GeometricalPredicates.jl:328; _extract_bigint
+                           12 ./gmp.jl:267; Type
+                            12 ./gmp.jl:177; set_ui(::UInt64)
+                             12 ./gmp.jl:56; Type
+                       54 ...Predicates/BdTxz/src/GeometricalPredicates.jl:755; intriangle(::VoronoiDelaunay.DelaunayTriangle{Particle}, ::Particle)
+                        53 ...Predicates/BdTxz/src/GeometricalPredicates.jl:728; _sz_intriangle(::VoronoiDelaunay.DelaunayTriangle{Particle}, ::Partic...
+                         53 ...Predicates/BdTxz/src/GeometricalPredicates.jl:686; _exact_intriangle(::VoronoiDelaunay.DelaunayTriangle{Particle}, ::Par...
+                          2  ./gmp.jl:267; _extract_bigint
+                           2 ./gmp.jl:177; set_ui(::UInt64)
+                            1 ./gmp.jl:56; Type
+                            1 ./gmp.jl:57; Type
+                             1 ./gmp.jl:121; init!
+                          1  ...redicates/BdTxz/src/GeometricalPredicates.jl:606; _exact_intriangle!(::BigInt, ::BigInt, ::BigInt, ::BigInt, ::BigInt,...
+                           1 ./gmp.jl:412; -
+                            1 ./gmp.jl:133; sub(::BigInt, ::BigInt)
+                             1 ./gmp.jl:56; Type
+                          1  ...redicates/BdTxz/src/GeometricalPredicates.jl:607; _exact_intriangle!(::BigInt, ::BigInt, ::BigInt, ::BigInt, ::BigInt,...
+                           1 ./gmp.jl:412; -
+                            1 ./gmp.jl:133; sub(::BigInt, ::BigInt)
+                             1 ./gmp.jl:132; sub!
+                          2  ...redicates/BdTxz/src/GeometricalPredicates.jl:608; _exact_intriangle!(::BigInt, ::BigInt, ::BigInt, ::BigInt, ::BigInt,...
+                           2 ./gmp.jl:412; -
+                            2 ./gmp.jl:133; sub(::BigInt, ::BigInt)
+                             2 ./gmp.jl:57; Type
+                              2 ./gmp.jl:121; init!
+                          14 ...redicates/BdTxz/src/GeometricalPredicates.jl:610; _exact_intriangle!(::BigInt, ::BigInt, ::BigInt, ::BigInt, ::BigInt,...
+                           2 ./gmp.jl:412; *
+                            2 ./gmp.jl:133; mul(::BigInt, ::BigInt)
+                             1 ./gmp.jl:57; Type
+                              1 ./gmp.jl:121; init!
+                             1 ./gmp.jl:132; mul!
+                           3 ./gmp.jl:412; +
+                            3 ./gmp.jl:133; add(::BigInt, ::BigInt)
+                             2 ./gmp.jl:57; Type
+                              2 ./gmp.jl:121; init!
+                             1 ./gmp.jl:132; add!
+                           9 ./gmp.jl:469; -
+                            9 ./gmp.jl:167; neg(::BigInt)
+                             9 ./gmp.jl:56; Type
+                          4  ...redicates/BdTxz/src/GeometricalPredicates.jl:611; _exact_intriangle!(::BigInt, ::BigInt, ::BigInt, ::BigInt, ::BigInt,...
+                           4 ./gmp.jl:412; -
+                            4 ./gmp.jl:133; sub(::BigInt, ::BigInt)
+                             1 ./gmp.jl:58; Type
+                              1 ./gcutils.jl:28; finalizer
+                             3 ./gmp.jl:132; sub!
+                          2  ...redicates/BdTxz/src/GeometricalPredicates.jl:612; _exact_intriangle!(::BigInt, ::BigInt, ::BigInt, ::BigInt, ::BigInt,...
+                           2 ./gmp.jl:412; -
+                            2 ./gmp.jl:133; sub(::BigInt, ::BigInt)
+                             1 ./gmp.jl:56; Type
+                             1 ./gmp.jl:57; Type
+                              1 ./gmp.jl:121; init!
+                          3  ...redicates/BdTxz/src/GeometricalPredicates.jl:614; _exact_intriangle!(::BigInt, ::BigInt, ::BigInt, ::BigInt, ::BigInt,...
+                           3 ./number.jl:142; sign(::BigInt)
+                            2 ./essentials.jl:334; oftype
+                             2 ./number.jl:7; convert
+                              2 ./gmp.jl:266; Type
+                               2 ./gmp.jl:177; set_si(::Int64)
+                                1 ./gmp.jl:57; Type
+                                 1 ./gmp.jl:121; init!
+                                1 ./gmp.jl:58; Type
+                                 1 ./gcutils.jl:28; finalizer
+                            1 ./number.jl:298; one
+                             1 ./number.jl:297; one
+                              1 ./number.jl:7; convert
+                               1 ./gmp.jl:266; Type
+                                1 ./gmp.jl:177; set_si(::Int64)
+                                 1 ./gmp.jl:57; Type
+                                  1 ./gmp.jl:121; init!
+                          1  ...redicates/BdTxz/src/GeometricalPredicates.jl:615; _exact_intriangle!(::BigInt, ::BigInt, ::BigInt, ::BigInt, ::BigInt,...
+                           1 ./number.jl:142; sign(::BigInt)
+                            1 ./number.jl:298; one
+                             1 ./number.jl:297; one
+                              1 ./number.jl:7; convert
+                               1 ./gmp.jl:266; Type
+                                1 ./gmp.jl:177; set_si(::Int64)
+                                 1 ./gmp.jl:57; Type
+                                  1 ./gmp.jl:121; init!
+                          12 ...redicates/BdTxz/src/GeometricalPredicates.jl:618; _exact_intriangle!(::BigInt, ::BigInt, ::BigInt, ::BigInt, ::BigInt,...
+                           12 ./number.jl:142; sign(::BigInt)
+                            12 ./number.jl:298; one
+                             12 ./number.jl:297; one
+                              12 ./number.jl:7; convert
+                               12 ./gmp.jl:266; Type
+                                12 ./gmp.jl:177; set_si(::Int64)
+                                 10 ./gmp.jl:56; Type
+                                 1  ./gmp.jl:57; Type
+                                  1 ./gmp.jl:121; init!
+                                 1  ./gmp.jl:58; Type
+                                  1 ./gcutils.jl:28; finalizer
+                          1  ...redicates/BdTxz/src/GeometricalPredicates.jl:621; _exact_intriangle!(::BigInt, ::BigInt, ::BigInt, ::BigInt, ::BigInt,...
+                           1 ./gmp.jl:412; +
+                            1 ./gmp.jl:133; add(::BigInt, ::BigInt)
+                             1 ./gmp.jl:57; Type
+                              1 ./gmp.jl:121; init!
+                          3  ...redicates/BdTxz/src/GeometricalPredicates.jl:622; _exact_intriangle!(::BigInt, ::BigInt, ::BigInt, ::BigInt, ::BigInt,...
+                           2 ./number.jl:142; sign(::BigInt)
+                            2 ./number.jl:298; one
+                             2 ./number.jl:297; one
+                              2 ./number.jl:7; convert
+                               2 ./gmp.jl:266; Type
+                                2 ./gmp.jl:177; set_si(::Int64)
+                                 2 ./gmp.jl:57; Type
+                                  2 ./gmp.jl:121; init!
+                          2  ...redicates/BdTxz/src/GeometricalPredicates.jl:627; _exact_intriangle!(::BigInt, ::BigInt, ::BigInt, ::BigInt, ::BigInt,...
+                           2 ./number.jl:142; sign(::BigInt)
+                            2 ./number.jl:298; one
+                             2 ./number.jl:297; one
+                              2 ./number.jl:7; convert
+                               2 ./gmp.jl:266; Type
+                                2 ./gmp.jl:177; set_si(::Int64)
+                                 2 ./gmp.jl:57; Type
+                                  2 ./gmp.jl:121; init!
+                          3  ...redicates/BdTxz/src/GeometricalPredicates.jl:630; _exact_intriangle!(::BigInt, ::BigInt, ::BigInt, ::BigInt, ::BigInt,...
+                           3 ./number.jl:142; sign(::BigInt)
+                            2 ./essentials.jl:334; oftype
+                             2 ./number.jl:7; convert
+                              2 ./gmp.jl:266; Type
+                               2 ./gmp.jl:177; set_si(::Int64)
+                                2 ./gmp.jl:57; Type
+                                 2 ./gmp.jl:121; init!
+                            1 ./number.jl:298; one
+                             1 ./number.jl:297; one
+                              1 ./number.jl:7; convert
+                               1 ./gmp.jl:266; Type
+                                1 ./gmp.jl:177; set_si(::Int64)
+                                 1 ./gmp.jl:57; Type
+                                  1 ./gmp.jl:121; init!
+                          2  ...redicates/BdTxz/src/GeometricalPredicates.jl:328; _extract_bigint
+                           2 ./gmp.jl:267; Type
+                            2 ./gmp.jl:177; set_ui(::UInt64)
+                             2 ./gmp.jl:57; Type
+                              2 ./gmp.jl:121; init!
+                     1   ...s/VoronoiDelaunay/3l7TP/src/VoronoiDelaunay.jl:301; _pushunfixed!(::DelaunayTessellation2D{Particle}, ::Particle)
+                      1 ...lPredicates/BdTxz/src/GeometricalPredicates.jl:423; seta
+                       1 ./sysimg.jl:19; setproperty!
+                     1   ...s/VoronoiDelaunay/3l7TP/src/VoronoiDelaunay.jl:308; _pushunfixed!(::DelaunayTessellation2D{Particle}, ::Particle)
+                      1 ...lPredicates/BdTxz/src/GeometricalPredicates.jl:427; setabc
+                       1 ./sysimg.jl:19; setproperty!
+                     1   ...s/VoronoiDelaunay/3l7TP/src/VoronoiDelaunay.jl:314; _pushunfixed!(::DelaunayTessellation2D{Particle}, ::Particle)
+                      1 ...lPredicates/BdTxz/src/GeometricalPredicates.jl:427; setabc
+                       1 ./sysimg.jl:19; setproperty!
+                     1   ...s/VoronoiDelaunay/3l7TP/src/VoronoiDelaunay.jl:332; _pushunfixed!(::DelaunayTessellation2D{Particle}, ::Particle)
+                      1 ./sysimg.jl:19; setproperty!
+                    57  ...s/VoronoiDelaunay/3l7TP/src/VoronoiDelaunay.jl:664; push!
+                     1  ...s/VoronoiDelaunay/3l7TP/src/VoronoiDelaunay.jl:346; _restoredelaunayhood!(::DelaunayTessellation2D{Particle}, ::Int64)
+                     4  ...s/VoronoiDelaunay/3l7TP/src/VoronoiDelaunay.jl:522; _restoredelaunayhood!(::DelaunayTessellation2D{Particle}, ::Int64)
+                      1 ...s/VoronoiDelaunay/3l7TP/src/VoronoiDelaunay.jl:554; _flipca!(::DelaunayTessellation2D{Particle}, ::Int64, ::Int64, ::Vorono...
+                       1 ...lPredicates/BdTxz/src/GeometricalPredicates.jl:417; geta
+                        1 ./sysimg.jl:18; getproperty
+                      1 ...s/VoronoiDelaunay/3l7TP/src/VoronoiDelaunay.jl:555; _flipca!(::DelaunayTessellation2D{Particle}, ::Int64, ::Int64, ::Vorono...
+                       1 ...lPredicates/BdTxz/src/GeometricalPredicates.jl:423; seta
+                        1 ...Predicates/BdTxz/src/GeometricalPredicates.jl:414; clean!
+                         1 ./float.jl:395; _clean!
+                      2 ...s/VoronoiDelaunay/3l7TP/src/VoronoiDelaunay.jl:561; _flipca!(::DelaunayTessellation2D{Particle}, ::Int64, ::Int64, ::Vorono...
+                       2 ...lPredicates/BdTxz/src/GeometricalPredicates.jl:427; setabc
+                        2 ...Predicates/BdTxz/src/GeometricalPredicates.jl:414; clean!
+                         1 ./float.jl:399; _clean!
+                         1 ...Predicates/BdTxz/src/GeometricalPredicates.jl:332; _clean!
+                          1 ./float.jl:397; -
+                     1  ...s/VoronoiDelaunay/3l7TP/src/VoronoiDelaunay.jl:608; _restoredelaunayhood!(::DelaunayTessellation2D{Particle}, ::Int64)
+                      1 ./array.jl:856; push!
+                       1 ./array.jl:814; _growend!
+                     1  ...s/VoronoiDelaunay/3l7TP/src/VoronoiDelaunay.jl:611; _restoredelaunayhood!(::DelaunayTessellation2D{Particle}, ::Int64)
+                      1 ./array.jl:731; getindex
+                     10 ...s/VoronoiDelaunay/3l7TP/src/VoronoiDelaunay.jl:615; _restoredelaunayhood!(::DelaunayTessellation2D{Particle}, ::Int64)
+                      1 ./float.jl:397; incircle
+                      1 ./float.jl:399; incircle
+                      1 ...lPredicates/BdTxz/src/GeometricalPredicates.jl:531; incircle
+                       1 ./operators.jl:502; +
+                        1 ./float.jl:395; +
+                      7 ...lPredicates/BdTxz/src/GeometricalPredicates.jl:538; incircle
+                       7 ...lPredicates/BdTxz/src/GeometricalPredicates.jl:509; _sz_incircle(::VoronoiDelaunay.DelaunayTriangle{Particle}, ::Particle,...
+                        1 ./gmp.jl:267; _extract_bigint
+                         1 ./gmp.jl:177; set_ui(::UInt64)
+                          1 ./gmp.jl:57; Type
+                           1 ./gmp.jl:121; init!
+                        1 ...Predicates/BdTxz/src/GeometricalPredicates.jl:469; _exact_sign_incircle_determinant!(::BigInt, ::BigInt, ::BigInt, ::BigI...
+                         1 ./gmp.jl:412; -
+                          1 ./gmp.jl:133; sub(::BigInt, ::BigInt)
+                           1 ./gmp.jl:132; sub!
+                        1 ...Predicates/BdTxz/src/GeometricalPredicates.jl:470; _exact_sign_incircle_determinant!(::BigInt, ::BigInt, ::BigInt, ::BigI...
+                         1 ./gmp.jl:412; -
+                          1 ./gmp.jl:133; sub(::BigInt, ::BigInt)
+                           1 ./gmp.jl:132; sub!
+                        1 ...Predicates/BdTxz/src/GeometricalPredicates.jl:473; _exact_sign_incircle_determinant!(::BigInt, ::BigInt, ::BigInt, ::BigI...
+                         1 ./gmp.jl:412; *
+                          1 ./gmp.jl:133; mul(::BigInt, ::BigInt)
+                           1 ./gmp.jl:56; Type
+                        3 ...Predicates/BdTxz/src/GeometricalPredicates.jl:475; _exact_sign_incircle_determinant!(::BigInt, ::BigInt, ::BigInt, ::BigI...
+                         2 ./gmp.jl:412; +
+                          2 ./gmp.jl:133; add(::BigInt, ::BigInt)
+                           2 ./gmp.jl:132; add!
+                         1 ./gmp.jl:441; +(::BigInt, ::BigInt, ::BigInt)
+                          1 ./gmp.jl:133; add(::BigInt, ::BigInt)
+                           1 ./gmp.jl:57; Type
+                            1 ./gmp.jl:121; init!
+                     4  ...s/VoronoiDelaunay/3l7TP/src/VoronoiDelaunay.jl:616; _restoredelaunayhood!(::DelaunayTessellation2D{Particle}, ::Int64)
+                      2 ./array.jl:731; _flipa!
+                      1 ...s/VoronoiDelaunay/3l7TP/src/VoronoiDelaunay.jl:348; _flipa!
+                       1 ...s/VoronoiDelaunay/3l7TP/src/VoronoiDelaunay.jl:403; _flipab!(::DelaunayTessellation2D{Particle}, ::Int64, ::Int64, ::Voron...
+                        1 ...Predicates/BdTxz/src/GeometricalPredicates.jl:427; setabc
+                         1 ...Predicates/BdTxz/src/GeometricalPredicates.jl:414; clean!
+                          1 ...Predicates/BdTxz/src/GeometricalPredicates.jl:335; _clean!
+                           1 ./float.jl:399; *
+                      1 ...s/VoronoiDelaunay/3l7TP/src/VoronoiDelaunay.jl:350; _flipa!
+                       1 ...s/VoronoiDelaunay/3l7TP/src/VoronoiDelaunay.jl:415; _flipac!(::DelaunayTessellation2D{Particle}, ::Int64, ::Int64, ::Voron...
+                        1 ...Predicates/BdTxz/src/GeometricalPredicates.jl:424; setb
+                         1 ...Predicates/BdTxz/src/GeometricalPredicates.jl:414; clean!
+                          1 ./float.jl:395; _clean!
+                     1  ...s/VoronoiDelaunay/3l7TP/src/VoronoiDelaunay.jl:621; _restoredelaunayhood!(::DelaunayTessellation2D{Particle}, ::Int64)
+                      1 ./array.jl:1068; pop!
+                       1 ./array.jl:823; _deleteend!
+                     1  ...s/VoronoiDelaunay/3l7TP/src/VoronoiDelaunay.jl:625; _restoredelaunayhood!(::DelaunayTessellation2D{Particle}, ::Int64)
+                      1 ./array.jl:856; push!
+                       1 ./array.jl:814; _growend!
+                     10 ...s/VoronoiDelaunay/3l7TP/src/VoronoiDelaunay.jl:632; _restoredelaunayhood!(::DelaunayTessellation2D{Particle}, ::Int64)
+                      2 ./float.jl:399; incircle
+                      1 ...lPredicates/BdTxz/src/GeometricalPredicates.jl:532; incircle
+                       1 ./float.jl:452; <
+                      7 ...lPredicates/BdTxz/src/GeometricalPredicates.jl:538; incircle
+                       7 ...lPredicates/BdTxz/src/GeometricalPredicates.jl:509; _sz_incircle(::VoronoiDelaunay.DelaunayTriangle{Particle}, ::Particle,...
+                        1 ...Predicates/BdTxz/src/GeometricalPredicates.jl:469; _exact_sign_incircle_determinant!(::BigInt, ::BigInt, ::BigInt, ::BigI...
+                         1 ./gmp.jl:412; -
+                          1 ./gmp.jl:133; sub(::BigInt, ::BigInt)
+                           1 ./gmp.jl:132; sub!
+                        1 ...Predicates/BdTxz/src/GeometricalPredicates.jl:474; _exact_sign_incircle_determinant!(::BigInt, ::BigInt, ::BigInt, ::BigI...
+                         1 ./gmp.jl:412; *
+                          1 ./gmp.jl:133; mul(::BigInt, ::BigInt)
+                           1 ./gmp.jl:132; mul!
+                        5 ...Predicates/BdTxz/src/GeometricalPredicates.jl:475; _exact_sign_incircle_determinant!(::BigInt, ::BigInt, ::BigInt, ::BigI...
+                         1 ./gmp.jl:441; *(::BigInt, ::BigInt, ::BigInt)
+                          1 ./gmp.jl:134; mul!
+                           1 ./gmp.jl:132; mul!
+                         1 ./gmp.jl:412; -
+                          1 ./gmp.jl:133; sub(::BigInt, ::BigInt)
+                           1 ./gmp.jl:57; Type
+                            1 ./gmp.jl:121; init!
+                         2 ./gmp.jl:469; -
+                          2 ./gmp.jl:167; neg(::BigInt)
+                           2 ./gmp.jl:166; neg!
+                         1 ./number.jl:142; sign(::BigInt)
+                          1 ./number.jl:298; one
+                           1 ./number.jl:297; one
+                            1 ./number.jl:7; convert
+                             1 ./gmp.jl:266; Type
+                              1 ./gmp.jl:177; set_si(::Int64)
+                               1 ./gmp.jl:57; Type
+                                1 ./gmp.jl:121; init!
+                     3  ...s/VoronoiDelaunay/3l7TP/src/VoronoiDelaunay.jl:633; _restoredelaunayhood!(::DelaunayTessellation2D{Particle}, ::Int64)
+                      1 ...s/VoronoiDelaunay/3l7TP/src/VoronoiDelaunay.jl:434; _flipb!
+                       1 ...s/VoronoiDelaunay/3l7TP/src/VoronoiDelaunay.jl:467; _flipba!(::DelaunayTessellation2D{Particle}, ::Int64, ::Int64, ::Voron...
+                        1 ...Predicates/BdTxz/src/GeometricalPredicates.jl:425; setc
+                         1 ...Predicates/BdTxz/src/GeometricalPredicates.jl:414; clean!
+                          1 ...Predicates/BdTxz/src/GeometricalPredicates.jl:338; _clean!
+                           1 ./float.jl:399; *
+                      2 ...s/VoronoiDelaunay/3l7TP/src/VoronoiDelaunay.jl:438; _flipb!
+                       1 ...s/VoronoiDelaunay/3l7TP/src/VoronoiDelaunay.jl:501; _flipbc!(::DelaunayTessellation2D{Particle}, ::Int64, ::Int64, ::Voron...
+                        1 ...Predicates/BdTxz/src/GeometricalPredicates.jl:425; setc
+                         1 ...Predicates/BdTxz/src/GeometricalPredicates.jl:414; clean!
+                          1 ...Predicates/BdTxz/src/GeometricalPredicates.jl:333; _clean!
+                           1 /home/fred/Documents/Dropbox/devls/CRN1/setup.jl:51; getx
+                            1 ./sysimg.jl:18; getproperty
+                       1 ...s/VoronoiDelaunay/3l7TP/src/VoronoiDelaunay.jl:507; _flipbc!(::DelaunayTessellation2D{Particle}, ::Int64, ::Int64, ::Voron...
+                        1 ...Predicates/BdTxz/src/GeometricalPredicates.jl:427; setabc
+                         1 ./sysimg.jl:19; setproperty!
+                     2  ...s/VoronoiDelaunay/3l7TP/src/VoronoiDelaunay.jl:634; _restoredelaunayhood!(::DelaunayTessellation2D{Particle}, ::Int64)
+                      1 ./array.jl:856; push!
+                       1 ./array.jl:814; _growend!
+                      1 ./sysimg.jl:18; getproperty
+                     1  ...s/VoronoiDelaunay/3l7TP/src/VoronoiDelaunay.jl:638; _restoredelaunayhood!(::DelaunayTessellation2D{Particle}, ::Int64)
+                      1 ./array.jl:1068; pop!
+                       1 ./array.jl:823; _deleteend!
+                     1  ...s/VoronoiDelaunay/3l7TP/src/VoronoiDelaunay.jl:642; _restoredelaunayhood!(::DelaunayTessellation2D{Particle}, ::Int64)
+                      1 ./array.jl:856; push!
+                       1 ./array.jl:814; _growend!
+                     1  ...s/VoronoiDelaunay/3l7TP/src/VoronoiDelaunay.jl:644; _restoredelaunayhood!(::DelaunayTessellation2D{Particle}, ::Int64)
+                      1 ./abstractarray.jl:249; lastindex
+                       1 ./abstractarray.jl:214; eachindex
+                        1 ./abstractarray.jl:93; axes1
+                         1 ./abstractarray.jl:75; axes
+                          1 ./tuple.jl:162; map
+                           1 ./range.jl:298; Type
+                            1 ./range.jl:289; Type
+                             1 ./promotion.jl:436; max
+                     15 ...s/VoronoiDelaunay/3l7TP/src/VoronoiDelaunay.jl:649; _restoredelaunayhood!(::DelaunayTessellation2D{Particle}, ::Int64)
+                      1  ./float.jl:395; incircle
+                      1  ...lPredicates/BdTxz/src/GeometricalPredicates.jl:527; incircle
+                       1 ./float.jl:397; -
+                      1  ...lPredicates/BdTxz/src/GeometricalPredicates.jl:531; incircle
+                       1 ./float.jl:399; *
+                      12 ...lPredicates/BdTxz/src/GeometricalPredicates.jl:538; incircle
+                       12 ...Predicates/BdTxz/src/GeometricalPredicates.jl:509; _sz_incircle(::VoronoiDelaunay.DelaunayTriangle{Particle}, ::Particle,...
+                        1 ...Predicates/BdTxz/src/GeometricalPredicates.jl:472; _exact_sign_incircle_determinant!(::BigInt, ::BigInt, ::BigInt, ::BigI...
+                         1 ./gmp.jl:412; +
+                          1 ./gmp.jl:133; add(::BigInt, ::BigInt)
+                           1 ./gmp.jl:57; Type
+                            1 ./gmp.jl:121; init!
+                        1 ...Predicates/BdTxz/src/GeometricalPredicates.jl:473; _exact_sign_incircle_determinant!(::BigInt, ::BigInt, ::BigInt, ::BigI...
+                         1 ./gmp.jl:412; *
+                          1 ./gmp.jl:133; mul(::BigInt, ::BigInt)
+                           1 ./gmp.jl:132; mul!
+                        1 ...Predicates/BdTxz/src/GeometricalPredicates.jl:474; _exact_sign_incircle_determinant!(::BigInt, ::BigInt, ::BigInt, ::BigI...
+                         1 ./gmp.jl:412; *
+                          1 ./gmp.jl:133; mul(::BigInt, ::BigInt)
+                           1 ./gmp.jl:132; mul!
+                        8 ...Predicates/BdTxz/src/GeometricalPredicates.jl:475; _exact_sign_incircle_determinant!(::BigInt, ::BigInt, ::BigInt, ::BigI...
+                         4 ./gmp.jl:441; *(::BigInt, ::BigInt, ::BigInt)
+                          2 ./gmp.jl:133; mul(::BigInt, ::BigInt)
+                           1 ./gmp.jl:57; Type
+                            1 ./gmp.jl:121; init!
+                           1 ./gmp.jl:132; mul!
+                          2 ./gmp.jl:134; mul!
+                           2 ./gmp.jl:132; mul!
+                         1 ./gmp.jl:412; +
+                          1 ./gmp.jl:133; add(::BigInt, ::BigInt)
+                           1 ./gmp.jl:57; Type
+                            1 ./gmp.jl:121; init!
+                         1 ./gmp.jl:412; -
+                          1 ./gmp.jl:133; sub(::BigInt, ::BigInt)
+                           1 ./gmp.jl:132; sub!
+                         2 ./gmp.jl:469; -
+                          2 ./gmp.jl:167; neg(::BigInt)
+                           1 ./gmp.jl:57; Type
+                            1 ./gmp.jl:121; init!
+                        1 ...Predicates/BdTxz/src/GeometricalPredicates.jl:328; _extract_bigint
+                         1 ./gmp.jl:267; Type
+                          1 ./gmp.jl:177; set_ui(::UInt64)
+                           1 ./gmp.jl:56; Type
+                     1  ...s/VoronoiDelaunay/3l7TP/src/VoronoiDelaunay.jl:651; _restoredelaunayhood!(::DelaunayTessellation2D{Particle}, ::Int64)
+                      1 ./array.jl:856; push!
+                       1 ./array.jl:814; _growend!
+                 7   /home/fred/Documents/Dropbox/devls/CRN1/setup2.jl:166; oneloop(::Array{Particle,1}, ::Float64)
+                  1 ./channels.jl:385; iterate
+                   1 ./channels.jl:386; iterate(::Channel{Any}, ::Nothing)
+                  1 ...ges/VoronoiDelaunay/3l7TP/src/VoronoiDelaunay.jl:216; voronoiedges
+                   1 ./channels.jl:104; Type
+                    1 ./channels.jl:106; #Channel#585(::Type, ::Int64, ::Nothing, ::Type, ::getfield(VoronoiDelau...
+                     1 ./channels.jl:192; bind
+                      1 ./task.jl:273; register_taskdone_hook(::Task, ::Function)
+                       1 ./abstractdict.jl:649; get!
+                        1 ./abstractdict.jl:585; setindex!(::IdDict{Any,Any}, ::Any, ::Any)
+                 9   /home/fred/Documents/Dropbox/devls/CRN1/setup2.jl:167; oneloop(::Array{Particle,1}, ::Float64)
+                 11  /home/fred/Documents/Dropbox/devls/CRN1/setup2.jl:168; oneloop(::Array{Particle,1}, ::Float64)
+                  7 ./sysimg.jl:18; getproperty
+                 21  /home/fred/Documents/Dropbox/devls/CRN1/setup2.jl:170; oneloop(::Array{Particle,1}, ::Float64)
+                  1 ...ges/VoronoiDelaunay/3l7TP/src/VoronoiDelaunay.jl:149; geta(::VoronoiDelaunay.VoronoiEdge{Particle})
+                 2   /home/fred/Documents/Dropbox/devls/CRN1/setup2.jl:172; oneloop(::Array{Particle,1}, ::Float64)
+                 3   /home/fred/Documents/Dropbox/devls/CRN1/setup2.jl:173; oneloop(::Array{Particle,1}, ::Float64)
+                  1 /home/fred/Documents/Dropbox/devls/CRN1/setup.jl:52; gety
+                   1 ./sysimg.jl:18; getproperty
+                 1   /home/fred/Documents/Dropbox/devls/CRN1/setup2.jl:175; oneloop(::Array{Particle,1}, ::Float64)
+                  1 ./promotion.jl:316; /
+                   1 ./float.jl:401; /
+                 13  /home/fred/Documents/Dropbox/devls/CRN1/setup2.jl:178; oneloop(::Array{Particle,1}, ::Float64)
+                  4 ./sysimg.jl:18; getproperty
+                 91  /home/fred/Documents/Dropbox/devls/CRN1/setup2.jl:179; oneloop(::Array{Particle,1}, ::Float64)
+                  10 ./sysimg.jl:18; getproperty
+                  54 ./sysimg.jl:19; setproperty!(::Particle, ::Symbol, ::Float64)
+                   1 /home/fred/devl/julia-1.0.2/lib/julia/sys.so:?; convert(::Type{Float64}, ::Float64)
+                  3  /home/fred/devl/julia-1.0.2/lib/julia/sys.so:?; +(::Float64, ::Float64)
+                 54  /home/fred/Documents/Dropbox/devls/CRN1/setup2.jl:180; oneloop(::Array{Particle,1}, ::Float64)
+                  9  ./sysimg.jl:18; getproperty
+                  34 ./sysimg.jl:19; setproperty!(::Particle, ::Symbol, ::Float64)
+                 15  /home/fred/Documents/Dropbox/devls/CRN1/setup2.jl:182; oneloop(::Array{Particle,1}, ::Float64)
+                  8 ./sysimg.jl:18; getproperty
+                 78  /home/fred/Documents/Dropbox/devls/CRN1/setup2.jl:183; oneloop(::Array{Particle,1}, ::Float64)
+                  12 ./sysimg.jl:18; getproperty
+                  47 ./sysimg.jl:19; setproperty!(::Particle, ::Symbol, ::Float64)
+                 365 /home/fred/Documents/Dropbox/devls/CRN1/setup2.jl:184; oneloop(::Array{Particle,1}, ::Float64)
+                  4   ./channels.jl:385; iterate(::Channel{Any}, ::Nothing)
+                  308 ./channels.jl:386; iterate(::Channel{Any}, ::Nothing)
+                   233 ./channels.jl:306; take!
+                    4   ./channels.jl:319; take_unbuffered(::Channel{Any})
+                     2 ./array.jl:856; push!
+                      2 ./array.jl:814; _growend!
+                     2 ./array.jl:857; push!
+                      2 ./abstractarray.jl:249; lastindex
+                       2 ./abstractarray.jl:214; eachindex
+                        2 ./abstractarray.jl:93; axes1
+                         2 ./abstractarray.jl:75; axes
+                          2 ./tuple.jl:162; map
+                           2 ./range.jl:298; Type
+                            2 ./range.jl:289; Type
+                             2 ./promotion.jl:436; max
+                    1   ./channels.jl:320; take_unbuffered(::Channel{Any})
+                    227 ./channels.jl:329; take_unbuffered(::Channel{Any})
+                     3   ./event.jl:244; wait()
+                     6   ./event.jl:253; wait()
+                      3 ./event.jl:229; poptask()
+                       1 ./array.jl:1128; popfirst!
+                        1 ./array.jl:731; getindex
+                       1 ./array.jl:1129; popfirst!
+                        1 ./array.jl:821; _deletebeg!
+                      3 ./event.jl:230; poptask()
+                       1 ./operators.jl:185; !=
+                        1 ./operators.jl:83; ==
+                       2 ./sysimg.jl:18; getproperty
+                     96  ./event.jl:255; wait()
+                      3  ./event.jl:186; try_yieldto(::typeof(Base.ensure_rescheduled), ::Base.RefValue{Task})
+                      88 ./event.jl:187; try_yieldto(::typeof(Base.ensure_rescheduled), ::Base.RefValue{Task})
+                      2  ./event.jl:192; try_yieldto(::typeof(Base.ensure_rescheduled), ::Base.RefValue{Task})
+                       2 ./task.jl:93; current_task
+                      2  ./event.jl:196; try_yieldto(::typeof(Base.ensure_rescheduled), ::Base.RefValue{Task})
+                     121 ./event.jl:256; wait()
+                      2   ./libuv.jl:96; process_events
+                       2 ./libuv.jl:89; eventloop
+                      119 ./libuv.jl:100; process_events
+                  1   ./channels.jl:389; iterate(::Channel{Any}, ::Nothing)
+                  7   ./sysimg.jl:18; getproperty
+                  36  ./sysimg.jl:19; setproperty!(::Particle, ::Symbol, ::Float64)
+                 12  /home/fred/Documents/Dropbox/devls/CRN1/setup2.jl:187; oneloop(::Array{Particle,1}, ::Float64)
+                  12 ./abstractarray.jl:1835; foreach(::getfield(Main, Symbol("##74#80")), ::Array{Particle,1})
+                   1  ./float.jl:401; #74
+                   11 /home/fred/Documents/Dropbox/devls/CRN1/setup2.jl:187; #74
+                    11 ./math.jl:780; ^
+                 1   /home/fred/Documents/Dropbox/devls/CRN1/setup2.jl:188; oneloop(::Array{Particle,1}, ::Float64)
+                  1 ./reduce.jl:485; maximum
+                   1 ./reduce.jl:203; mapreduce
+                    1 ./reduce.jl:203; #mapreduce#174
+                     1 ./reduce.jl:70; mapfoldl
+                      1 ./reduce.jl:70; #mapfoldl#170
+                       1 ./reduce.jl:59; mapfoldl_impl
+                        1 ./math.jl:575; mapfoldl_impl(::typeof(identity), ::typeof(max), ::NamedTuple{(:init,)...
+                 23  /home/fred/Documents/Dropbox/devls/CRN1/setup2.jl:195; oneloop(::Array{Particle,1}, ::Float64)
+                  12 ...es/VoronoiDelaunay/3l7TP/src/VoronoiDelaunay.jl:216; voronoiedges
+                   12 ./channels.jl:104; Type
+                    11 ./channels.jl:105; #Channel#585(::Type, ::Int64, ::Nothing, ::Type, ::getfield(VoronoiDelau...
+                     10 ./boot.jl:377; Type
+                    1  ./channels.jl:107; #Channel#585(::Type, ::Int64, ::Nothing, ::Type, ::getfield(VoronoiDelau...
+                     1 ./event.jl:166; yield
+                      1 ./event.jl:169; yield(::Task, ::Any)
+                       1 ./event.jl:187; try_yieldto(::typeof(Base.ensure_rescheduled), ::Base.RefValue{Task})
+                 11  /home/fred/Documents/Dropbox/devls/CRN1/setup2.jl:196; oneloop(::Array{Particle,1}, ::Float64)
+                 14  /home/fred/Documents/Dropbox/devls/CRN1/setup2.jl:197; oneloop(::Array{Particle,1}, ::Float64)
+                  5 ./sysimg.jl:18; getproperty
+                 11  /home/fred/Documents/Dropbox/devls/CRN1/setup2.jl:199; oneloop(::Array{Particle,1}, ::Float64)
+                 67  /home/fred/Documents/Dropbox/devls/CRN1/setup2.jl:202; oneloop(::Array{Particle,1}, ::Float64)
+                  29 ./sysimg.jl:18; getproperty(::Any, ::Symbol)
+                 63  /home/fred/Documents/Dropbox/devls/CRN1/setup2.jl:203; oneloop(::Array{Particle,1}, ::Float64)
+                  40 ./sysimg.jl:18; getproperty
+                  1  /home/fred/devl/julia-1.0.2/lib/julia/sys.so:?; +(::Float64, ::Float64)
+                 13  /home/fred/Documents/Dropbox/devls/CRN1/setup2.jl:205; oneloop(::Array{Particle,1}, ::Float64)
+                  7 ./sysimg.jl:18; getproperty
+                 17  /home/fred/Documents/Dropbox/devls/CRN1/setup2.jl:208; oneloop(::Array{Particle,1}, ::Float64)
+                  14 ./sysimg.jl:18; getproperty
+                  1  /home/fred/devl/julia-1.0.2/lib/julia/sys.so:?; <=(::Int64, ::Int64)
+                 16  /home/fred/Documents/Dropbox/devls/CRN1/setup2.jl:212; oneloop(::Array{Particle,1}, ::Float64)
+                  16 ./sysimg.jl:18; getproperty
+                 16  /home/fred/Documents/Dropbox/devls/CRN1/setup2.jl:213; oneloop(::Array{Particle,1}, ::Float64)
+                  16 ./sysimg.jl:18; getproperty
+                 11  /home/fred/Documents/Dropbox/devls/CRN1/setup2.jl:216; oneloop(::Array{Particle,1}, ::Float64)
+                 62  /home/fred/Documents/Dropbox/devls/CRN1/setup2.jl:217; oneloop(::Array{Particle,1}, ::Float64)
+                  25 ./sysimg.jl:18; getproperty
+                 11  /home/fred/Documents/Dropbox/devls/CRN1/setup2.jl:218; oneloop(::Array{Particle,1}, ::Float64)
+                 49  /home/fred/Documents/Dropbox/devls/CRN1/setup2.jl:220; oneloop(::Array{Particle,1}, ::Float64)
+                 54  /home/fred/Documents/Dropbox/devls/CRN1/setup2.jl:221; oneloop(::Array{Particle,1}, ::Float64)
+                 78  /home/fred/Documents/Dropbox/devls/CRN1/setup2.jl:224; oneloop(::Array{Particle,1}, ::Float64)
+                  15 ./math.jl:780; ^(::Float64, ::Float64)
+                  12 ./sysimg.jl:18; getproperty
+                 38  /home/fred/Documents/Dropbox/devls/CRN1/setup2.jl:225; oneloop(::Array{Particle,1}, ::Float64)
+                  15 ./math.jl:780; ^(::Float64, ::Float64)
+                  3  ./sysimg.jl:18; getproperty
+                  1  /home/fred/devl/julia-1.0.2/lib/julia/sys.so:?; /(::Float64, ::Float64)
+                 59  /home/fred/Documents/Dropbox/devls/CRN1/setup2.jl:227; oneloop(::Array{Particle,1}, ::Float64)
+                  24 ./operators.jl:502; *
+                 12  /home/fred/Documents/Dropbox/devls/CRN1/setup2.jl:228; oneloop(::Array{Particle,1}, ::Float64)
+                 7   /home/fred/Documents/Dropbox/devls/CRN1/setup2.jl:229; oneloop(::Array{Particle,1}, ::Float64)
+                  1 ./float.jl:395; +(::Float64, ::Float64)
+                 12  /home/fred/Documents/Dropbox/devls/CRN1/setup2.jl:231; oneloop(::Array{Particle,1}, ::Float64)
+                  8 ./sysimg.jl:18; getproperty
+                 66  /home/fred/Documents/Dropbox/devls/CRN1/setup2.jl:232; oneloop(::Array{Particle,1}, ::Float64)
+                  8  ./sysimg.jl:18; getproperty
+                  39 ./sysimg.jl:19; setproperty!(::Particle, ::Symbol, ::Float64)
+                   1 /home/fred/devl/julia-1.0.2/lib/julia/sys.so:?; convert(::Type{Float64}, ::Float64)
+                 57  /home/fred/Documents/Dropbox/devls/CRN1/setup2.jl:233; oneloop(::Array{Particle,1}, ::Float64)
+                  8  ./sysimg.jl:18; getproperty
+                  29 ./sysimg.jl:19; setproperty!(::Particle, ::Symbol, ::Float64)
+                   1 /home/fred/devl/julia-1.0.2/lib/julia/sys.so:?; convert(::Type{Float64}, ::Float64)
+                  1  /home/fred/devl/julia-1.0.2/lib/julia/sys.so:?; -(::Float64, ::Float64)
+                 8   /home/fred/Documents/Dropbox/devls/CRN1/setup2.jl:236; oneloop(::Array{Particle,1}, ::Float64)
+                  5 ./sysimg.jl:18; getproperty
+                  1 /home/fred/devl/julia-1.0.2/lib/julia/sys.so:?; >(::Int64, ::Int64)
+                 84  /home/fred/Documents/Dropbox/devls/CRN1/setup2.jl:237; oneloop(::Array{Particle,1}, ::Float64)
+                  17 ./sysimg.jl:18; getproperty
+                  32 ./sysimg.jl:19; setproperty!(::Particle, ::Symbol, ::Float64)
+                   2 /home/fred/devl/julia-1.0.2/lib/julia/sys.so:?; convert(::Type{Float64}, ::Float64)
+                  1  /home/fred/devl/julia-1.0.2/lib/julia/sys.so:?; /(::Float64, ::Float64)
+                 458 /home/fred/Documents/Dropbox/devls/CRN1/setup2.jl:238; oneloop(::Array{Particle,1}, ::Float64)
+                  3   ./channels.jl:385; iterate(::Channel{Any}, ::Nothing)
+                  374 ./channels.jl:386; iterate(::Channel{Any}, ::Nothing)
+                   300 ./channels.jl:306; take!
+                    4   ./channels.jl:319; take_unbuffered(::Channel{Any})
+                     3 ./array.jl:857; push!
+                      3 ./array.jl:769; setindex!
+                     1 ./task.jl:93; current_task
+                    4   ./channels.jl:320; take_unbuffered(::Channel{Any})
+                    291 ./channels.jl:329; take_unbuffered(::Channel{Any})
+                     7   ./event.jl:253; wait()
+                      4 ./event.jl:229; poptask()
+                       2 ./array.jl:1128; popfirst!
+                        2 ./array.jl:731; getindex
+                       2 ./array.jl:1129; popfirst!
+                        2 ./array.jl:821; _deletebeg!
+                      1 ./event.jl:230; poptask()
+                       1 ./sysimg.jl:18; getproperty
+                      2 ./event.jl:240; poptask()
+                       2 ./refpointer.jl:82; Type
+                        2 ./refvalue.jl:10; Type
+                         2 ./refvalue.jl:8; Type
+                     134 ./event.jl:255; wait()
+                      2   ./event.jl:186; try_yieldto(::typeof(Base.ensure_rescheduled), ::Base.RefValue{Task})
+                      125 ./event.jl:187; try_yieldto(::typeof(Base.ensure_rescheduled), ::Base.RefValue{Task})
+                      1   ./event.jl:196; try_yieldto(::typeof(Base.ensure_rescheduled), ::Base.RefValue{Task})
+                      1   ./event.jl:200; try_yieldto(::typeof(Base.ensure_rescheduled), ::Base.RefValue{Task})
+                     148 ./event.jl:256; wait()
+                      1   ./libuv.jl:96; process_events
+                       1 ./libuv.jl:89; eventloop
+                      147 ./libuv.jl:100; process_events
+                  26  ./sysimg.jl:18; getproperty
+                  34  ./sysimg.jl:19; setproperty!(::Particle, ::Symbol, ::Float64)
+                 1   /home/fred/Documents/Dropbox/devls/CRN1/setup2.jl:241; oneloop(::Array{Particle,1}, ::Float64)
+                  1 ./reduce.jl:485; maximum
+                   1 ./reduce.jl:203; mapreduce
+                    1 ./reduce.jl:203; #mapreduce#174
+                     1 ./reduce.jl:70; mapfoldl
+                      1 ./reduce.jl:70; #mapfoldl#170
+                       1 ./reduce.jl:59; mapfoldl_impl
+                        1 ./reduce.jl:45; mapfoldl_impl(::typeof(identity), ::typeof(max), ::NamedTuple{(:init,)...
+                         1 ./generator.jl:47; iterate
+                          1 ./float.jl:399; #77
+                 8   /home/fred/Documents/Dropbox/devls/CRN1/setup2.jl:247; oneloop(::Array{Particle,1}, ::Float64)
+                  3 ./sysimg.jl:18; getproperty(::Any, ::Symbol)
+                 4   /home/fred/Documents/Dropbox/devls/CRN1/setup2.jl:250; oneloop(::Array{Particle,1}, ::Float64)
+                  1 ./sysimg.jl:18; getproperty
+                  1 ./sysimg.jl:18; getproperty(::Any, ::Symbol)
+                 1   /home/fred/Documents/Dropbox/devls/CRN1/setup2.jl:255; oneloop(::Array{Particle,1}, ::Float64)
+                  1 ./float.jl:395; +
+                 1   /home/fred/Documents/Dropbox/devls/CRN1/setup2.jl:256; oneloop(::Array{Particle,1}, ::Float64)
+                  1 ./float.jl:399; *
+                 32  /home/fred/Documents/Dropbox/devls/CRN1/setup2.jl:257; oneloop(::Array{Particle,1}, ::Float64)
+                  2  ./sysimg.jl:18; getproperty(::Any, ::Symbol)
+                  18 ./sysimg.jl:19; setproperty!(::Particle, ::Symbol, ::Float64)
+                   1 /home/fred/devl/julia-1.0.2/lib/julia/sys.so:?; convert(::Type{Float64}, ::Float64)
+                 7   /home/fred/Documents/Dropbox/devls/CRN1/setup2.jl:258; oneloop(::Array{Particle,1}, ::Float64)
+                  2 ./sysimg.jl:18; getproperty(::Any, ::Symbol)
+                 7   /home/fred/Documents/Dropbox/devls/CRN1/setup2.jl:261; oneloop(::Array{Particle,1}, ::Float64)
+                  1 ./sysimg.jl:18; getproperty(::Any, ::Symbol)
+                 4   /home/fred/Documents/Dropbox/devls/CRN1/setup2.jl:266; oneloop(::Array{Particle,1}, ::Float64)
+                  4 ./reduce.jl:485; maximum
+                   4 ./reduce.jl:203; mapreduce
+                    4 ./reduce.jl:203; #mapreduce#174
+                     4 ./reduce.jl:70; mapfoldl
+                      4 ./reduce.jl:70; #mapfoldl#170
+                       4 ./reduce.jl:59; mapfoldl_impl
+                        4 ./reduce.jl:45; mapfoldl_impl(::typeof(identity), ::typeof(max), ::NamedTuple{(:init,)...
+                         4 ./generator.jl:47; iterate
+                          1 ./float.jl:399; #78
+                          3 ./none:0; #78
+                           3 ./math.jl:493; sqrt
+2    ./task.jl:293; task_done_hook(::Task)
+1    ./task.jl:294; task_done_hook(::Task)
+2    ./task.jl:295; task_done_hook(::Task)
+23   /home/fred/.julia/packages/Atom/mngyX/src/comm.jl:164; handlemsg(::Dict{String,Any}, ::Dict{String,Any})
+ 23 /home/fred/.julia/packages/Atom/mngyX/src/eval.jl:86; (::getfield(Atom, Symbol("##113#118")))(::Dict{String,Any})
+  23 /home/fred/.julia/packages/Media/ItEPc/src/dynamic.jl:24; macro expansion
+   23 /home/fred/.julia/packages/Atom/mngyX/src/eval.jl:91; macro expansion
+    23 /home/fred/.julia/packages/Atom/mngyX/src/repl.jl:87; hideprompt(::getfield(Atom, Symbol("##114#119")){String,Int64,String})
+     23 /home/fred/.julia/packages/Atom/mngyX/src/eval.jl:92; #114
+      23 ./logging.jl:491; with_logger
+       23 ./logging.jl:395; with_logstate(::getfield(Atom, Symbol("##115#120")){String,Int64,String}, ::Bas...
+        23 /home/fred/.julia/packages/Atom/mngyX/src/eval.jl:93; #115
+         23 /home/fred/.julia/packages/Atom/mngyX/src/eval.jl:46; withpath
+          23 ...e/fred/.julia/packages/CodeTools/xGemk/src/utils.jl:30; withpath(::getfield(Atom, Symbol("##116#121")){String,Int64,String}, ::String)
+           23 /home/fred/.julia/packages/Atom/mngyX/src/eval.jl:94; (::getfield(Atom, Symbol("##116#121")){String,Int64,String})()
+            23 ...e/fred/.julia/packages/CodeTools/xGemk/src/eval.jl:30; include_string(::Module, ::String, ::String, ::Int64)
+             23 ./loading.jl:1008; include_string(::Module, ::String, ::String)
+              23 ...sr/share/julia/stdlib/v1.0/Profile/src/Profile.jl:25; top-level scope
+               23 ...d/Documents/Dropbox/devls/CRN1/voronoi-tests 3.jl:175; macro expansion
+                8 /home/fred/Documents/Dropbox/devls/CRN1/setup2.jl:158; oneloop(::Array{Particle,1}, ::Float64)
+                 8 /home/fred/Documents/Dropbox/devls/CRN1/setup2.jl:233; borderize(::Array{Particle,1})
+                  8 ./channels.jl:386; iterate(::Channel{Any}, ::Nothing)
+                   8 ./channels.jl:306; take!
+                    8 ./channels.jl:329; take_unbuffered(::Channel{Any})
+                     8 ./event.jl:255; wait()
+                      8 ./event.jl:187; try_yieldto(::typeof(Base.ensure_rescheduled), ::Base.RefValue{Task})
+                6 /home/fred/Documents/Dropbox/devls/CRN1/setup2.jl:184; oneloop(::Array{Particle,1}, ::Float64)
+                 6 ./channels.jl:386; iterate(::Channel{Any}, ::Nothing)
+                  6 ./channels.jl:306; take!
+                   6 ./channels.jl:329; take_unbuffered(::Channel{Any})
+                    6 ./event.jl:255; wait()
+                     6 ./event.jl:187; try_yieldto(::typeof(Base.ensure_rescheduled), ::Base.RefValue{Task})
+                9 /home/fred/Documents/Dropbox/devls/CRN1/setup2.jl:238; oneloop(::Array{Particle,1}, ::Float64)
+                 9 ./channels.jl:386; iterate(::Channel{Any}, ::Nothing)
+                  9 ./channels.jl:306; take!
+                   9 ./channels.jl:329; take_unbuffered(::Channel{Any})
+                    9 ./event.jl:255; wait()
+                     9 ./event.jl:187; try_yieldto(::typeof(Base.ensure_rescheduled), ::Base.RefValue{Task})
